@@ -1,0 +1,27 @@
+{
+    "time_constraints": {
+        "operational_hours": {
+          "start": "08:00",
+          "end": "17:00"
+        },
+        "max_continuous_driving_time": {
+          "hours": 4,
+          "mandatory_rest": {
+            "duration": 45,
+            "units": "minutes"
+          }
+        },
+        "peak_traffic_hours": [
+          {
+            "start": "07:30",
+            "end": "09:00",
+            "impact_factor": 1.5
+          },
+          {
+            "start": "16:30",
+            "end": "18:30",
+            "impact_factor": 1.7
+          }
+        ]
+    }    
+}

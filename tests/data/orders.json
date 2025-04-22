@@ -1,0 +1,2542 @@
+{
+  "orders": [
+    {
+      "order_id": "ORD2001",
+      "location_id": "LOC201",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "USNS Summers, FPO AP 07163",
+      "geo": {
+        "lat": 13.015,
+        "lon": 80.09
+      },
+      "distance_from_warehouse_km": 12.99,
+      "geo_cluster": "West",
+      "packages": [
+        {
+          "id": "PKG0029",
+          "sku": "TEXT-3509",
+          "name": "Expanded upward-trending forecast",
+          "quantity": 9,
+          "weight_kg": 13.35,
+          "dimensions_cm": {
+            "l": 75,
+            "w": 57,
+            "h": 61
+          }
+        },
+        {
+          "id": "PKG0261",
+          "sku": "ELEC-6569",
+          "name": "Open-architected bottom-line structure",
+          "quantity": 9,
+          "weight_kg": 21.88,
+          "dimensions_cm": {
+            "l": 38,
+            "w": 28,
+            "h": 23
+          }
+        },
+        {
+          "id": "PKG0280",
+          "sku": "CLEAN-9528",
+          "name": "Object-based object-oriented superstructure",
+          "quantity": 10,
+          "weight_kg": 26.25,
+          "dimensions_cm": {
+            "l": 26,
+            "w": 100,
+            "h": 17
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2002",
+      "location_id": "LOC202",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "497 Christopher Key, North Anaborough, OR 12354",
+      "geo": {
+        "lat": 12.905,
+        "lon": 80.23
+      },
+      "distance_from_warehouse_km": 14.58,
+      "geo_cluster": "South",
+      "packages": [
+        {
+          "id": "PKG0374",
+          "sku": "FOOD-1375",
+          "name": "Focused system-worthy core",
+          "quantity": 300,
+          "weight_kg": 17.8,
+          "dimensions_cm": {
+            "l": 80,
+            "w": 46,
+            "h": 17
+          }
+        },
+        {
+          "id": "PKG0169",
+          "sku": "MED-1046",
+          "name": "Assimilated intangible process improvement",
+          "quantity": 4,
+          "weight_kg": 17.42,
+          "dimensions_cm": {
+            "l": 36,
+            "w": 30,
+            "h": 18
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2003",
+      "location_id": "LOC203",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "1757 Rebecca Coves, Kiddshire, SD 62881",
+      "geo": {
+        "lat": 13.11,
+        "lon": 80.25
+      },
+      "distance_from_warehouse_km": 9.47,
+      "geo_cluster": "North",
+      "packages": [
+        {
+          "id": "PKG0052",
+          "sku": "MED-3104",
+          "name": "Horizontal discrete standardization",
+          "quantity": 14,
+          "weight_kg": 2.09,
+          "dimensions_cm": {
+            "l": 43,
+            "w": 86,
+            "h": 48
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2004",
+      "location_id": "LOC204",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "Unit 2665 Box 0415, DPO AA 78074",
+      "geo": {
+        "lat": 12.92,
+        "lon": 80.26
+      },
+      "distance_from_warehouse_km": 13.92,
+      "geo_cluster": "South",
+      "packages": [
+        {
+          "id": "PKG0277",
+          "sku": "ELEC-4252",
+          "name": "Extended motivating alliance",
+          "quantity": 5,
+          "weight_kg": 0.65,
+          "dimensions_cm": {
+            "l": 37,
+            "w": 29,
+            "h": 18
+          }
+        },
+        {
+          "id": "PKG0030",
+          "sku": "TOOL-4353",
+          "name": "Distributed national function",
+          "quantity": 5,
+          "weight_kg": 29.97,
+          "dimensions_cm": {
+            "l": 18,
+            "w": 74,
+            "h": 17
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2005",
+      "location_id": "LOC205",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "26304 Jenkins Shoal, Bridgetberg, ME 19268",
+      "geo": {
+        "lat": 13.11,
+        "lon": 80.25
+      },
+      "distance_from_warehouse_km": 9.47,
+      "geo_cluster": "North",
+      "packages": [
+        {
+          "id": "PKG0345",
+          "sku": "ELEC-5171",
+          "name": "Cloned intangible ability",
+          "quantity": 5,
+          "weight_kg": 10.52,
+          "dimensions_cm": {
+            "l": 50,
+            "w": 99,
+            "h": 35
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2006",
+      "location_id": "LOC206",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "19337 Juan Street, Lake Bruce, IA 71789",
+      "geo": {
+        "lat": 13.0,
+        "lon": 80.13
+      },
+      "distance_from_warehouse_km": 9.31,
+      "geo_cluster": "West",
+      "packages": [
+        {
+          "id": "PKG0294",
+          "sku": "AGRO-6003",
+          "name": "Extended intangible process improvement",
+          "quantity": 6,
+          "weight_kg": 6.17,
+          "dimensions_cm": {
+            "l": 58,
+            "w": 51,
+            "h": 54
+          }
+        },
+        {
+          "id": "PKG0351",
+          "sku": "CLEAN-5281",
+          "name": "Optimized executive knowledgebase",
+          "quantity": 13,
+          "weight_kg": 2.24,
+          "dimensions_cm": {
+            "l": 20,
+            "w": 74,
+            "h": 14
+          }
+        },
+        {
+          "id": "PKG0459",
+          "sku": "TOOL-8427",
+          "name": "Stand-alone human-resource software",
+          "quantity": 15,
+          "weight_kg": 27.41,
+          "dimensions_cm": {
+            "l": 46,
+            "w": 28,
+            "h": 27
+          }
+        },
+        {
+          "id": "PKG0127",
+          "sku": "MED-5077",
+          "name": "Function-based 6thgeneration throughput",
+          "quantity": 10,
+          "weight_kg": 17.03,
+          "dimensions_cm": {
+            "l": 56,
+            "w": 95,
+            "h": 9
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2007",
+      "location_id": "LOC207",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "53868 Jackson Tunnel, Lopezville, IL 88599",
+      "geo": {
+        "lat": 13.14,
+        "lon": 80.06
+      },
+      "distance_from_warehouse_km": 19.81,
+      "geo_cluster": "Outskirts",
+      "packages": [
+        {
+          "id": "PKG0086",
+          "sku": "FOOD-8168",
+          "name": "Fully-configurable contextually-based adapter",
+          "quantity": 4,
+          "weight_kg": 23.3,
+          "dimensions_cm": {
+            "l": 74,
+            "w": 62,
+            "h": 7
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2008",
+      "location_id": "LOC208",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "09287 Rogers Manor Suite 891, Lindaport, RI 72801",
+      "geo": {
+        "lat": 12.86,
+        "lon": 80.29
+      },
+      "distance_from_warehouse_km": 21.31,
+      "geo_cluster": "Outskirts",
+      "packages": [
+        {
+          "id": "PKG0231",
+          "sku": "MED-1146",
+          "name": "Business-focused real-time contingency",
+          "quantity": 6,
+          "weight_kg": 29.01,
+          "dimensions_cm": {
+            "l": 87,
+            "w": 62,
+            "h": 70
+          }
+        },
+        {
+          "id": "PKG0377",
+          "sku": "ELEC-6689",
+          "name": "Adaptive explicit Graphic Interface",
+          "quantity": 13,
+          "weight_kg": 17.54,
+          "dimensions_cm": {
+            "l": 55,
+            "w": 37,
+            "h": 62
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2009",
+      "location_id": "LOC209",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "Unit 9405 Box 7745, DPO AA 57678",
+      "geo": {
+        "lat": 12.905,
+        "lon": 80.23
+      },
+      "distance_from_warehouse_km": 14.58,
+      "geo_cluster": "South",
+      "packages": [
+        {
+          "id": "PKG0309",
+          "sku": "CLEAN-2606",
+          "name": "Enhanced attitude-oriented orchestration",
+          "quantity": 7,
+          "weight_kg": 1.3,
+          "dimensions_cm": {
+            "l": 51,
+            "w": 19,
+            "h": 21
+          }
+        },
+        {
+          "id": "PKG0354",
+          "sku": "FOOD-7395",
+          "name": "Cross-platform multi-tasking support",
+          "quantity": 2,
+          "weight_kg": 26.25,
+          "dimensions_cm": {
+            "l": 68,
+            "w": 43,
+            "h": 46
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2010",
+      "location_id": "LOC210",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "1459 Moore Manors, North Stacy, RI 34574",
+      "geo": {
+        "lat": 12.905,
+        "lon": 80.23
+      },
+      "distance_from_warehouse_km": 14.58,
+      "geo_cluster": "South",
+      "packages": [
+        {
+          "id": "PKG0151",
+          "sku": "ELEC-5616",
+          "name": "Distributed contextually-based analyzer",
+          "quantity": 15,
+          "weight_kg": 2.12,
+          "dimensions_cm": {
+            "l": 39,
+            "w": 34,
+            "h": 58
+          }
+        },
+        {
+          "id": "PKG0353",
+          "sku": "CLEAN-7778",
+          "name": "Inverse heuristic capability",
+          "quantity": 1,
+          "weight_kg": 27.66,
+          "dimensions_cm": {
+            "l": 88,
+            "w": 13,
+            "h": 64
+          }
+        },
+        {
+          "id": "PKG0005",
+          "sku": "CLEAN-9030",
+          "name": "Innovative directional Internet solution",
+          "quantity": 5,
+          "weight_kg": 3.43,
+          "dimensions_cm": {
+            "l": 40,
+            "w": 63,
+            "h": 33
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2011",
+      "location_id": "LOC211",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "630 Kevin Curve, West Adamland, DE 76942",
+      "geo": {
+        "lat": 13.015,
+        "lon": 80.09
+      },
+      "distance_from_warehouse_km": 12.99,
+      "geo_cluster": "West",
+      "packages": [
+        {
+          "id": "PKG0265",
+          "sku": "TEXT-3457",
+          "name": "Function-based modular strategy",
+          "quantity": 7,
+          "weight_kg": 27.35,
+          "dimensions_cm": {
+            "l": 26,
+            "w": 17,
+            "h": 28
+          }
+        },
+        {
+          "id": "PKG0491",
+          "sku": "TOOL-8070",
+          "name": "Self-enabling leadingedge artificial intelligence",
+          "quantity": 15,
+          "weight_kg": 6.29,
+          "dimensions_cm": {
+            "l": 62,
+            "w": 19,
+            "h": 49
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2012",
+      "location_id": "LOC212",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "9465 Michelle Dale, Lewisborough, WV 30126",
+      "geo": {
+        "lat": 12.91,
+        "lon": 80.245
+      },
+      "distance_from_warehouse_km": 14.4,
+      "geo_cluster": "South",
+      "packages": [
+        {
+          "id": "PKG0325",
+          "sku": "AGRO-9870",
+          "name": "Configurable optimal support",
+          "quantity": 12,
+          "weight_kg": 21.98,
+          "dimensions_cm": {
+            "l": 42,
+            "w": 79,
+            "h": 49
+          }
+        },
+        {
+          "id": "PKG0128",
+          "sku": "FOOD-2564",
+          "name": "Cloned bifurcated contingency",
+          "quantity": 15,
+          "weight_kg": 1.7,
+          "dimensions_cm": {
+            "l": 48,
+            "w": 31,
+            "h": 27
+          }
+        },
+        {
+          "id": "PKG0065",
+          "sku": "ELEC-9882",
+          "name": "Managed encompassing hardware",
+          "quantity": 13,
+          "weight_kg": 13.48,
+          "dimensions_cm": {
+            "l": 100,
+            "w": 47,
+            "h": 13
+          }
+        },
+        {
+          "id": "PKG0165",
+          "sku": "AGRO-7085",
+          "name": "Streamlined bi-directional workforce",
+          "quantity": 13,
+          "weight_kg": 28.22,
+          "dimensions_cm": {
+            "l": 49,
+            "w": 66,
+            "h": 5
+          }
+        },
+        {
+          "id": "PKG0394",
+          "sku": "TOOL-9108",
+          "name": "User-friendly dedicated leverage",
+          "quantity": 1,
+          "weight_kg": 13.56,
+          "dimensions_cm": {
+            "l": 93,
+            "w": 26,
+            "h": 30
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2013",
+      "location_id": "LOC213",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "USNS Lambert, FPO AP 10807",
+      "geo": {
+        "lat": 13.11,
+        "lon": 80.25
+      },
+      "distance_from_warehouse_km": 9.47,
+      "geo_cluster": "North",
+      "packages": [
+        {
+          "id": "PKG0100",
+          "sku": "MED-3837",
+          "name": "Right-sized hybrid standardization",
+          "quantity": 10,
+          "weight_kg": 7.64,
+          "dimensions_cm": {
+            "l": 57,
+            "w": 72,
+            "h": 44
+          }
+        },
+        {
+          "id": "PKG0353",
+          "sku": "CLEAN-7778",
+          "name": "Inverse heuristic capability",
+          "quantity": 14,
+          "weight_kg": 27.66,
+          "dimensions_cm": {
+            "l": 88,
+            "w": 13,
+            "h": 64
+          }
+        },
+        {
+          "id": "PKG0272",
+          "sku": "ELEC-4827",
+          "name": "Reverse-engineered 4thgeneration workforce",
+          "quantity": 11,
+          "weight_kg": 23.75,
+          "dimensions_cm": {
+            "l": 37,
+            "w": 79,
+            "h": 38
+          }
+        },
+        {
+          "id": "PKG0265",
+          "sku": "TEXT-3457",
+          "name": "Function-based modular strategy",
+          "quantity": 1,
+          "weight_kg": 27.35,
+          "dimensions_cm": {
+            "l": 26,
+            "w": 17,
+            "h": 28
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2014",
+      "location_id": "LOC214",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "136 Linda Cliff Suite 573, Johnsonfort, NM 13546",
+      "geo": {
+        "lat": 12.905,
+        "lon": 80.23
+      },
+      "distance_from_warehouse_km": 14.58,
+      "geo_cluster": "South",
+      "packages": [
+        {
+          "id": "PKG0088",
+          "sku": "TOOL-9628",
+          "name": "Up-sized stable groupware",
+          "quantity": 11,
+          "weight_kg": 6.23,
+          "dimensions_cm": {
+            "l": 50,
+            "w": 64,
+            "h": 43
+          }
+        },
+        {
+          "id": "PKG0334",
+          "sku": "TEXT-2694",
+          "name": "Programmable bandwidth-monitored matrix",
+          "quantity": 11,
+          "weight_kg": 27.0,
+          "dimensions_cm": {
+            "l": 82,
+            "w": 51,
+            "h": 16
+          }
+        },
+        {
+          "id": "PKG0342",
+          "sku": "TOOL-3920",
+          "name": "Decentralized dedicated software",
+          "quantity": 10,
+          "weight_kg": 28.15,
+          "dimensions_cm": {
+            "l": 54,
+            "w": 53,
+            "h": 61
+          }
+        },
+        {
+          "id": "PKG0352",
+          "sku": "ELEC-4871",
+          "name": "Total solution-oriented Graphic Interface",
+          "quantity": 11,
+          "weight_kg": 11.76,
+          "dimensions_cm": {
+            "l": 28,
+            "w": 70,
+            "h": 61
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2015",
+      "location_id": "LOC215",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "4241 Bowman Ways Suite 577, Brownchester, NV 53746",
+      "geo": {
+        "lat": 13.03,
+        "lon": 80.11
+      },
+      "distance_from_warehouse_km": 10.64,
+      "geo_cluster": "West",
+      "packages": [
+        {
+          "id": "PKG0184",
+          "sku": "TOOL-3841",
+          "name": "Organized asynchronous encoding",
+          "quantity": 11,
+          "weight_kg": 27.54,
+          "dimensions_cm": {
+            "l": 98,
+            "w": 16,
+            "h": 56
+          }
+        },
+        {
+          "id": "PKG0159",
+          "sku": "CLEAN-2057",
+          "name": "Quality-focused 24hour strategy",
+          "quantity": 7,
+          "weight_kg": 4.83,
+          "dimensions_cm": {
+            "l": 33,
+            "w": 57,
+            "h": 55
+          }
+        },
+        {
+          "id": "PKG0396",
+          "sku": "ELEC-2272",
+          "name": "Robust actuating capacity",
+          "quantity": 11,
+          "weight_kg": 18.0,
+          "dimensions_cm": {
+            "l": 52,
+            "w": 91,
+            "h": 40
+          }
+        },
+        {
+          "id": "PKG0464",
+          "sku": "CLEAN-4244",
+          "name": "Pre-emptive system-worthy conglomeration",
+          "quantity": 15,
+          "weight_kg": 11.39,
+          "dimensions_cm": {
+            "l": 47,
+            "w": 12,
+            "h": 18
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2016",
+      "location_id": "LOC216",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "32009 Lee Islands Apt. 133, Alexisberg, AL 90174",
+      "geo": {
+        "lat": 12.92,
+        "lon": 80.26
+      },
+      "distance_from_warehouse_km": 13.92,
+      "geo_cluster": "South",
+      "packages": [
+        {
+          "id": "PKG0411",
+          "sku": "AGRO-9604",
+          "name": "Balanced encompassing pricing structure",
+          "quantity": 7,
+          "weight_kg": 7.79,
+          "dimensions_cm": {
+            "l": 93,
+            "w": 24,
+            "h": 16
+          }
+        },
+        {
+          "id": "PKG0142",
+          "sku": "TEXT-4758",
+          "name": "Persistent intangible Local Area Network",
+          "quantity": 1,
+          "weight_kg": 28.73,
+          "dimensions_cm": {
+            "l": 25,
+            "w": 37,
+            "h": 67
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2017",
+      "location_id": "LOC217",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "23532 Travis Estates, Timothymouth, NC 16013",
+      "geo": {
+        "lat": 12.92,
+        "lon": 80.26
+      },
+      "distance_from_warehouse_km": 13.92,
+      "geo_cluster": "South",
+      "packages": [
+        {
+          "id": "PKG0485",
+          "sku": "TEXT-3897",
+          "name": "Seamless well-modulated protocol",
+          "quantity": 12,
+          "weight_kg": 27.65,
+          "dimensions_cm": {
+            "l": 26,
+            "w": 78,
+            "h": 39
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2018",
+      "location_id": "LOC218",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "901 Karen Port Apt. 023, Amyland, IN 87746",
+      "geo": {
+        "lat": 13.14,
+        "lon": 80.06
+      },
+      "distance_from_warehouse_km": 19.81,
+      "geo_cluster": "Outskirts",
+      "packages": [
+        {
+          "id": "PKG0204",
+          "sku": "TOOL-2466",
+          "name": "Self-enabling optimizing core",
+          "quantity": 3,
+          "weight_kg": 24.64,
+          "dimensions_cm": {
+            "l": 47,
+            "w": 95,
+            "h": 30
+          }
+        },
+        {
+          "id": "PKG0110",
+          "sku": "TOOL-4524",
+          "name": "Optimized 6thgeneration collaboration",
+          "quantity": 5,
+          "weight_kg": 20.54,
+          "dimensions_cm": {
+            "l": 12,
+            "w": 29,
+            "h": 48
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2019",
+      "location_id": "LOC219",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "6660 Jackson Parkway Suite 421, Lake Mackenzieton, ID 86208",
+      "geo": {
+        "lat": 12.86,
+        "lon": 80.29
+      },
+      "distance_from_warehouse_km": 21.31,
+      "geo_cluster": "Outskirts",
+      "packages": [
+        {
+          "id": "PKG0247",
+          "sku": "ELEC-7270",
+          "name": "Open-architected exuding matrix",
+          "quantity": 10,
+          "weight_kg": 11.2,
+          "dimensions_cm": {
+            "l": 83,
+            "w": 59,
+            "h": 5
+          }
+        },
+        {
+          "id": "PKG0082",
+          "sku": "CLEAN-7083",
+          "name": "Exclusive secondary synergy",
+          "quantity": 14,
+          "weight_kg": 3.8,
+          "dimensions_cm": {
+            "l": 71,
+            "w": 46,
+            "h": 54
+          }
+        },
+        {
+          "id": "PKG0470",
+          "sku": "TEXT-8245",
+          "name": "Progressive multi-state synergy",
+          "quantity": 5,
+          "weight_kg": 28.11,
+          "dimensions_cm": {
+            "l": 73,
+            "w": 64,
+            "h": 30
+          }
+        },
+        {
+          "id": "PKG0463",
+          "sku": "CLEAN-8296",
+          "name": "Right-sized zero administration Internet solution",
+          "quantity": 4,
+          "weight_kg": 13.15,
+          "dimensions_cm": {
+            "l": 51,
+            "w": 20,
+            "h": 57
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2020",
+      "location_id": "LOC220",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "9563 Desiree Fords Suite 070, New Jason, NH 90876",
+      "geo": {
+        "lat": 13.015,
+        "lon": 80.09
+      },
+      "distance_from_warehouse_km": 12.99,
+      "geo_cluster": "West",
+      "packages": [
+        {
+          "id": "PKG0375",
+          "sku": "AGRO-5855",
+          "name": "Visionary content-based website",
+          "quantity": 1,
+          "weight_kg": 13.99,
+          "dimensions_cm": {
+            "l": 57,
+            "w": 40,
+            "h": 43
+          }
+        },
+        {
+          "id": "PKG0266",
+          "sku": "ELEC-1012",
+          "name": "Switchable local interface",
+          "quantity": 15,
+          "weight_kg": 26.39,
+          "dimensions_cm": {
+            "l": 58,
+            "w": 72,
+            "h": 25
+          }
+        },
+        {
+          "id": "PKG0147",
+          "sku": "TOOL-9792",
+          "name": "Persistent contextually-based artificial intelligence",
+          "quantity": 7,
+          "weight_kg": 18.74,
+          "dimensions_cm": {
+            "l": 29,
+            "w": 66,
+            "h": 38
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2021",
+      "location_id": "LOC221",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "730 Murphy Ferry Apt. 917, Port Isaac, KS 40112",
+      "geo": {
+        "lat": 13.03,
+        "lon": 80.11
+      },
+      "distance_from_warehouse_km": 10.64,
+      "geo_cluster": "West",
+      "packages": [
+        {
+          "id": "PKG0121",
+          "sku": "TOOL-7264",
+          "name": "Decentralized exuding Internet solution",
+          "quantity": 9,
+          "weight_kg": 9.31,
+          "dimensions_cm": {
+            "l": 80,
+            "w": 47,
+            "h": 59
+          }
+        },
+        {
+          "id": "PKG0050",
+          "sku": "AGRO-9509",
+          "name": "Re-engineered coherent protocol",
+          "quantity": 5,
+          "weight_kg": 15.9,
+          "dimensions_cm": {
+            "l": 50,
+            "w": 100,
+            "h": 18
+          }
+        },
+        {
+          "id": "PKG0119",
+          "sku": "TOOL-4411",
+          "name": "Up-sized multi-state alliance",
+          "quantity": 3,
+          "weight_kg": 8.92,
+          "dimensions_cm": {
+            "l": 44,
+            "w": 23,
+            "h": 22
+          }
+        },
+        {
+          "id": "PKG0394",
+          "sku": "TOOL-9108",
+          "name": "User-friendly dedicated leverage",
+          "quantity": 11,
+          "weight_kg": 13.56,
+          "dimensions_cm": {
+            "l": 93,
+            "w": 26,
+            "h": 30
+          }
+        },
+        {
+          "id": "PKG0255",
+          "sku": "MED-5229",
+          "name": "Grass-roots zero administration methodology",
+          "quantity": 13,
+          "weight_kg": 17.36,
+          "dimensions_cm": {
+            "l": 84,
+            "w": 94,
+            "h": 17
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2022",
+      "location_id": "LOC222",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "666 Matthew Crossroad, North Matthewmouth, RI 99515",
+      "geo": {
+        "lat": 13.14,
+        "lon": 80.06
+      },
+      "distance_from_warehouse_km": 19.81,
+      "geo_cluster": "Outskirts",
+      "packages": [
+        {
+          "id": "PKG0127",
+          "sku": "MED-5077",
+          "name": "Function-based 6thgeneration throughput",
+          "quantity": 11,
+          "weight_kg": 17.03,
+          "dimensions_cm": {
+            "l": 56,
+            "w": 95,
+            "h": 9
+          }
+        },
+        {
+          "id": "PKG0412",
+          "sku": "CLEAN-8079",
+          "name": "Exclusive object-oriented website",
+          "quantity": 10,
+          "weight_kg": 6.5,
+          "dimensions_cm": {
+            "l": 64,
+            "w": 90,
+            "h": 16
+          }
+        },
+        {
+          "id": "PKG0358",
+          "sku": "TOOL-5100",
+          "name": "Digitized transitional functionalities",
+          "quantity": 12,
+          "weight_kg": 28.04,
+          "dimensions_cm": {
+            "l": 33,
+            "w": 66,
+            "h": 38
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2023",
+      "location_id": "LOC223",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "PSC 9492, Box 6331, APO AE 80761",
+      "geo": {
+        "lat": 13.14,
+        "lon": 80.06
+      },
+      "distance_from_warehouse_km": 19.81,
+      "geo_cluster": "Outskirts",
+      "packages": [
+        {
+          "id": "PKG0129",
+          "sku": "TEXT-4847",
+          "name": "Advanced dynamic success",
+          "quantity": 7,
+          "weight_kg": 27.41,
+          "dimensions_cm": {
+            "l": 75,
+            "w": 40,
+            "h": 32
+          }
+        },
+        {
+          "id": "PKG0126",
+          "sku": "TEXT-9424",
+          "name": "Ameliorated solution-oriented support",
+          "quantity": 11,
+          "weight_kg": 15.95,
+          "dimensions_cm": {
+            "l": 42,
+            "w": 74,
+            "h": 36
+          }
+        },
+        {
+          "id": "PKG0446",
+          "sku": "TEXT-2070",
+          "name": "Total client-server application",
+          "quantity": 11,
+          "weight_kg": 1.4,
+          "dimensions_cm": {
+            "l": 79,
+            "w": 35,
+            "h": 60
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2024",
+      "location_id": "LOC224",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "165 Adkins Mills, East Susan, WV 54789",
+      "geo": {
+        "lat": 12.905,
+        "lon": 80.23
+      },
+      "distance_from_warehouse_km": 14.58,
+      "geo_cluster": "South",
+      "packages": [
+        {
+          "id": "PKG0108",
+          "sku": "AGRO-1726",
+          "name": "Business-focused directional encryption",
+          "quantity": 12,
+          "weight_kg": 23.45,
+          "dimensions_cm": {
+            "l": 98,
+            "w": 39,
+            "h": 40
+          }
+        },
+        {
+          "id": "PKG0290",
+          "sku": "TOOL-4443",
+          "name": "Digitized full-range access",
+          "quantity": 14,
+          "weight_kg": 3.37,
+          "dimensions_cm": {
+            "l": 28,
+            "w": 45,
+            "h": 44
+          }
+        },
+        {
+          "id": "PKG0082",
+          "sku": "CLEAN-7083",
+          "name": "Exclusive secondary synergy",
+          "quantity": 5,
+          "weight_kg": 3.8,
+          "dimensions_cm": {
+            "l": 71,
+            "w": 46,
+            "h": 54
+          }
+        },
+        {
+          "id": "PKG0308",
+          "sku": "AGRO-8013",
+          "name": "Quality-focused logistical orchestration",
+          "quantity": 15,
+          "weight_kg": 27.28,
+          "dimensions_cm": {
+            "l": 23,
+            "w": 45,
+            "h": 49
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2025",
+      "location_id": "LOC225",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "0851 Perkins Mills, Christopherburgh, PA 38229",
+      "geo": {
+        "lat": 13.0,
+        "lon": 80.13
+      },
+      "distance_from_warehouse_km": 9.31,
+      "geo_cluster": "West",
+      "packages": [
+        {
+          "id": "PKG0007",
+          "sku": "FOOD-2757",
+          "name": "Inverse bandwidth-monitored Internet solution",
+          "quantity": 11,
+          "weight_kg": 29.02,
+          "dimensions_cm": {
+            "l": 13,
+            "w": 86,
+            "h": 49
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2026",
+      "location_id": "LOC226",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "03737 Jose Common Apt. 433, Georgemouth, KY 88812",
+      "geo": {
+        "lat": 12.905,
+        "lon": 80.23
+      },
+      "distance_from_warehouse_km": 14.58,
+      "geo_cluster": "South",
+      "packages": [
+        {
+          "id": "PKG0346",
+          "sku": "CLEAN-7619",
+          "name": "Polarized object-oriented throughput",
+          "quantity": 14,
+          "weight_kg": 19.59,
+          "dimensions_cm": {
+            "l": 77,
+            "w": 16,
+            "h": 57
+          }
+        },
+        {
+          "id": "PKG0257",
+          "sku": "FOOD-7341",
+          "name": "Object-based coherent alliance",
+          "quantity": 1,
+          "weight_kg": 5.12,
+          "dimensions_cm": {
+            "l": 47,
+            "w": 55,
+            "h": 47
+          }
+        },
+        {
+          "id": "PKG0129",
+          "sku": "TEXT-4847",
+          "name": "Advanced dynamic success",
+          "quantity": 6,
+          "weight_kg": 27.41,
+          "dimensions_cm": {
+            "l": 75,
+            "w": 40,
+            "h": 32
+          }
+        },
+        {
+          "id": "PKG0384",
+          "sku": "CLEAN-5503",
+          "name": "Multi-channeled client-server archive",
+          "quantity": 13,
+          "weight_kg": 16.47,
+          "dimensions_cm": {
+            "l": 23,
+            "w": 39,
+            "h": 26
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2027",
+      "location_id": "LOC227",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "PSC 5775, Box 8772, APO AE 22038",
+      "geo": {
+        "lat": 13.0,
+        "lon": 80.13
+      },
+      "distance_from_warehouse_km": 9.31,
+      "geo_cluster": "West",
+      "packages": [
+        {
+          "id": "PKG0497",
+          "sku": "AGRO-4145",
+          "name": "Expanded tangible task-force",
+          "quantity": 6,
+          "weight_kg": 28.29,
+          "dimensions_cm": {
+            "l": 59,
+            "w": 97,
+            "h": 12
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2028",
+      "location_id": "LOC228",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "5728 Cheryl Courts Apt. 332, North Elizabeth, OK 17790",
+      "geo": {
+        "lat": 13.015,
+        "lon": 80.09
+      },
+      "distance_from_warehouse_km": 12.99,
+      "geo_cluster": "West",
+      "packages": [
+        {
+          "id": "PKG0216",
+          "sku": "CLEAN-9866",
+          "name": "Reduced bifurcated task-force",
+          "quantity": 13,
+          "weight_kg": 22.05,
+          "dimensions_cm": {
+            "l": 70,
+            "w": 91,
+            "h": 44
+          }
+        },
+        {
+          "id": "PKG0259",
+          "sku": "ELEC-7548",
+          "name": "Programmable transitional throughput",
+          "quantity": 13,
+          "weight_kg": 9.45,
+          "dimensions_cm": {
+            "l": 52,
+            "w": 38,
+            "h": 45
+          }
+        },
+        {
+          "id": "PKG0495",
+          "sku": "CLEAN-7381",
+          "name": "Versatile incremental access",
+          "quantity": 6,
+          "weight_kg": 29.98,
+          "dimensions_cm": {
+            "l": 54,
+            "w": 11,
+            "h": 19
+          }
+        },
+        {
+          "id": "PKG0139",
+          "sku": "ELEC-8075",
+          "name": "Exclusive bandwidth-monitored intranet",
+          "quantity": 14,
+          "weight_kg": 15.73,
+          "dimensions_cm": {
+            "l": 29,
+            "w": 94,
+            "h": 22
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2029",
+      "location_id": "LOC229",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "5135 Crane Roads, Richardsontown, WI 74093",
+      "geo": {
+        "lat": 13.14,
+        "lon": 80.06
+      },
+      "distance_from_warehouse_km": 19.81,
+      "geo_cluster": "Outskirts",
+      "packages": [
+        {
+          "id": "PKG0016",
+          "sku": "ELEC-3918",
+          "name": "Integrated directional structure",
+          "quantity": 12,
+          "weight_kg": 24.71,
+          "dimensions_cm": {
+            "l": 22,
+            "w": 25,
+            "h": 58
+          }
+        },
+        {
+          "id": "PKG0112",
+          "sku": "AGRO-7652",
+          "name": "Up-sized background approach",
+          "quantity": 3,
+          "weight_kg": 2.16,
+          "dimensions_cm": {
+            "l": 13,
+            "w": 39,
+            "h": 56
+          }
+        },
+        {
+          "id": "PKG0105",
+          "sku": "TOOL-6308",
+          "name": "Diverse static intranet",
+          "quantity": 12,
+          "weight_kg": 8.72,
+          "dimensions_cm": {
+            "l": 56,
+            "w": 10,
+            "h": 36
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2030",
+      "location_id": "LOC230",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "06513 Craig Creek, Kennedyburgh, OK 14683",
+      "geo": {
+        "lat": 12.91,
+        "lon": 80.245
+      },
+      "distance_from_warehouse_km": 14.4,
+      "geo_cluster": "South",
+      "packages": [
+        {
+          "id": "PKG0217",
+          "sku": "TEXT-9237",
+          "name": "Horizontal uniform project",
+          "quantity": 4,
+          "weight_kg": 26.94,
+          "dimensions_cm": {
+            "l": 13,
+            "w": 54,
+            "h": 60
+          }
+        },
+        {
+          "id": "PKG0087",
+          "sku": "ELEC-7850",
+          "name": "Customizable fresh-thinking productivity",
+          "quantity": 15,
+          "weight_kg": 25.97,
+          "dimensions_cm": {
+            "l": 96,
+            "w": 70,
+            "h": 7
+          }
+        },
+        {
+          "id": "PKG0237",
+          "sku": "CLEAN-2005",
+          "name": "Balanced multi-state alliance",
+          "quantity": 4,
+          "weight_kg": 18.68,
+          "dimensions_cm": {
+            "l": 27,
+            "w": 78,
+            "h": 18
+          }
+        },
+        {
+          "id": "PKG0045",
+          "sku": "AGRO-4297",
+          "name": "User-centric local infrastructure",
+          "quantity": 9,
+          "weight_kg": 15.96,
+          "dimensions_cm": {
+            "l": 50,
+            "w": 81,
+            "h": 47
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2031",
+      "location_id": "LOC231",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "31560 Amber Roads, Lake Danahaven, NC 02656",
+      "geo": {
+        "lat": 12.86,
+        "lon": 80.29
+      },
+      "distance_from_warehouse_km": 21.31,
+      "geo_cluster": "Outskirts",
+      "packages": [
+        {
+          "id": "PKG0460",
+          "sku": "TOOL-1277",
+          "name": "Face-to-face analyzing monitoring",
+          "quantity": 2,
+          "weight_kg": 9.79,
+          "dimensions_cm": {
+            "l": 59,
+            "w": 30,
+            "h": 32
+          }
+        },
+        {
+          "id": "PKG0482",
+          "sku": "AGRO-4045",
+          "name": "Vision-oriented non-volatile initiative",
+          "quantity": 14,
+          "weight_kg": 5.17,
+          "dimensions_cm": {
+            "l": 57,
+            "w": 68,
+            "h": 39
+          }
+        },
+        {
+          "id": "PKG0088",
+          "sku": "TOOL-9628",
+          "name": "Up-sized stable groupware",
+          "quantity": 12,
+          "weight_kg": 6.23,
+          "dimensions_cm": {
+            "l": 50,
+            "w": 64,
+            "h": 43
+          }
+        },
+        {
+          "id": "PKG0441",
+          "sku": "FOOD-5746",
+          "name": "Polarized clear-thinking focus group",
+          "quantity": 12,
+          "weight_kg": 28.49,
+          "dimensions_cm": {
+            "l": 37,
+            "w": 26,
+            "h": 23
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2032",
+      "location_id": "LOC232",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "450 Amy Lights, Bakerport, CA 50236",
+      "geo": {
+        "lat": 13.1,
+        "lon": 80.26
+      },
+      "distance_from_warehouse_km": 9.14,
+      "geo_cluster": "North",
+      "packages": [
+        {
+          "id": "PKG0033",
+          "sku": "ELEC-7432",
+          "name": "Advanced homogeneous artificial intelligence",
+          "quantity": 3,
+          "weight_kg": 12.18,
+          "dimensions_cm": {
+            "l": 42,
+            "w": 17,
+            "h": 26
+          }
+        },
+        {
+          "id": "PKG0436",
+          "sku": "ELEC-5804",
+          "name": "Object-based eco-centric array",
+          "quantity": 2,
+          "weight_kg": 0.82,
+          "dimensions_cm": {
+            "l": 57,
+            "w": 54,
+            "h": 47
+          }
+        },
+        {
+          "id": "PKG0029",
+          "sku": "TEXT-3509",
+          "name": "Expanded upward-trending forecast",
+          "quantity": 13,
+          "weight_kg": 13.35,
+          "dimensions_cm": {
+            "l": 75,
+            "w": 57,
+            "h": 61
+          }
+        },
+        {
+          "id": "PKG0382",
+          "sku": "TOOL-2716",
+          "name": "Customer-focused intermediate Graphic Interface",
+          "quantity": 3,
+          "weight_kg": 11.07,
+          "dimensions_cm": {
+            "l": 17,
+            "w": 14,
+            "h": 23
+          }
+        },
+        {
+          "id": "PKG0477",
+          "sku": "ELEC-7930",
+          "name": "Triple-buffered eco-centric moderator",
+          "quantity": 15,
+          "weight_kg": 18.77,
+          "dimensions_cm": {
+            "l": 57,
+            "w": 80,
+            "h": 61
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2033",
+      "location_id": "LOC233",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "765 Shaw Ports Suite 003, West Elizabethland, MS 16346",
+      "geo": {
+        "lat": 13.12,
+        "lon": 80.28
+      },
+      "distance_from_warehouse_km": 12.22,
+      "geo_cluster": "North",
+      "packages": [
+        {
+          "id": "PKG0010",
+          "sku": "TEXT-4320",
+          "name": "Monitored system-worthy collaboration",
+          "quantity": 7,
+          "weight_kg": 18.35,
+          "dimensions_cm": {
+            "l": 85,
+            "w": 55,
+            "h": 22
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2034",
+      "location_id": "LOC234",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "795 Garrett Lights Apt. 569, West Anthony, ME 36903",
+      "geo": {
+        "lat": 12.91,
+        "lon": 80.245
+      },
+      "distance_from_warehouse_km": 14.4,
+      "geo_cluster": "South",
+      "packages": [
+        {
+          "id": "PKG0380",
+          "sku": "CLEAN-1078",
+          "name": "Multi-channeled human-resource policy",
+          "quantity": 7,
+          "weight_kg": 29.81,
+          "dimensions_cm": {
+            "l": 75,
+            "w": 94,
+            "h": 15
+          }
+        },
+        {
+          "id": "PKG0281",
+          "sku": "TOOL-5864",
+          "name": "Optimized explicit concept",
+          "quantity": 3,
+          "weight_kg": 21.3,
+          "dimensions_cm": {
+            "l": 43,
+            "w": 93,
+            "h": 45
+          }
+        },
+        {
+          "id": "PKG0360",
+          "sku": "CLEAN-4927",
+          "name": "Expanded modular open system",
+          "quantity": 6,
+          "weight_kg": 25.71,
+          "dimensions_cm": {
+            "l": 34,
+            "w": 73,
+            "h": 69
+          }
+        },
+        {
+          "id": "PKG0246",
+          "sku": "ELEC-1848",
+          "name": "Multi-layered transitional productivity",
+          "quantity": 8,
+          "weight_kg": 18.67,
+          "dimensions_cm": {
+            "l": 37,
+            "w": 18,
+            "h": 66
+          }
+        },
+        {
+          "id": "PKG0011",
+          "sku": "CLEAN-8543",
+          "name": "Integrated zero-defect complexity",
+          "quantity": 14,
+          "weight_kg": 11.09,
+          "dimensions_cm": {
+            "l": 83,
+            "w": 34,
+            "h": 68
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2035",
+      "location_id": "LOC235",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "37943 Hampton Hills Apt. 455, Hudsontown, OR 61299",
+      "geo": {
+        "lat": 13.03,
+        "lon": 80.11
+      },
+      "distance_from_warehouse_km": 10.64,
+      "geo_cluster": "West",
+      "packages": [
+        {
+          "id": "PKG0166",
+          "sku": "MED-8837",
+          "name": "Monitored disintermediate superstructure",
+          "quantity": 15,
+          "weight_kg": 20.13,
+          "dimensions_cm": {
+            "l": 57,
+            "w": 45,
+            "h": 38
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2036",
+      "location_id": "LOC236",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "9862 Lynch Coves, East Kristenland, TN 92010",
+      "geo": {
+        "lat": 13.12,
+        "lon": 80.28
+      },
+      "distance_from_warehouse_km": 12.22,
+      "geo_cluster": "North",
+      "packages": [
+        {
+          "id": "PKG0365",
+          "sku": "AGRO-4352",
+          "name": "Upgradable executive contingency",
+          "quantity": 14,
+          "weight_kg": 21.72,
+          "dimensions_cm": {
+            "l": 24,
+            "w": 93,
+            "h": 29
+          }
+        },
+        {
+          "id": "PKG0483",
+          "sku": "AGRO-9703",
+          "name": "Configurable local parallelism",
+          "quantity": 3,
+          "weight_kg": 23.85,
+          "dimensions_cm": {
+            "l": 98,
+            "w": 86,
+            "h": 34
+          }
+        },
+        {
+          "id": "PKG0029",
+          "sku": "TEXT-3509",
+          "name": "Expanded upward-trending forecast",
+          "quantity": 12,
+          "weight_kg": 13.35,
+          "dimensions_cm": {
+            "l": 75,
+            "w": 57,
+            "h": 61
+          }
+        },
+        {
+          "id": "PKG0309",
+          "sku": "CLEAN-2606",
+          "name": "Enhanced attitude-oriented orchestration",
+          "quantity": 8,
+          "weight_kg": 1.3,
+          "dimensions_cm": {
+            "l": 51,
+            "w": 19,
+            "h": 21
+          }
+        },
+        {
+          "id": "PKG0355",
+          "sku": "FOOD-2091",
+          "name": "Multi-lateral zero tolerance circuit",
+          "quantity": 12,
+          "weight_kg": 15.56,
+          "dimensions_cm": {
+            "l": 46,
+            "w": 84,
+            "h": 59
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2037",
+      "location_id": "LOC237",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "PSC 6883, Box 9569, APO AE 87943",
+      "geo": {
+        "lat": 13.14,
+        "lon": 80.06
+      },
+      "distance_from_warehouse_km": 19.81,
+      "geo_cluster": "Outskirts",
+      "packages": [
+        {
+          "id": "PKG0293",
+          "sku": "AGRO-5549",
+          "name": "Optimized local implementation",
+          "quantity": 8,
+          "weight_kg": 18.93,
+          "dimensions_cm": {
+            "l": 53,
+            "w": 27,
+            "h": 53
+          }
+        },
+        {
+          "id": "PKG0222",
+          "sku": "MED-5432",
+          "name": "Integrated methodical core",
+          "quantity": 8,
+          "weight_kg": 20.0,
+          "dimensions_cm": {
+            "l": 19,
+            "w": 100,
+            "h": 62
+          }
+        },
+        {
+          "id": "PKG0410",
+          "sku": "MED-4762",
+          "name": "De-engineered systemic portal",
+          "quantity": 15,
+          "weight_kg": 21.41,
+          "dimensions_cm": {
+            "l": 54,
+            "w": 63,
+            "h": 16
+          }
+        },
+        {
+          "id": "PKG0186",
+          "sku": "ELEC-2236",
+          "name": "Object-based encompassing framework",
+          "quantity": 11,
+          "weight_kg": 24.8,
+          "dimensions_cm": {
+            "l": 45,
+            "w": 43,
+            "h": 65
+          }
+        },
+        {
+          "id": "PKG0097",
+          "sku": "TEXT-7431",
+          "name": "Progressive reciprocal encoding",
+          "quantity": 13,
+          "weight_kg": 27.05,
+          "dimensions_cm": {
+            "l": 43,
+            "w": 80,
+            "h": 54
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2038",
+      "location_id": "LOC238",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "947 Smith Ridge, Reidstad, VA 38224",
+      "geo": {
+        "lat": 12.92,
+        "lon": 80.26
+      },
+      "distance_from_warehouse_km": 13.92,
+      "geo_cluster": "South",
+      "packages": [
+        {
+          "id": "PKG0384",
+          "sku": "CLEAN-5503",
+          "name": "Multi-channeled client-server archive",
+          "quantity": 8,
+          "weight_kg": 16.47,
+          "dimensions_cm": {
+            "l": 23,
+            "w": 39,
+            "h": 26
+          }
+        },
+        {
+          "id": "PKG0421",
+          "sku": "CLEAN-7717",
+          "name": "Secured bifurcated protocol",
+          "quantity": 5,
+          "weight_kg": 28.02,
+          "dimensions_cm": {
+            "l": 35,
+            "w": 17,
+            "h": 51
+          }
+        },
+        {
+          "id": "PKG0005",
+          "sku": "CLEAN-9030",
+          "name": "Innovative directional Internet solution",
+          "quantity": 9,
+          "weight_kg": 3.43,
+          "dimensions_cm": {
+            "l": 40,
+            "w": 63,
+            "h": 33
+          }
+        },
+        {
+          "id": "PKG0102",
+          "sku": "ELEC-7245",
+          "name": "Multi-layered zero-defect installation",
+          "quantity": 14,
+          "weight_kg": 3.46,
+          "dimensions_cm": {
+            "l": 91,
+            "w": 32,
+            "h": 64
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2039",
+      "location_id": "LOC239",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "6330 Greene Light, South Susan, AZ 33741",
+      "geo": {
+        "lat": 13.0,
+        "lon": 80.13
+      },
+      "distance_from_warehouse_km": 9.31,
+      "geo_cluster": "West",
+      "packages": [
+        {
+          "id": "PKG0028",
+          "sku": "TOOL-5929",
+          "name": "Optimized composite encryption",
+          "quantity": 10,
+          "weight_kg": 22.04,
+          "dimensions_cm": {
+            "l": 19,
+            "w": 51,
+            "h": 50
+          }
+        },
+        {
+          "id": "PKG0237",
+          "sku": "CLEAN-2005",
+          "name": "Balanced multi-state alliance",
+          "quantity": 5,
+          "weight_kg": 18.68,
+          "dimensions_cm": {
+            "l": 27,
+            "w": 78,
+            "h": 18
+          }
+        },
+        {
+          "id": "PKG0169",
+          "sku": "MED-1046",
+          "name": "Assimilated intangible process improvement",
+          "quantity": 7,
+          "weight_kg": 17.42,
+          "dimensions_cm": {
+            "l": 36,
+            "w": 30,
+            "h": 18
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2040",
+      "location_id": "LOC240",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "55291 Davidson Knoll, Nicolestad, NV 23617",
+      "geo": {
+        "lat": 12.905,
+        "lon": 80.23
+      },
+      "distance_from_warehouse_km": 14.58,
+      "geo_cluster": "South",
+      "packages": [
+        {
+          "id": "PKG0012",
+          "sku": "TOOL-3184",
+          "name": "Re-contextualized web-enabled standardization",
+          "quantity": 14,
+          "weight_kg": 22.95,
+          "dimensions_cm": {
+            "l": 77,
+            "w": 14,
+            "h": 28
+          }
+        },
+        {
+          "id": "PKG0244",
+          "sku": "FOOD-2634",
+          "name": "Open-source maximized open architecture",
+          "quantity": 6,
+          "weight_kg": 29.69,
+          "dimensions_cm": {
+            "l": 47,
+            "w": 92,
+            "h": 10
+          }
+        },
+        {
+          "id": "PKG0042",
+          "sku": "TEXT-4798",
+          "name": "Expanded contextually-based emulation",
+          "quantity": 10,
+          "weight_kg": 27.47,
+          "dimensions_cm": {
+            "l": 73,
+            "w": 71,
+            "h": 52
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2041",
+      "location_id": "LOC241",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "USCGC Bowers, FPO AP 16386",
+      "geo": {
+        "lat": 12.86,
+        "lon": 80.29
+      },
+      "distance_from_warehouse_km": 21.31,
+      "geo_cluster": "Outskirts",
+      "packages": [
+        {
+          "id": "PKG0465",
+          "sku": "ELEC-3968",
+          "name": "Persistent executive archive",
+          "quantity": 11,
+          "weight_kg": 14.77,
+          "dimensions_cm": {
+            "l": 96,
+            "w": 80,
+            "h": 42
+          }
+        },
+        {
+          "id": "PKG0472",
+          "sku": "CLEAN-1386",
+          "name": "Expanded national emulation",
+          "quantity": 8,
+          "weight_kg": 3.88,
+          "dimensions_cm": {
+            "l": 13,
+            "w": 99,
+            "h": 66
+          }
+        },
+        {
+          "id": "PKG0243",
+          "sku": "AGRO-4959",
+          "name": "Synergized holistic Graphic Interface",
+          "quantity": 11,
+          "weight_kg": 7.27,
+          "dimensions_cm": {
+            "l": 47,
+            "w": 20,
+            "h": 31
+          }
+        },
+        {
+          "id": "PKG0134",
+          "sku": "AGRO-4718",
+          "name": "Advanced radical framework",
+          "quantity": 12,
+          "weight_kg": 2.66,
+          "dimensions_cm": {
+            "l": 96,
+            "w": 66,
+            "h": 33
+          }
+        },
+        {
+          "id": "PKG0469",
+          "sku": "TEXT-8167",
+          "name": "Polarized high-level analyzer",
+          "quantity": 7,
+          "weight_kg": 24.18,
+          "dimensions_cm": {
+            "l": 30,
+            "w": 35,
+            "h": 27
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2042",
+      "location_id": "LOC242",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "8564 Kayla Island, Lake Susan, CA 65745",
+      "geo": {
+        "lat": 13.11,
+        "lon": 80.25
+      },
+      "distance_from_warehouse_km": 9.47,
+      "geo_cluster": "North",
+      "packages": [
+        {
+          "id": "PKG0123",
+          "sku": "TOOL-9367",
+          "name": "Universal neutral parallelism",
+          "quantity": 12,
+          "weight_kg": 20.69,
+          "dimensions_cm": {
+            "l": 58,
+            "w": 74,
+            "h": 35
+          }
+        },
+        {
+          "id": "PKG0237",
+          "sku": "CLEAN-2005",
+          "name": "Balanced multi-state alliance",
+          "quantity": 8,
+          "weight_kg": 18.68,
+          "dimensions_cm": {
+            "l": 27,
+            "w": 78,
+            "h": 18
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2043",
+      "location_id": "LOC243",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "36585 Ramos Gardens, North Matthewburgh, ND 20834",
+      "geo": {
+        "lat": 12.905,
+        "lon": 80.23
+      },
+      "distance_from_warehouse_km": 14.58,
+      "geo_cluster": "South",
+      "packages": [
+        {
+          "id": "PKG0065",
+          "sku": "ELEC-9882",
+          "name": "Managed encompassing hardware",
+          "quantity": 4,
+          "weight_kg": 13.48,
+          "dimensions_cm": {
+            "l": 100,
+            "w": 47,
+            "h": 13
+          }
+        },
+        {
+          "id": "PKG0131",
+          "sku": "TEXT-3464",
+          "name": "Quality-focused 4thgeneration capability",
+          "quantity": 15,
+          "weight_kg": 15.56,
+          "dimensions_cm": {
+            "l": 21,
+            "w": 95,
+            "h": 63
+          }
+        },
+        {
+          "id": "PKG0080",
+          "sku": "ELEC-7041",
+          "name": "Profound global attitude",
+          "quantity": 7,
+          "weight_kg": 20.05,
+          "dimensions_cm": {
+            "l": 59,
+            "w": 91,
+            "h": 7
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2044",
+      "location_id": "LOC244",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "55325 Paul Fork Suite 892, West Lindastad, WA 64029",
+      "geo": {
+        "lat": 12.86,
+        "lon": 80.29
+      },
+      "distance_from_warehouse_km": 21.31,
+      "geo_cluster": "Outskirts",
+      "packages": [
+        {
+          "id": "PKG0100",
+          "sku": "MED-3837",
+          "name": "Right-sized hybrid standardization",
+          "quantity": 6,
+          "weight_kg": 7.64,
+          "dimensions_cm": {
+            "l": 57,
+            "w": 72,
+            "h": 44
+          }
+        },
+        {
+          "id": "PKG0323",
+          "sku": "FOOD-4273",
+          "name": "Extended mission-critical algorithm",
+          "quantity": 9,
+          "weight_kg": 21.5,
+          "dimensions_cm": {
+            "l": 24,
+            "w": 54,
+            "h": 26
+          }
+        },
+        {
+          "id": "PKG0260",
+          "sku": "ELEC-9511",
+          "name": "Synergistic hybrid capacity",
+          "quantity": 12,
+          "weight_kg": 7.19,
+          "dimensions_cm": {
+            "l": 77,
+            "w": 89,
+            "h": 62
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2045",
+      "location_id": "LOC245",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "423 Zachary Trail Suite 084, East Kimberlymouth, VA 11982",
+      "geo": {
+        "lat": 13.12,
+        "lon": 80.28
+      },
+      "distance_from_warehouse_km": 12.22,
+      "geo_cluster": "North",
+      "packages": [
+        {
+          "id": "PKG0093",
+          "sku": "FOOD-9710",
+          "name": "Right-sized coherent methodology",
+          "quantity": 11,
+          "weight_kg": 29.99,
+          "dimensions_cm": {
+            "l": 52,
+            "w": 41,
+            "h": 26
+          }
+        },
+        {
+          "id": "PKG0149",
+          "sku": "TOOL-2245",
+          "name": "Visionary eco-centric hierarchy",
+          "quantity": 4,
+          "weight_kg": 21.77,
+          "dimensions_cm": {
+            "l": 64,
+            "w": 15,
+            "h": 16
+          }
+        },
+        {
+          "id": "PKG0296",
+          "sku": "TOOL-6445",
+          "name": "Ergonomic multimedia function",
+          "quantity": 1,
+          "weight_kg": 25.21,
+          "dimensions_cm": {
+            "l": 73,
+            "w": 22,
+            "h": 42
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2046",
+      "location_id": "LOC246",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "9697 Sandoval Port, East Andrewmouth, HI 06731",
+      "geo": {
+        "lat": 13.12,
+        "lon": 80.28
+      },
+      "distance_from_warehouse_km": 12.22,
+      "geo_cluster": "North",
+      "packages": [
+        {
+          "id": "PKG0482",
+          "sku": "AGRO-4045",
+          "name": "Vision-oriented non-volatile initiative",
+          "quantity": 15,
+          "weight_kg": 5.17,
+          "dimensions_cm": {
+            "l": 57,
+            "w": 68,
+            "h": 39
+          }
+        },
+        {
+          "id": "PKG0030",
+          "sku": "TOOL-4353",
+          "name": "Distributed national function",
+          "quantity": 10,
+          "weight_kg": 29.97,
+          "dimensions_cm": {
+            "l": 18,
+            "w": 74,
+            "h": 17
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2047",
+      "location_id": "LOC247",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "PSC 2829, Box 3142, APO AP 36135",
+      "geo": {
+        "lat": 13.12,
+        "lon": 80.28
+      },
+      "distance_from_warehouse_km": 12.22,
+      "geo_cluster": "North",
+      "packages": [
+        {
+          "id": "PKG0040",
+          "sku": "CLEAN-6237",
+          "name": "Multi-lateral asynchronous customer loyalty",
+          "quantity": 13,
+          "weight_kg": 27.86,
+          "dimensions_cm": {
+            "l": 78,
+            "w": 95,
+            "h": 14
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2048",
+      "location_id": "LOC248",
+      "delivery_date": "2025-04-12",
+      "priority": "high",
+      "address": "2644 Padilla Ridge Suite 292, North Edward, NE 45854",
+      "geo": {
+        "lat": 12.905,
+        "lon": 80.23
+      },
+      "distance_from_warehouse_km": 14.58,
+      "geo_cluster": "South",
+      "packages": [
+        {
+          "id": "PKG0411",
+          "sku": "AGRO-9604",
+          "name": "Balanced encompassing pricing structure",
+          "quantity": 2,
+          "weight_kg": 7.79,
+          "dimensions_cm": {
+            "l": 93,
+            "w": 24,
+            "h": 16
+          }
+        },
+        {
+          "id": "PKG0086",
+          "sku": "FOOD-8168",
+          "name": "Fully-configurable contextually-based adapter",
+          "quantity": 6,
+          "weight_kg": 23.3,
+          "dimensions_cm": {
+            "l": 74,
+            "w": 62,
+            "h": 7
+          }
+        },
+        {
+          "id": "PKG0492",
+          "sku": "FOOD-7698",
+          "name": "Open-architected local process improvement",
+          "quantity": 13,
+          "weight_kg": 12.57,
+          "dimensions_cm": {
+            "l": 49,
+            "w": 37,
+            "h": 37
+          }
+        },
+        {
+          "id": "PKG0287",
+          "sku": "AGRO-9580",
+          "name": "Team-oriented didactic throughput",
+          "quantity": 7,
+          "weight_kg": 20.52,
+          "dimensions_cm": {
+            "l": 45,
+            "w": 89,
+            "h": 61
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2049",
+      "location_id": "LOC249",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "559 Kelly Groves, West Johnberg, OK 67943",
+      "geo": {
+        "lat": 13.11,
+        "lon": 80.25
+      },
+      "distance_from_warehouse_km": 9.47,
+      "geo_cluster": "North",
+      "packages": [
+        {
+          "id": "PKG0320",
+          "sku": "AGRO-1686",
+          "name": "Multi-lateral cohesive task-force",
+          "quantity": 9,
+          "weight_kg": 11.06,
+          "dimensions_cm": {
+            "l": 26,
+            "w": 56,
+            "h": 58
+          }
+        },
+        {
+          "id": "PKG0207",
+          "sku": "MED-4426",
+          "name": "Realigned clear-thinking software",
+          "quantity": 15,
+          "weight_kg": 27.63,
+          "dimensions_cm": {
+            "l": 20,
+            "w": 39,
+            "h": 38
+          }
+        },
+        {
+          "id": "PKG0334",
+          "sku": "TEXT-2694",
+          "name": "Programmable bandwidth-monitored matrix",
+          "quantity": 4,
+          "weight_kg": 27.0,
+          "dimensions_cm": {
+            "l": 82,
+            "w": 51,
+            "h": 16
+          }
+        },
+        {
+          "id": "PKG0111",
+          "sku": "FOOD-4591",
+          "name": "Multi-layered composite hub",
+          "quantity": 2,
+          "weight_kg": 5.48,
+          "dimensions_cm": {
+            "l": 59,
+            "w": 90,
+            "h": 34
+          }
+        },
+        {
+          "id": "PKG0407",
+          "sku": "TOOL-9616",
+          "name": "Persistent upward-trending core",
+          "quantity": 14,
+          "weight_kg": 6.18,
+          "dimensions_cm": {
+            "l": 51,
+            "w": 47,
+            "h": 59
+          }
+        }
+      ]
+    },
+    {
+      "order_id": "ORD2050",
+      "location_id": "LOC250",
+      "delivery_date": "2025-04-12",
+      "priority": "normal",
+      "address": "Unit 2604 Box 0930, DPO AE 60623",
+      "geo": {
+        "lat": 12.86,
+        "lon": 80.29
+      },
+      "distance_from_warehouse_km": 21.31,
+      "geo_cluster": "Outskirts",
+      "packages": [
+        {
+          "id": "PKG0376",
+          "sku": "FOOD-2189",
+          "name": "Reactive next generation matrices",
+          "quantity": 8,
+          "weight_kg": 18.2,
+          "dimensions_cm": {
+            "l": 90,
+            "w": 98,
+            "h": 48
+          }
+        }
+      ]
+    }
+  ]
+}

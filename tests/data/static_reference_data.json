@@ -1,0 +1,785 @@
+{
+    "package_categories": ["FOOD", "ELEC", "AGRO", "MED", "CLEAN", "TOOL", "TEXT"],
+    "vehicle_types": ["Small Truck", "Medium Truck", "Large Truck"],
+    "location_id": "LOC201...LOC250",
+    "geo_cluster": ["West", "South", "North", "Outskirts", "East"],
+    "sku_map": {
+        "FOOD": {
+            "FOOD-1375": {
+              "name": "FOOD Product 1375",
+              "category": "FOOD",
+              "is_hazardous": false,
+              "is_perishable": true
+            },
+            "FOOD-2091": {
+              "name": "FOOD Product 2091",
+              "category": "FOOD",
+              "is_hazardous": false,
+              "is_perishable": true
+            },
+            "FOOD-2189": {
+              "name": "FOOD Product 2189",
+              "category": "FOOD",
+              "is_hazardous": false,
+              "is_perishable": true
+            },
+            "FOOD-2564": {
+              "name": "FOOD Product 2564",
+              "category": "FOOD",
+              "is_hazardous": false,
+              "is_perishable": true
+            },
+            "FOOD-2634": {
+              "name": "FOOD Product 2634",
+              "category": "FOOD",
+              "is_hazardous": false,
+              "is_perishable": true
+            },
+            "FOOD-2757": {
+              "name": "FOOD Product 2757",
+              "category": "FOOD",
+              "is_hazardous": false,
+              "is_perishable": true
+            },
+            "FOOD-4273": {
+              "name": "FOOD Product 4273",
+              "category": "FOOD",
+              "is_hazardous": false,
+              "is_perishable": true
+            },
+            "FOOD-4591": {
+              "name": "FOOD Product 4591",
+              "category": "FOOD",
+              "is_hazardous": false,
+              "is_perishable": true
+            },
+            "FOOD-5746": {
+              "name": "FOOD Product 5746",
+              "category": "FOOD",
+              "is_hazardous": false,
+              "is_perishable": true
+            },
+            "FOOD-7341": {
+              "name": "FOOD Product 7341",
+              "category": "FOOD",
+              "is_hazardous": false,
+              "is_perishable": true
+            },
+            "FOOD-7395": {
+              "name": "FOOD Product 7395",
+              "category": "FOOD",
+              "is_hazardous": false,
+              "is_perishable": true
+            },
+            "FOOD-7698": {
+              "name": "FOOD Product 7698",
+              "category": "FOOD",
+              "is_hazardous": false,
+              "is_perishable": true
+            },
+            "FOOD-8168": {
+              "name": "FOOD Product 8168",
+              "category": "FOOD",
+              "is_hazardous": false,
+              "is_perishable": true
+            },
+            "FOOD-9710": {
+              "name": "FOOD Product 9710",
+              "category": "FOOD",
+              "is_hazardous": false,
+              "is_perishable": true
+            }
+          
+          },
+        "ELEC": {
+          "ELEC-1012": {
+            "name": "ELEC Product 1012",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-1848": {
+            "name": "ELEC Product 1848",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-2236": {
+            "name": "ELEC Product 2236",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-2272": {
+            "name": "ELEC Product 2272",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-3918": {
+            "name": "ELEC Product 3918",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-3968": {
+            "name": "ELEC Product 3968",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-4252": {
+            "name": "ELEC Product 4252",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-4827": {
+            "name": "ELEC Product 4827",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-4871": {
+            "name": "ELEC Product 4871",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-5171": {
+            "name": "ELEC Product 5171",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-5616": {
+            "name": "ELEC Product 5616",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-5804": {
+            "name": "ELEC Product 5804",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-6569": {
+            "name": "ELEC Product 6569",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-6689": {
+            "name": "ELEC Product 6689",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-7041": {
+            "name": "ELEC Product 7041",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-7245": {
+            "name": "ELEC Product 7245",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-7270": {
+            "name": "ELEC Product 7270",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-7432": {
+            "name": "ELEC Product 7432",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-7548": {
+            "name": "ELEC Product 7548",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-7850": {
+            "name": "ELEC Product 7850",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-7930": {
+            "name": "ELEC Product 7930",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-8075": {
+            "name": "ELEC Product 8075",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-9511": {
+            "name": "ELEC Product 9511",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "ELEC-9882": {
+            "name": "ELEC Product 9882",
+            "category": "ELEC",
+            "is_hazardous": false,
+            "is_perishable": false
+          }
+        },
+        "AGRO": {
+          "AGRO-1686": {
+            "name": "AGRO Product 1686",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-1726": {
+            "name": "AGRO Product 1726",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-4045": {
+            "name": "AGRO Product 4045",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-4145": {
+            "name": "AGRO Product 4145",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-4297": {
+            "name": "AGRO Product 4297",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-4352": {
+            "name": "AGRO Product 4352",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-4718": {
+            "name": "AGRO Product 4718",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-4959": {
+            "name": "AGRO Product 4959",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-5549": {
+            "name": "AGRO Product 5549",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-5855": {
+            "name": "AGRO Product 5855",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-6003": {
+            "name": "AGRO Product 6003",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-7085": {
+            "name": "AGRO Product 7085",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-7652": {
+            "name": "AGRO Product 7652",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-8013": {
+            "name": "AGRO Product 8013",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-9509": {
+            "name": "AGRO Product 9509",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-9580": {
+            "name": "AGRO Product 9580",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-9604": {
+            "name": "AGRO Product 9604",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-9703": {
+            "name": "AGRO Product 9703",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          },
+          "AGRO-9870": {
+            "name": "AGRO Product 9870",
+            "category": "AGRO",
+            "is_hazardous": false,
+            "is_perishable": true
+          }
+        },
+        "MED": {
+          "MED-1046": {
+            "name": "MED Product 1046",
+            "category": "MED",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "MED-1146": {
+            "name": "MED Product 1146",
+            "category": "MED",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "MED-3104": {
+            "name": "MED Product 3104",
+            "category": "MED",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "MED-3837": {
+            "name": "MED Product 3837",
+            "category": "MED",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "MED-4426": {
+            "name": "MED Product 4426",
+            "category": "MED",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "MED-4762": {
+            "name": "MED Product 4762",
+            "category": "MED",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "MED-5077": {
+            "name": "MED Product 5077",
+            "category": "MED",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "MED-5229": {
+            "name": "MED Product 5229",
+            "category": "MED",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "MED-5432": {
+            "name": "MED Product 5432",
+            "category": "MED",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "MED-8837": {
+            "name": "MED Product 8837",
+            "category": "MED",
+            "is_hazardous": false,
+            "is_perishable": false
+          }
+        },
+        "CLEAN": {
+          "CLEAN-1078": {
+            "name": "CLEAN Product 1078",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-1386": {
+            "name": "CLEAN Product 1386",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-2005": {
+            "name": "CLEAN Product 2005",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-2057": {
+            "name": "CLEAN Product 2057",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-2606": {
+            "name": "CLEAN Product 2606",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-4244": {
+            "name": "CLEAN Product 4244",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-4927": {
+            "name": "CLEAN Product 4927",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-5281": {
+            "name": "CLEAN Product 5281",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-5503": {
+            "name": "CLEAN Product 5503",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-6237": {
+            "name": "CLEAN Product 6237",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-7083": {
+            "name": "CLEAN Product 7083",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-7381": {
+            "name": "CLEAN Product 7381",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-7619": {
+            "name": "CLEAN Product 7619",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-7717": {
+            "name": "CLEAN Product 7717",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-7778": {
+            "name": "CLEAN Product 7778",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-8079": {
+            "name": "CLEAN Product 8079",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-8296": {
+            "name": "CLEAN Product 8296",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-8543": {
+            "name": "CLEAN Product 8543",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-9030": {
+            "name": "CLEAN Product 9030",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-9528": {
+            "name": "CLEAN Product 9528",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          },
+          "CLEAN-9866": {
+            "name": "CLEAN Product 9866",
+            "category": "CLEAN",
+            "is_hazardous": true,
+            "is_perishable": false
+          }
+        },
+        "TOOL": {
+          "TOOL-1277": {
+            "name": "TOOL Product 1277",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-2245": {
+            "name": "TOOL Product 2245",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-2466": {
+            "name": "TOOL Product 2466",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-2716": {
+            "name": "TOOL Product 2716",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-3184": {
+            "name": "TOOL Product 3184",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-3841": {
+            "name": "TOOL Product 3841",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-3920": {
+            "name": "TOOL Product 3920",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-4353": {
+            "name": "TOOL Product 4353",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-4411": {
+            "name": "TOOL Product 4411",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-4443": {
+            "name": "TOOL Product 4443",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-4524": {
+            "name": "TOOL Product 4524",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-5100": {
+            "name": "TOOL Product 5100",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-5864": {
+            "name": "TOOL Product 5864",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-5929": {
+            "name": "TOOL Product 5929",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-6308": {
+            "name": "TOOL Product 6308",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-6445": {
+            "name": "TOOL Product 6445",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-7264": {
+            "name": "TOOL Product 7264",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-8070": {
+            "name": "TOOL Product 8070",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-8427": {
+            "name": "TOOL Product 8427",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-9108": {
+            "name": "TOOL Product 9108",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-9367": {
+            "name": "TOOL Product 9367",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-9616": {
+            "name": "TOOL Product 9616",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-9628": {
+            "name": "TOOL Product 9628",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TOOL-9792": {
+            "name": "TOOL Product 9792",
+            "category": "TOOL",
+            "is_hazardous": false,
+            "is_perishable": false
+          }
+        },
+        "TEXT": {
+          "TEXT-2070": {
+            "name": "TEXT Product 2070",
+            "category": "TEXT",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TEXT-2694": {
+            "name": "TEXT Product 2694",
+            "category": "TEXT",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TEXT-3457": {
+            "name": "TEXT Product 3457",
+            "category": "TEXT",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TEXT-3464": {
+            "name": "TEXT Product 3464",
+            "category": "TEXT",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TEXT-3509": {
+            "name": "TEXT Product 3509",
+            "category": "TEXT",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TEXT-3897": {
+            "name": "TEXT Product 3897",
+            "category": "TEXT",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TEXT-4320": {
+            "name": "TEXT Product 4320",
+            "category": "TEXT",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TEXT-4758": {
+            "name": "TEXT Product 4758",
+            "category": "TEXT",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TEXT-4798": {
+            "name": "TEXT Product 4798",
+            "category": "TEXT",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TEXT-4847": {
+            "name": "TEXT Product 4847",
+            "category": "TEXT",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TEXT-7431": {
+            "name": "TEXT Product 7431",
+            "category": "TEXT",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TEXT-8167": {
+            "name": "TEXT Product 8167",
+            "category": "TEXT",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TEXT-8245": {
+            "name": "TEXT Product 8245",
+            "category": "TEXT",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TEXT-9237": {
+            "name": "TEXT Product 9237",
+            "category": "TEXT",
+            "is_hazardous": false,
+            "is_perishable": false
+          },
+          "TEXT-9424": {
+            "name": "TEXT Product 9424",
+            "category": "TEXT",
+            "is_hazardous": false,
+            "is_perishable": false
+          }
+        }
+      }
+}

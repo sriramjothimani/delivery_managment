@@ -1,0 +1,14 @@
+{
+    "regulatory_constraints": {
+        "forbidden_combinations": [
+        {
+            "packages": ["Food Supplies", "Pesticides"],
+            "reason": "Health and Safety Regulation"
+        },
+        {
+            "packages": ["Electronics", "Hazardous Chemicals"],
+            "reason": "Risk of Contamination"
+        }
+        ]
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "time_constraints": {
+        "average_deliver_time": {
+          "weight_not_exceeding": "20kg",
+          "delivery_time": "15 mins"
+        },
+        "average_distance_between_locations": "5 km",
+        "average_speed": "30 km/h",
+        "operational_hours": {
+          "start": "09:00",
+          "end": "18:00"
+        },
+        "max_continuous_driving_time": {
+          "hours": 4,
+          "mandatory_rest": {
+            "duration": 45,
+            "units": "minutes"
+          }
+        },
+        "peak_traffic_hours": [
+          {
+            "start": "07:30",
+            "end": "09:00",
+            "impact_factor": 1.5
+          },
+          {
+            "start": "16:30",
+            "end": "18:30",
+            "impact_factor": 1.7
+          }
+        ]
+    }    
+}
