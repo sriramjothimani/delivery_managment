@@ -6,14 +6,14 @@ from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
 from delivery_management.tools import (
     cluster_orders,
-    time_constraints,
-    fleet
+    fleet,
+    enrich_clustered_orders
 )
 
 from delivery_management.tasks import (
     create_routes,
-    finetune_routes,
-    time_optimize_routes
+    time_optimize_routes,
+    weight_optimize_routes
 )
 
 # If you want to run a snippet of code before or after the crew starts,
@@ -55,9 +55,11 @@ class DeliveryManagement():
         
     fleet_tool = fleet.Fleet()
 
+    enrich_clusters_tool = enrich_clustered_orders.EnrichClusteredOrders()
+
     # Define Agents
  
-    fleetManagerAgent = Agent(
+    greedyFleetManagerAgent = Agent(
         config= agents_config['GreedyFleetManagerAgent'],
         memory= True,
         verbose=True,
@@ -70,15 +72,23 @@ class DeliveryManagement():
         config = agents_config['TimeOptimizerAgent'],
         memory= True,
         verbose= True,
+        tools=[enrich_clusters_tool, fleet_tool],
+        llm = llm
+    )
+
+    weightOptimizerAgent = Agent(
+        config = agents_config['WeightOptimizerAgent'],
+        memory= True,
+        verbose= True,
         tools=[fleet_tool],
         llm = llm
     )
 
     # Define Tasks
 
-    create_routes = create_routes.create_cluster_orders_into_routes_task(fleetManagerAgent)
-    finetune_routes = finetune_routes.fine_tune_routes_task(fleetManagerAgent)
+    create_routes = create_routes.create_cluster_orders_into_routes_task(greedyFleetManagerAgent)
     time_optimize_routes = time_optimize_routes.time_optimize_routes_task(timeOptimizerAgent)
+    weight_optimize_routes = weight_optimize_routes.fine_tune_routes_task(weightOptimizerAgent)
 
     def crew(self) -> Crew:
         """Creates the DeliveryManagement crew"""
@@ -86,16 +96,16 @@ class DeliveryManagement():
         # https://docs.crewai.com/concepts/knowledge#what-is-knowledge
 
         return Crew(
-            agents= [self.fleetManagerAgent, self.timeOptimizerAgent], 
-            tasks= [self.create_routes, self.finetune_routes, self.time_optimize_routes], 
+            agents= [self.greedyFleetManagerAgent, self.timeOptimizerAgent, self.weightOptimizerAgent], 
+            tasks= [self.create_routes, self.time_optimize_routes, self.weight_optimize_routes],
             process=Process.sequential,
             verbose=True,
             cache=False
         )
 
         # return Crew(
-        #     agents= [self.fleetManagerAgent], 
-        #     tasks= [self.create_routes, self.finetune_routes], 
+        #     agents= [self.greedyFleetManagerAgent, self.weightOptimizerAgent], 
+        #     tasks= [self.create_routes, self.time_optimize_routes, self.weight_optimize_routes],
         #     process=Process.sequential,
         #     verbose=True,
         #     cache=False

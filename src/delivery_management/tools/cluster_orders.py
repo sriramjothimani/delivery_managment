@@ -38,6 +38,7 @@ class LocationCluster(BaseModel):
     location: Optional[LocationMeta] = Field(..., description="location metadata")
     total_weight: float = Field(...,description="sum of weights of all the orders in the cluster")
     total_volume: float = Field(...,description="sum of volumes of all the orders in the cluster")
+    est_delivery_time_hours: float = Field(...,description="estimated delivery time for the location")
     orders: List[ClusteredOrder] = Field(..., description="list of clustered orders")
 
 class ProductSummary(BaseModel):
@@ -58,34 +59,17 @@ class WeightVolumeSummary(BaseModel):
     total_volume_cm3: float = Field(..., description="total volume of the products in cm3 for a location")
     location_id: Optional[str] = Field(..., description="unique id of the location")  
 
-class UnfulfillablePackage(BaseModel):
-    order_id: str = Field(..., description="unique id of the order")
-    location_id: str = Field(..., description="unique id of the location")
-    product: str = Field(..., description="unique id of the product")
-    required_quantity: int = Field(..., description="required quantity of the product that cannot be fullfilled")
-    available_quantity: int = Field(..., description="available quantity of the product in the inventory")
-    metadata: Optional[SKUMeta] = Field(..., description="product metadata")
-
-class InventoryCheckResult(BaseModel):
-    unfulfillable: List[UnfulfillablePackage] = Field(..., description="list of unfillable orders")
-
 class H3LocationCluster(BaseModel):
     h3_index: str = Field(..., description="H3 index representing the geographic cluster")
     locations: List[LocationCluster] = Field(..., description="list of locations grouped under the H3 index")
 
 class ClusteredOrdersInput(BaseModel):
     locations: List[LocationCluster] = Field(..., description="unique id of the location")
-    product_summary: List[ProductSummary] = Field(..., description="product summary")
     priority_orders: List[PriorityOrder] = Field(..., description="priority orders list")
-    weight_volume_summary: List[WeightVolumeSummary] = Field(..., description="weight volume summary")
-    inventory_issues: Optional[InventoryCheckResult] = Field(..., description="inventory check list")
     h3_clusters: Optional[List[H3LocationCluster]] = Field(..., description="Geo clustered locations using H3 index")
 
 class H3ClusteredOrdersInput(BaseModel):
-    product_summary: List[ProductSummary] = Field(..., description="product summary")
     priority_orders: List[PriorityOrder] = Field(..., description="priority orders list")
-    weight_volume_summary: List[WeightVolumeSummary] = Field(..., description="weight volume summary")
-    inventory_issues: Optional[InventoryCheckResult] = Field(..., description="inventory check list")
     h3_clusters: Optional[List[H3LocationCluster]] = Field(..., description="Geo clustered locations using H3 index")
 
 class ClusterOrdersByGeoTool(BaseTool):
@@ -101,7 +85,6 @@ class ClusterOrdersByGeoTool(BaseTool):
     _geolocations: dict = PrivateAttr(default_factory=dict)
     _static_ref: dict = PrivateAttr(default_factory=dict)
     _inventory: dict = PrivateAttr(default_factory=dict)
-    # args_schema: Type[BaseModel] = H3ClusteredOrdersInput
     
     # Builder methods
     def with_orders_file(self, path: Path):
@@ -181,10 +164,10 @@ class ClusterOrdersByGeoTool(BaseTool):
                 sku = package["sku"]
                 quantity = package["quantity"]
                 weight = package.get("weight_kg", 0) * quantity
-                dimensions = package.get("dimensions_cm", {})
+                dimensions = package.get("dimensions_m", {})
                 metadata = SKUMeta(**sku_map_flat[sku]) if sku in sku_map_flat else None
                 volume = (
-                    (dimensions["l"] * dimensions["w"] * dimensions["h"])/1000000
+                    (dimensions["l"] * dimensions["w"] * dimensions["h"])
                     if all(k in dimensions for k in ["l", "w", "h"]) else 0.0
                 ) * quantity
 
@@ -219,10 +202,7 @@ class ClusterOrdersByGeoTool(BaseTool):
         return ClusteredOrdersInput(
             h3_clusters=None,
             locations=self._build_location_clusters(location_clusters, location_map),
-            product_summary=self._build_product_summary(product_counter, sku_map_flat),
-            priority_orders=priority_orders,
-            weight_volume_summary=self._build_weight_volume_summary(weight_volume_tracker),
-            inventory_issues=self._build_inventory_issues(product_counter, raw_order_index, sku_map_flat)
+            priority_orders=priority_orders
         )
 
     def _build_location_clusters(self, location_clusters, location_map) -> List[LocationCluster]:
@@ -231,8 +211,9 @@ class ClusterOrdersByGeoTool(BaseTool):
                 location_id=loc_id,
                 location=LocationMeta(**location_map[loc_id]) if loc_id in location_map else None,
                 orders=orders,
-                total_weight=sum(order.weight for order in orders),
-                total_volume=sum(order.volume for order in orders)                
+                total_weight=(total_weight := sum(order.weight for order in orders)),
+                total_volume=sum(order.volume for order in orders),
+                est_delivery_time_hours=round(((total_weight / 50) * 15) / 60, 2)
             )
             for loc_id, orders in location_clusters.items()
         ]
@@ -256,38 +237,6 @@ class ClusterOrdersByGeoTool(BaseTool):
             )
             for loc_id, data in weight_volume_tracker.items()
         ]
-
-    def _build_inventory_issues(
-        self,
-        product_counter,
-        raw_order_index,
-        sku_map_flat
-    ) -> Optional[InventoryCheckResult]:
-        if not self._inventory:
-            return None
-
-        unfulfillable = []
-
-        for sku, required_qty in product_counter.items():
-            available = self._inventory.get(sku, 0)
-            if required_qty > available:
-                # Track specific order-item combinations affected
-                shortage = required_qty - available
-                for order_id, location_id, qty in raw_order_index[sku]:
-                    if shortage <= 0:
-                        break
-                    affected_qty = min(qty, shortage)
-                    unfulfillable.append(UnfulfillablePackage(
-                        order_id=order_id,
-                        location_id=location_id,
-                        product=sku,
-                        required_quantity=qty,
-                        available_quantity=max(0, available),
-                        metadata=SKUMeta(**sku_map_flat[sku]) if sku in sku_map_flat else None
-                    ))
-                    shortage -= affected_qty
-
-        return InventoryCheckResult(unfulfillable=unfulfillable) if unfulfillable else None
 
     def _apply_h3_geo_clustering(self, clustered_orders_input: ClusteredOrdersInput, resolution: int) -> H3ClusteredOrdersInput:
         """
@@ -330,10 +279,10 @@ class ClusterOrdersByGeoTool(BaseTool):
 
         # Return the updated clustered orders input with H3 clustering applied
         return H3ClusteredOrdersInput(
-            product_summary=clustered_orders_input.product_summary,
+            # product_summary=clustered_orders_input.product_summary,
             priority_orders=clustered_orders_input.priority_orders,
-            weight_volume_summary=clustered_orders_input.weight_volume_summary,
-            inventory_issues=clustered_orders_input.inventory_issues,
+            # weight_volume_summary=clustered_orders_input.weight_volume_summary,
+            # inventory_issues=clustered_orders_input.inventory_issues,
             h3_clusters=h3_location_clusters
         )
 

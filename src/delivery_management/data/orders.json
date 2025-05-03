@@ -19,10 +19,10 @@
           "name": "Expanded upward-trending forecast",
           "quantity": 7,
           "weight_kg": 13.35,
-          "dimensions_cm": {
-            "l": 75,
-            "w": 57,
-            "h": 61
+          "dimensions_m": {
+            "l": 0.75,
+            "w": 0.57,
+            "h": 0.61
           }
         },
         {
@@ -31,10 +31,10 @@
           "name": "Open-architected bottom-line structure",
           "quantity": 9,
           "weight_kg": 21.88,
-          "dimensions_cm": {
-            "l": 38,
-            "w": 28,
-            "h": 23
+          "dimensions_m": {
+            "l": 0.38,
+            "w": 0.28,
+            "h": 0.23
           }
         },
         {
@@ -43,10 +43,10 @@
           "name": "Object-based object-oriented superstructure",
           "quantity": 5,
           "weight_kg": 26.25,
-          "dimensions_cm": {
-            "l": 26,
-            "w": 100,
-            "h": 17
+          "dimensions_m": {
+            "l": 0.26,
+            "w": 1,
+            "h": 0.17
           }
         }
       ]
@@ -70,10 +70,10 @@
           "name": "Focused system-worthy core",
           "quantity": 3,
           "weight_kg": 17.8,
-          "dimensions_cm": {
-            "l": 80,
-            "w": 46,
-            "h": 17
+          "dimensions_m": {
+            "l": 0.8,
+            "w": 0.46,
+            "h": 0.17
           }
         },
         {
@@ -82,10 +82,10 @@
           "name": "Assimilated intangible process improvement",
           "quantity": 4,
           "weight_kg": 17.42,
-          "dimensions_cm": {
-            "l": 36,
-            "w": 30,
-            "h": 18
+          "dimensions_m": {
+            "l": 0.36,
+            "w": 0.3,
+            "h": 0.18
           }
         }
       ]
@@ -109,10 +109,10 @@
           "name": "Horizontal discrete standardization",
           "quantity": 14,
           "weight_kg": 2.09,
-          "dimensions_cm": {
-            "l": 43,
-            "w": 86,
-            "h": 48
+          "dimensions_m": {
+            "l": 0.43,
+            "w": 0.86,
+            "h": 0.48
           }
         }
       ]
@@ -136,10 +136,10 @@
           "name": "Extended motivating alliance",
           "quantity": 5,
           "weight_kg": 0.65,
-          "dimensions_cm": {
-            "l": 37,
-            "w": 29,
-            "h": 18
+          "dimensions_m": {
+            "l": 0.37,
+            "w": 0.29,
+            "h": 0.18
           }
         },
         {
@@ -148,10 +148,10 @@
           "name": "Distributed national function",
           "quantity": 5,
           "weight_kg": 29.97,
-          "dimensions_cm": {
-            "l": 18,
-            "w": 74,
-            "h": 17
+          "dimensions_m": {
+            "l": 0.18,
+            "w": 0.74,
+            "h": 0.17
           }
         }
       ]
@@ -175,10 +175,10 @@
           "name": "Cloned intangible ability",
           "quantity": 5,
           "weight_kg": 10.52,
-          "dimensions_cm": {
-            "l": 50,
-            "w": 99,
-            "h": 35
+          "dimensions_m": {
+            "l": 0.5,
+            "w": 0.99,
+            "h": 0.35
           }
         }
       ]
@@ -190,7 +190,7 @@
       "priority": "high",
       "address": "19337 Juan Street, Lake Bruce, IA 71789",
       "geo": {
-        "lat": 13.0,
+        "lat": 13,
         "lon": 80.13
       },
       "distance_from_warehouse_km": 9.31,
@@ -202,10 +202,10 @@
           "name": "Extended intangible process improvement",
           "quantity": 6,
           "weight_kg": 6.17,
-          "dimensions_cm": {
-            "l": 58,
-            "w": 51,
-            "h": 54
+          "dimensions_m": {
+            "l": 0.58,
+            "w": 0.51,
+            "h": 0.54
           }
         },
         {
@@ -214,10 +214,10 @@
           "name": "Optimized executive knowledgebase",
           "quantity": 10,
           "weight_kg": 2.24,
-          "dimensions_cm": {
-            "l": 20,
-            "w": 74,
-            "h": 14
+          "dimensions_m": {
+            "l": 0.2,
+            "w": 0.74,
+            "h": 0.14
           }
         },
         {
@@ -226,10 +226,10 @@
           "name": "Stand-alone human-resource software",
           "quantity": 8,
           "weight_kg": 27.41,
-          "dimensions_cm": {
-            "l": 46,
-            "w": 28,
-            "h": 27
+          "dimensions_m": {
+            "l": 0.46,
+            "w": 0.28,
+            "h": 0.27
           }
         },
         {
@@ -238,10 +238,10 @@
           "name": "Function-based 6thgeneration throughput",
           "quantity": 10,
           "weight_kg": 17.03,
-          "dimensions_cm": {
-            "l": 56,
-            "w": 95,
-            "h": 9
+          "dimensions_m": {
+            "l": 0.56,
+            "w": 0.95,
+            "h": 0.09
           }
         }
       ]
@@ -265,10 +265,10 @@
           "name": "Fully-configurable contextually-based adapter",
           "quantity": 4,
           "weight_kg": 23.3,
-          "dimensions_cm": {
-            "l": 74,
-            "w": 62,
-            "h": 7
+          "dimensions_m": {
+            "l": 0.74,
+            "w": 0.62,
+            "h": 0.07
           }
         }
       ]
@@ -292,10 +292,10 @@
           "name": "Business-focused real-time contingency",
           "quantity": 6,
           "weight_kg": 29.01,
-          "dimensions_cm": {
-            "l": 87,
-            "w": 62,
-            "h": 70
+          "dimensions_m": {
+            "l": 0.87,
+            "w": 0.62,
+            "h": 0.7
           }
         },
         {
@@ -304,10 +304,10 @@
           "name": "Adaptive explicit Graphic Interface",
           "quantity": 9,
           "weight_kg": 17.54,
-          "dimensions_cm": {
-            "l": 55,
-            "w": 37,
-            "h": 62
+          "dimensions_m": {
+            "l": 0.55,
+            "w": 0.37,
+            "h": 0.62
           }
         }
       ]
@@ -331,10 +331,10 @@
           "name": "Enhanced attitude-oriented orchestration",
           "quantity": 7,
           "weight_kg": 1.3,
-          "dimensions_cm": {
-            "l": 51,
-            "w": 19,
-            "h": 21
+          "dimensions_m": {
+            "l": 0.51,
+            "w": 0.19,
+            "h": 0.21
           }
         },
         {
@@ -343,10 +343,10 @@
           "name": "Cross-platform multi-tasking support",
           "quantity": 2,
           "weight_kg": 26.25,
-          "dimensions_cm": {
-            "l": 68,
-            "w": 43,
-            "h": 46
+          "dimensions_m": {
+            "l": 0.68,
+            "w": 0.43,
+            "h": 0.46
           }
         }
       ]
@@ -370,10 +370,10 @@
           "name": "Distributed contextually-based analyzer",
           "quantity": 15,
           "weight_kg": 2.12,
-          "dimensions_cm": {
-            "l": 39,
-            "w": 34,
-            "h": 58
+          "dimensions_m": {
+            "l": 0.39,
+            "w": 0.34,
+            "h": 0.58
           }
         },
         {
@@ -382,10 +382,10 @@
           "name": "Inverse heuristic capability",
           "quantity": 1,
           "weight_kg": 27.66,
-          "dimensions_cm": {
-            "l": 88,
-            "w": 13,
-            "h": 64
+          "dimensions_m": {
+            "l": 0.88,
+            "w": 0.13,
+            "h": 0.64
           }
         },
         {
@@ -394,10 +394,10 @@
           "name": "Innovative directional Internet solution",
           "quantity": 5,
           "weight_kg": 3.43,
-          "dimensions_cm": {
-            "l": 40,
-            "w": 63,
-            "h": 33
+          "dimensions_m": {
+            "l": 0.4,
+            "w": 0.63,
+            "h": 0.33
           }
         }
       ]
@@ -421,10 +421,10 @@
           "name": "Function-based modular strategy",
           "quantity": 7,
           "weight_kg": 27.35,
-          "dimensions_cm": {
-            "l": 26,
-            "w": 17,
-            "h": 28
+          "dimensions_m": {
+            "l": 0.26,
+            "w": 0.17,
+            "h": 0.28
           }
         },
         {
@@ -433,10 +433,10 @@
           "name": "Self-enabling leadingedge artificial intelligence",
           "quantity": 15,
           "weight_kg": 6.29,
-          "dimensions_cm": {
-            "l": 62,
-            "w": 19,
-            "h": 49
+          "dimensions_m": {
+            "l": 0.62,
+            "w": 0.19,
+            "h": 0.49
           }
         }
       ]
@@ -460,10 +460,10 @@
           "name": "Configurable optimal support",
           "quantity": 9,
           "weight_kg": 21.98,
-          "dimensions_cm": {
-            "l": 42,
-            "w": 79,
-            "h": 49
+          "dimensions_m": {
+            "l": 0.42,
+            "w": 0.79,
+            "h": 0.49
           }
         },
         {
@@ -472,10 +472,10 @@
           "name": "Cloned bifurcated contingency",
           "quantity": 15,
           "weight_kg": 1.7,
-          "dimensions_cm": {
-            "l": 48,
-            "w": 31,
-            "h": 27
+          "dimensions_m": {
+            "l": 0.48,
+            "w": 0.31,
+            "h": 0.27
           }
         },
         {
@@ -484,10 +484,10 @@
           "name": "Managed encompassing hardware",
           "quantity": 3,
           "weight_kg": 13.48,
-          "dimensions_cm": {
-            "l": 100,
-            "w": 47,
-            "h": 13
+          "dimensions_m": {
+            "l": 1,
+            "w": 0.47,
+            "h": 0.13
           }
         },
         {
@@ -496,10 +496,10 @@
           "name": "Streamlined bi-directional workforce",
           "quantity": 13,
           "weight_kg": 28.22,
-          "dimensions_cm": {
-            "l": 49,
-            "w": 66,
-            "h": 5
+          "dimensions_m": {
+            "l": 0.49,
+            "w": 0.66,
+            "h": 0.05
           }
         },
         {
@@ -508,10 +508,10 @@
           "name": "User-friendly dedicated leverage",
           "quantity": 1,
           "weight_kg": 13.56,
-          "dimensions_cm": {
-            "l": 93,
-            "w": 26,
-            "h": 30
+          "dimensions_m": {
+            "l": 0.93,
+            "w": 0.26,
+            "h": 0.3
           }
         }
       ]
@@ -535,10 +535,10 @@
           "name": "Right-sized hybrid standardization",
           "quantity": 10,
           "weight_kg": 7.64,
-          "dimensions_cm": {
-            "l": 57,
-            "w": 72,
-            "h": 44
+          "dimensions_m": {
+            "l": 0.57,
+            "w": 0.72,
+            "h": 0.44
           }
         },
         {
@@ -547,10 +547,10 @@
           "name": "Inverse heuristic capability",
           "quantity": 14,
           "weight_kg": 27.66,
-          "dimensions_cm": {
-            "l": 88,
-            "w": 13,
-            "h": 64
+          "dimensions_m": {
+            "l": 0.88,
+            "w": 0.13,
+            "h": 0.64
           }
         },
         {
@@ -559,10 +559,10 @@
           "name": "Reverse-engineered 4thgeneration workforce",
           "quantity": 11,
           "weight_kg": 23.75,
-          "dimensions_cm": {
-            "l": 37,
-            "w": 79,
-            "h": 38
+          "dimensions_m": {
+            "l": 0.37,
+            "w": 0.79,
+            "h": 0.38
           }
         },
         {
@@ -571,10 +571,10 @@
           "name": "Function-based modular strategy",
           "quantity": 1,
           "weight_kg": 27.35,
-          "dimensions_cm": {
-            "l": 26,
-            "w": 17,
-            "h": 28
+          "dimensions_m": {
+            "l": 0.26,
+            "w": 0.17,
+            "h": 0.28
           }
         }
       ]
@@ -598,10 +598,10 @@
           "name": "Up-sized stable groupware",
           "quantity": 11,
           "weight_kg": 6.23,
-          "dimensions_cm": {
-            "l": 50,
-            "w": 64,
-            "h": 43
+          "dimensions_m": {
+            "l": 0.5,
+            "w": 0.64,
+            "h": 0.43
           }
         },
         {
@@ -609,11 +609,11 @@
           "sku": "TEXT-2694",
           "name": "Programmable bandwidth-monitored matrix",
           "quantity": 11,
-          "weight_kg": 27.0,
-          "dimensions_cm": {
-            "l": 82,
-            "w": 51,
-            "h": 16
+          "weight_kg": 27,
+          "dimensions_m": {
+            "l": 0.82,
+            "w": 0.51,
+            "h": 0.16
           }
         },
         {
@@ -622,10 +622,10 @@
           "name": "Decentralized dedicated software",
           "quantity": 10,
           "weight_kg": 28.15,
-          "dimensions_cm": {
-            "l": 54,
-            "w": 53,
-            "h": 61
+          "dimensions_m": {
+            "l": 0.54,
+            "w": 0.53,
+            "h": 0.61
           }
         },
         {
@@ -634,10 +634,10 @@
           "name": "Total solution-oriented Graphic Interface",
           "quantity": 11,
           "weight_kg": 11.76,
-          "dimensions_cm": {
-            "l": 28,
-            "w": 70,
-            "h": 61
+          "dimensions_m": {
+            "l": 0.28,
+            "w": 0.7,
+            "h": 0.61
           }
         }
       ]
@@ -661,10 +661,10 @@
           "name": "Organized asynchronous encoding",
           "quantity": 11,
           "weight_kg": 27.54,
-          "dimensions_cm": {
-            "l": 98,
-            "w": 16,
-            "h": 56
+          "dimensions_m": {
+            "l": 0.98,
+            "w": 0.16,
+            "h": 0.56
           }
         },
         {
@@ -673,10 +673,10 @@
           "name": "Quality-focused 24hour strategy",
           "quantity": 7,
           "weight_kg": 4.83,
-          "dimensions_cm": {
-            "l": 33,
-            "w": 57,
-            "h": 55
+          "dimensions_m": {
+            "l": 0.33,
+            "w": 0.57,
+            "h": 0.55
           }
         },
         {
@@ -684,11 +684,11 @@
           "sku": "ELEC-2272",
           "name": "Robust actuating capacity",
           "quantity": 11,
-          "weight_kg": 18.0,
-          "dimensions_cm": {
-            "l": 52,
-            "w": 91,
-            "h": 40
+          "weight_kg": 18,
+          "dimensions_m": {
+            "l": 0.52,
+            "w": 0.91,
+            "h": 0.4
           }
         },
         {
@@ -697,10 +697,10 @@
           "name": "Pre-emptive system-worthy conglomeration",
           "quantity": 15,
           "weight_kg": 11.39,
-          "dimensions_cm": {
-            "l": 47,
-            "w": 12,
-            "h": 18
+          "dimensions_m": {
+            "l": 0.47,
+            "w": 0.12,
+            "h": 0.18
           }
         }
       ]
@@ -724,10 +724,10 @@
           "name": "Balanced encompassing pricing structure",
           "quantity": 7,
           "weight_kg": 7.79,
-          "dimensions_cm": {
-            "l": 93,
-            "w": 24,
-            "h": 16
+          "dimensions_m": {
+            "l": 0.93,
+            "w": 0.24,
+            "h": 0.16
           }
         },
         {
@@ -736,10 +736,10 @@
           "name": "Persistent intangible Local Area Network",
           "quantity": 1,
           "weight_kg": 28.73,
-          "dimensions_cm": {
-            "l": 25,
-            "w": 37,
-            "h": 67
+          "dimensions_m": {
+            "l": 0.25,
+            "w": 0.37,
+            "h": 0.67
           }
         }
       ]
@@ -763,10 +763,10 @@
           "name": "Seamless well-modulated protocol",
           "quantity": 12,
           "weight_kg": 27.65,
-          "dimensions_cm": {
-            "l": 26,
-            "w": 78,
-            "h": 39
+          "dimensions_m": {
+            "l": 0.26,
+            "w": 0.78,
+            "h": 0.39
           }
         }
       ]
@@ -790,10 +790,10 @@
           "name": "Self-enabling optimizing core",
           "quantity": 3,
           "weight_kg": 24.64,
-          "dimensions_cm": {
-            "l": 47,
-            "w": 95,
-            "h": 30
+          "dimensions_m": {
+            "l": 0.47,
+            "w": 0.95,
+            "h": 0.3
           }
         },
         {
@@ -802,10 +802,10 @@
           "name": "Optimized 6thgeneration collaboration",
           "quantity": 5,
           "weight_kg": 20.54,
-          "dimensions_cm": {
-            "l": 12,
-            "w": 29,
-            "h": 48
+          "dimensions_m": {
+            "l": 0.12,
+            "w": 0.29,
+            "h": 0.48
           }
         }
       ]
@@ -829,10 +829,10 @@
           "name": "Open-architected exuding matrix",
           "quantity": 10,
           "weight_kg": 11.2,
-          "dimensions_cm": {
-            "l": 83,
-            "w": 59,
-            "h": 5
+          "dimensions_m": {
+            "l": 0.83,
+            "w": 0.59,
+            "h": 0.05
           }
         },
         {
@@ -841,10 +841,10 @@
           "name": "Exclusive secondary synergy",
           "quantity": 14,
           "weight_kg": 3.8,
-          "dimensions_cm": {
-            "l": 71,
-            "w": 46,
-            "h": 54
+          "dimensions_m": {
+            "l": 0.71,
+            "w": 0.46,
+            "h": 0.54
           }
         },
         {
@@ -853,10 +853,10 @@
           "name": "Progressive multi-state synergy",
           "quantity": 5,
           "weight_kg": 28.11,
-          "dimensions_cm": {
-            "l": 73,
-            "w": 64,
-            "h": 30
+          "dimensions_m": {
+            "l": 0.73,
+            "w": 0.64,
+            "h": 0.3
           }
         },
         {
@@ -865,10 +865,10 @@
           "name": "Right-sized zero administration Internet solution",
           "quantity": 4,
           "weight_kg": 13.15,
-          "dimensions_cm": {
-            "l": 51,
-            "w": 20,
-            "h": 57
+          "dimensions_m": {
+            "l": 0.51,
+            "w": 0.2,
+            "h": 0.57
           }
         }
       ]
@@ -892,10 +892,10 @@
           "name": "Visionary content-based website",
           "quantity": 1,
           "weight_kg": 13.99,
-          "dimensions_cm": {
-            "l": 57,
-            "w": 40,
-            "h": 43
+          "dimensions_m": {
+            "l": 0.57,
+            "w": 0.4,
+            "h": 0.43
           }
         },
         {
@@ -904,22 +904,22 @@
           "name": "Switchable local interface",
           "quantity": 10,
           "weight_kg": 26.39,
-          "dimensions_cm": {
-            "l": 58,
-            "w": 72,
-            "h": 25
+          "dimensions_m": {
+            "l": 0.58,
+            "w": 0.72,
+            "h": 0.25
           }
         },
         {
           "id": "PKG0147",
           "sku": "TOOL-9792",
           "name": "Persistent contextually-based artificial intelligence",
-          "quantity": 7,
-          "weight_kg": 18.74,
-          "dimensions_cm": {
-            "l": 29,
-            "w": 66,
-            "h": 38
+          "quantity": 4,
+          "weight_kg": 0.5,
+          "dimensions_m": {
+            "l": 1.9,
+            "w": 2.5,
+            "h": 1.9
           }
         }
       ]
@@ -943,10 +943,10 @@
           "name": "Decentralized exuding Internet solution",
           "quantity": 9,
           "weight_kg": 9.31,
-          "dimensions_cm": {
-            "l": 80,
-            "w": 47,
-            "h": 59
+          "dimensions_m": {
+            "l": 0.8,
+            "w": 0.47,
+            "h": 0.59
           }
         },
         {
@@ -955,10 +955,10 @@
           "name": "Re-engineered coherent protocol",
           "quantity": 5,
           "weight_kg": 15.9,
-          "dimensions_cm": {
-            "l": 50,
-            "w": 100,
-            "h": 18
+          "dimensions_m": {
+            "l": 0.5,
+            "w": 1,
+            "h": 0.18
           }
         },
         {
@@ -967,10 +967,10 @@
           "name": "Up-sized multi-state alliance",
           "quantity": 3,
           "weight_kg": 8.92,
-          "dimensions_cm": {
-            "l": 44,
-            "w": 23,
-            "h": 22
+          "dimensions_m": {
+            "l": 0.44,
+            "w": 0.23,
+            "h": 0.22
           }
         },
         {
@@ -979,10 +979,10 @@
           "name": "User-friendly dedicated leverage",
           "quantity": 11,
           "weight_kg": 13.56,
-          "dimensions_cm": {
-            "l": 93,
-            "w": 26,
-            "h": 30
+          "dimensions_m": {
+            "l": 0.93,
+            "w": 0.26,
+            "h": 0.3
           }
         },
         {
@@ -991,10 +991,10 @@
           "name": "Grass-roots zero administration methodology",
           "quantity": 5,
           "weight_kg": 17.36,
-          "dimensions_cm": {
-            "l": 84,
-            "w": 94,
-            "h": 17
+          "dimensions_m": {
+            "l": 0.84,
+            "w": 0.94,
+            "h": 0.17
           }
         }
       ]
@@ -1018,10 +1018,10 @@
           "name": "Function-based 6thgeneration throughput",
           "quantity": 11,
           "weight_kg": 17.03,
-          "dimensions_cm": {
-            "l": 56,
-            "w": 95,
-            "h": 9
+          "dimensions_m": {
+            "l": 0.56,
+            "w": 0.95,
+            "h": 0.09
           }
         },
         {
@@ -1030,10 +1030,10 @@
           "name": "Exclusive object-oriented website",
           "quantity": 10,
           "weight_kg": 6.5,
-          "dimensions_cm": {
-            "l": 64,
-            "w": 90,
-            "h": 16
+          "dimensions_m": {
+            "l": 0.64,
+            "w": 0.9,
+            "h": 0.16
           }
         },
         {
@@ -1042,10 +1042,10 @@
           "name": "Digitized transitional functionalities",
           "quantity": 3,
           "weight_kg": 28.04,
-          "dimensions_cm": {
-            "l": 33,
-            "w": 66,
-            "h": 38
+          "dimensions_m": {
+            "l": 0.33,
+            "w": 0.66,
+            "h": 0.38
           }
         }
       ]
@@ -1069,10 +1069,10 @@
           "name": "Advanced dynamic success",
           "quantity": 7,
           "weight_kg": 27.41,
-          "dimensions_cm": {
-            "l": 75,
-            "w": 40,
-            "h": 32
+          "dimensions_m": {
+            "l": 0.75,
+            "w": 0.4,
+            "h": 0.32
           }
         },
         {
@@ -1081,10 +1081,10 @@
           "name": "Ameliorated solution-oriented support",
           "quantity": 11,
           "weight_kg": 15.95,
-          "dimensions_cm": {
-            "l": 42,
-            "w": 74,
-            "h": 36
+          "dimensions_m": {
+            "l": 0.42,
+            "w": 0.74,
+            "h": 0.36
           }
         },
         {
@@ -1093,10 +1093,10 @@
           "name": "Total client-server application",
           "quantity": 11,
           "weight_kg": 1.4,
-          "dimensions_cm": {
-            "l": 79,
-            "w": 35,
-            "h": 60
+          "dimensions_m": {
+            "l": 0.79,
+            "w": 0.35,
+            "h": 0.6
           }
         }
       ]
@@ -1120,10 +1120,10 @@
           "name": "Business-focused directional encryption",
           "quantity": 12,
           "weight_kg": 23.45,
-          "dimensions_cm": {
-            "l": 98,
-            "w": 39,
-            "h": 40
+          "dimensions_m": {
+            "l": 0.98,
+            "w": 0.39,
+            "h": 0.4
           }
         },
         {
@@ -1132,10 +1132,10 @@
           "name": "Digitized full-range access",
           "quantity": 14,
           "weight_kg": 3.37,
-          "dimensions_cm": {
-            "l": 28,
-            "w": 45,
-            "h": 44
+          "dimensions_m": {
+            "l": 0.28,
+            "w": 0.45,
+            "h": 0.44
           }
         },
         {
@@ -1144,10 +1144,10 @@
           "name": "Exclusive secondary synergy",
           "quantity": 5,
           "weight_kg": 3.8,
-          "dimensions_cm": {
-            "l": 71,
-            "w": 46,
-            "h": 54
+          "dimensions_m": {
+            "l": 0.71,
+            "w": 0.46,
+            "h": 0.54
           }
         },
         {
@@ -1156,10 +1156,10 @@
           "name": "Quality-focused logistical orchestration",
           "quantity": 5,
           "weight_kg": 27.28,
-          "dimensions_cm": {
-            "l": 23,
-            "w": 45,
-            "h": 49
+          "dimensions_m": {
+            "l": 0.23,
+            "w": 0.45,
+            "h": 0.49
           }
         }
       ]
@@ -1171,22 +1171,22 @@
       "priority": "normal",
       "address": "0851 Perkins Mills, Christopherburgh, PA 38229",
       "geo": {
-        "lat": 13.0,
+        "lat": 13,
         "lon": 80.13
       },
       "distance_from_warehouse_km": 9.31,
       "geo_cluster": "West",
       "packages": [
         {
-          "id": "PKG0007",
-          "sku": "FOOD-2757",
-          "name": "Inverse bandwidth-monitored Internet solution",
-          "quantity": 11,
-          "weight_kg": 29.02,
-          "dimensions_cm": {
-            "l": 13,
-            "w": 86,
-            "h": 49
+          "id": "PKG0147",
+          "sku": "TOOL-9792",
+          "name": "Persistent contextually-based artificial intelligence",
+          "quantity": 5,
+          "weight_kg": 0.5,
+          "dimensions_m": {
+            "l": 1.9,
+            "w": 2.5,
+            "h": 1.9
           }
         }
       ]
@@ -1210,10 +1210,10 @@
           "name": "Polarized object-oriented throughput",
           "quantity": 14,
           "weight_kg": 19.59,
-          "dimensions_cm": {
-            "l": 77,
-            "w": 16,
-            "h": 57
+          "dimensions_m": {
+            "l": 0.77,
+            "w": 0.16,
+            "h": 0.57
           }
         },
         {
@@ -1222,10 +1222,10 @@
           "name": "Object-based coherent alliance",
           "quantity": 1,
           "weight_kg": 5.12,
-          "dimensions_cm": {
-            "l": 47,
-            "w": 55,
-            "h": 47
+          "dimensions_m": {
+            "l": 0.47,
+            "w": 0.55,
+            "h": 0.47
           }
         },
         {
@@ -1234,10 +1234,10 @@
           "name": "Advanced dynamic success",
           "quantity": 6,
           "weight_kg": 27.41,
-          "dimensions_cm": {
-            "l": 75,
-            "w": 40,
-            "h": 32
+          "dimensions_m": {
+            "l": 0.75,
+            "w": 0.4,
+            "h": 0.32
           }
         },
         {
@@ -1246,10 +1246,10 @@
           "name": "Multi-channeled client-server archive",
           "quantity": 13,
           "weight_kg": 16.47,
-          "dimensions_cm": {
-            "l": 23,
-            "w": 39,
-            "h": 26
+          "dimensions_m": {
+            "l": 0.23,
+            "w": 0.39,
+            "h": 0.26
           }
         }
       ]
@@ -1261,22 +1261,22 @@
       "priority": "normal",
       "address": "PSC 5775, Box 8772, APO AE 22038",
       "geo": {
-        "lat": 13.0,
+        "lat": 13,
         "lon": 80.13
       },
       "distance_from_warehouse_km": 9.31,
       "geo_cluster": "West",
       "packages": [
         {
-          "id": "PKG0497",
-          "sku": "AGRO-4145",
-          "name": "Expanded tangible task-force",
-          "quantity": 6,
-          "weight_kg": 28.29,
-          "dimensions_cm": {
-            "l": 59,
-            "w": 97,
-            "h": 12
+          "id": "PKG0147",
+          "sku": "TOOL-9792",
+          "name": "Persistent contextually-based artificial intelligence",
+          "quantity": 5,
+          "weight_kg": 0.5,
+          "dimensions_m": {
+            "l": 1.9,
+            "w": 2.5,
+            "h": 1.9
           }
         }
       ]
@@ -1300,10 +1300,10 @@
           "name": "Reduced bifurcated task-force",
           "quantity": 13,
           "weight_kg": 22.05,
-          "dimensions_cm": {
-            "l": 70,
-            "w": 91,
-            "h": 44
+          "dimensions_m": {
+            "l": 0.7,
+            "w": 0.91,
+            "h": 0.44
           }
         },
         {
@@ -1312,10 +1312,10 @@
           "name": "Programmable transitional throughput",
           "quantity": 13,
           "weight_kg": 9.45,
-          "dimensions_cm": {
-            "l": 52,
-            "w": 38,
-            "h": 45
+          "dimensions_m": {
+            "l": 0.52,
+            "w": 0.38,
+            "h": 0.45
           }
         },
         {
@@ -1324,10 +1324,10 @@
           "name": "Versatile incremental access",
           "quantity": 6,
           "weight_kg": 29.98,
-          "dimensions_cm": {
-            "l": 54,
-            "w": 11,
-            "h": 19
+          "dimensions_m": {
+            "l": 0.54,
+            "w": 0.11,
+            "h": 0.19
           }
         },
         {
@@ -1336,10 +1336,10 @@
           "name": "Exclusive bandwidth-monitored intranet",
           "quantity": 4,
           "weight_kg": 15.73,
-          "dimensions_cm": {
-            "l": 29,
-            "w": 94,
-            "h": 22
+          "dimensions_m": {
+            "l": 0.29,
+            "w": 0.94,
+            "h": 0.22
           }
         }
       ]
@@ -1363,10 +1363,10 @@
           "name": "Integrated directional structure",
           "quantity": 7,
           "weight_kg": 24.71,
-          "dimensions_cm": {
-            "l": 22,
-            "w": 25,
-            "h": 58
+          "dimensions_m": {
+            "l": 0.22,
+            "w": 0.25,
+            "h": 0.58
           }
         },
         {
@@ -1375,10 +1375,10 @@
           "name": "Up-sized background approach",
           "quantity": 3,
           "weight_kg": 2.16,
-          "dimensions_cm": {
-            "l": 13,
-            "w": 39,
-            "h": 56
+          "dimensions_m": {
+            "l": 0.13,
+            "w": 0.39,
+            "h": 0.56
           }
         },
         {
@@ -1387,10 +1387,10 @@
           "name": "Diverse static intranet",
           "quantity": 12,
           "weight_kg": 8.72,
-          "dimensions_cm": {
-            "l": 56,
-            "w": 10,
-            "h": 36
+          "dimensions_m": {
+            "l": 0.56,
+            "w": 0.1,
+            "h": 0.36
           }
         }
       ]
@@ -1414,10 +1414,10 @@
           "name": "Horizontal uniform project",
           "quantity": 4,
           "weight_kg": 26.94,
-          "dimensions_cm": {
-            "l": 13,
-            "w": 54,
-            "h": 60
+          "dimensions_m": {
+            "l": 0.13,
+            "w": 0.54,
+            "h": 0.6
           }
         },
         {
@@ -1426,10 +1426,10 @@
           "name": "Customizable fresh-thinking productivity",
           "quantity": 5,
           "weight_kg": 25.97,
-          "dimensions_cm": {
-            "l": 96,
-            "w": 70,
-            "h": 7
+          "dimensions_m": {
+            "l": 0.96,
+            "w": 0.7,
+            "h": 0.07
           }
         },
         {
@@ -1438,10 +1438,10 @@
           "name": "Balanced multi-state alliance",
           "quantity": 4,
           "weight_kg": 18.68,
-          "dimensions_cm": {
-            "l": 27,
-            "w": 78,
-            "h": 18
+          "dimensions_m": {
+            "l": 0.27,
+            "w": 0.78,
+            "h": 0.18
           }
         },
         {
@@ -1450,10 +1450,10 @@
           "name": "User-centric local infrastructure",
           "quantity": 9,
           "weight_kg": 15.96,
-          "dimensions_cm": {
-            "l": 50,
-            "w": 81,
-            "h": 47
+          "dimensions_m": {
+            "l": 0.5,
+            "w": 0.81,
+            "h": 0.47
           }
         }
       ]
@@ -1477,10 +1477,10 @@
           "name": "Face-to-face analyzing monitoring",
           "quantity": 2,
           "weight_kg": 9.79,
-          "dimensions_cm": {
-            "l": 59,
-            "w": 30,
-            "h": 32
+          "dimensions_m": {
+            "l": 0.59,
+            "w": 0.3,
+            "h": 0.32
           }
         },
         {
@@ -1489,10 +1489,10 @@
           "name": "Vision-oriented non-volatile initiative",
           "quantity": 14,
           "weight_kg": 5.17,
-          "dimensions_cm": {
-            "l": 57,
-            "w": 68,
-            "h": 39
+          "dimensions_m": {
+            "l": 0.57,
+            "w": 0.68,
+            "h": 0.39
           }
         },
         {
@@ -1501,10 +1501,10 @@
           "name": "Up-sized stable groupware",
           "quantity": 12,
           "weight_kg": 6.23,
-          "dimensions_cm": {
-            "l": 50,
-            "w": 64,
-            "h": 43
+          "dimensions_m": {
+            "l": 0.5,
+            "w": 0.64,
+            "h": 0.43
           }
         },
         {
@@ -1513,10 +1513,10 @@
           "name": "Polarized clear-thinking focus group",
           "quantity": 8,
           "weight_kg": 28.49,
-          "dimensions_cm": {
-            "l": 37,
-            "w": 26,
-            "h": 23
+          "dimensions_m": {
+            "l": 0.37,
+            "w": 0.26,
+            "h": 0.23
           }
         }
       ]
@@ -1540,10 +1540,10 @@
           "name": "Advanced homogeneous artificial intelligence",
           "quantity": 3,
           "weight_kg": 12.18,
-          "dimensions_cm": {
-            "l": 42,
-            "w": 17,
-            "h": 26
+          "dimensions_m": {
+            "l": 0.42,
+            "w": 0.17,
+            "h": 0.26
           }
         },
         {
@@ -1552,10 +1552,10 @@
           "name": "Object-based eco-centric array",
           "quantity": 2,
           "weight_kg": 0.82,
-          "dimensions_cm": {
-            "l": 57,
-            "w": 54,
-            "h": 47
+          "dimensions_m": {
+            "l": 0.57,
+            "w": 0.54,
+            "h": 0.47
           }
         },
         {
@@ -1564,10 +1564,10 @@
           "name": "Expanded upward-trending forecast",
           "quantity": 13,
           "weight_kg": 13.35,
-          "dimensions_cm": {
-            "l": 75,
-            "w": 57,
-            "h": 61
+          "dimensions_m": {
+            "l": 0.75,
+            "w": 0.57,
+            "h": 0.61
           }
         },
         {
@@ -1576,10 +1576,10 @@
           "name": "Customer-focused intermediate Graphic Interface",
           "quantity": 3,
           "weight_kg": 11.07,
-          "dimensions_cm": {
-            "l": 17,
-            "w": 14,
-            "h": 23
+          "dimensions_m": {
+            "l": 0.17,
+            "w": 0.14,
+            "h": 0.23
           }
         },
         {
@@ -1588,10 +1588,10 @@
           "name": "Triple-buffered eco-centric moderator",
           "quantity": 9,
           "weight_kg": 18.77,
-          "dimensions_cm": {
-            "l": 57,
-            "w": 80,
-            "h": 61
+          "dimensions_m": {
+            "l": 0.57,
+            "w": 0.8,
+            "h": 0.61
           }
         }
       ]
@@ -1615,10 +1615,10 @@
           "name": "Monitored system-worthy collaboration",
           "quantity": 7,
           "weight_kg": 18.35,
-          "dimensions_cm": {
-            "l": 85,
-            "w": 55,
-            "h": 22
+          "dimensions_m": {
+            "l": 0.85,
+            "w": 0.55,
+            "h": 0.22
           }
         }
       ]
@@ -1642,10 +1642,10 @@
           "name": "Multi-channeled human-resource policy",
           "quantity": 7,
           "weight_kg": 29.81,
-          "dimensions_cm": {
-            "l": 75,
-            "w": 94,
-            "h": 15
+          "dimensions_m": {
+            "l": 0.75,
+            "w": 0.94,
+            "h": 0.15
           }
         },
         {
@@ -1654,10 +1654,10 @@
           "name": "Optimized explicit concept",
           "quantity": 3,
           "weight_kg": 21.3,
-          "dimensions_cm": {
-            "l": 43,
-            "w": 93,
-            "h": 45
+          "dimensions_m": {
+            "l": 0.43,
+            "w": 0.93,
+            "h": 0.45
           }
         },
         {
@@ -1666,10 +1666,10 @@
           "name": "Expanded modular open system",
           "quantity": 6,
           "weight_kg": 25.71,
-          "dimensions_cm": {
-            "l": 34,
-            "w": 73,
-            "h": 69
+          "dimensions_m": {
+            "l": 0.34,
+            "w": 0.73,
+            "h": 0.69
           }
         },
         {
@@ -1678,10 +1678,10 @@
           "name": "Multi-layered transitional productivity",
           "quantity": 8,
           "weight_kg": 18.67,
-          "dimensions_cm": {
-            "l": 37,
-            "w": 18,
-            "h": 66
+          "dimensions_m": {
+            "l": 0.37,
+            "w": 0.18,
+            "h": 0.66
           }
         },
         {
@@ -1690,10 +1690,10 @@
           "name": "Integrated zero-defect complexity",
           "quantity": 14,
           "weight_kg": 11.09,
-          "dimensions_cm": {
-            "l": 83,
-            "w": 34,
-            "h": 68
+          "dimensions_m": {
+            "l": 0.83,
+            "w": 0.34,
+            "h": 0.68
           }
         }
       ]
@@ -1717,10 +1717,10 @@
           "name": "Monitored disintermediate superstructure",
           "quantity": 5,
           "weight_kg": 20.13,
-          "dimensions_cm": {
-            "l": 57,
-            "w": 45,
-            "h": 38
+          "dimensions_m": {
+            "l": 0.57,
+            "w": 0.45,
+            "h": 0.38
           }
         }
       ]
@@ -1744,10 +1744,10 @@
           "name": "Upgradable executive contingency",
           "quantity": 4,
           "weight_kg": 21.72,
-          "dimensions_cm": {
-            "l": 24,
-            "w": 93,
-            "h": 29
+          "dimensions_m": {
+            "l": 0.24,
+            "w": 0.93,
+            "h": 0.29
           }
         },
         {
@@ -1756,10 +1756,10 @@
           "name": "Configurable local parallelism",
           "quantity": 3,
           "weight_kg": 23.85,
-          "dimensions_cm": {
-            "l": 98,
-            "w": 86,
-            "h": 34
+          "dimensions_m": {
+            "l": 0.98,
+            "w": 0.86,
+            "h": 0.34
           }
         },
         {
@@ -1768,10 +1768,10 @@
           "name": "Expanded upward-trending forecast",
           "quantity": 12,
           "weight_kg": 13.35,
-          "dimensions_cm": {
-            "l": 75,
-            "w": 57,
-            "h": 61
+          "dimensions_m": {
+            "l": 0.75,
+            "w": 0.57,
+            "h": 0.61
           }
         },
         {
@@ -1780,10 +1780,10 @@
           "name": "Enhanced attitude-oriented orchestration",
           "quantity": 8,
           "weight_kg": 1.3,
-          "dimensions_cm": {
-            "l": 51,
-            "w": 19,
-            "h": 21
+          "dimensions_m": {
+            "l": 0.51,
+            "w": 0.19,
+            "h": 0.21
           }
         },
         {
@@ -1792,10 +1792,10 @@
           "name": "Multi-lateral zero tolerance circuit",
           "quantity": 12,
           "weight_kg": 15.56,
-          "dimensions_cm": {
-            "l": 46,
-            "w": 84,
-            "h": 59
+          "dimensions_m": {
+            "l": 0.46,
+            "w": 0.84,
+            "h": 0.59
           }
         }
       ]
@@ -1819,10 +1819,10 @@
           "name": "Optimized local implementation",
           "quantity": 8,
           "weight_kg": 18.93,
-          "dimensions_cm": {
-            "l": 53,
-            "w": 27,
-            "h": 53
+          "dimensions_m": {
+            "l": 0.53,
+            "w": 0.27,
+            "h": 0.53
           }
         },
         {
@@ -1830,11 +1830,11 @@
           "sku": "MED-5432",
           "name": "Integrated methodical core",
           "quantity": 8,
-          "weight_kg": 20.0,
-          "dimensions_cm": {
-            "l": 19,
-            "w": 100,
-            "h": 62
+          "weight_kg": 20,
+          "dimensions_m": {
+            "l": 0.19,
+            "w": 1,
+            "h": 0.62
           }
         },
         {
@@ -1843,10 +1843,10 @@
           "name": "De-engineered systemic portal",
           "quantity": 5,
           "weight_kg": 21.41,
-          "dimensions_cm": {
-            "l": 54,
-            "w": 63,
-            "h": 16
+          "dimensions_m": {
+            "l": 0.54,
+            "w": 0.63,
+            "h": 0.16
           }
         },
         {
@@ -1855,10 +1855,10 @@
           "name": "Object-based encompassing framework",
           "quantity": 11,
           "weight_kg": 24.8,
-          "dimensions_cm": {
-            "l": 45,
-            "w": 43,
-            "h": 65
+          "dimensions_m": {
+            "l": 0.45,
+            "w": 0.43,
+            "h": 0.65
           }
         },
         {
@@ -1867,10 +1867,10 @@
           "name": "Progressive reciprocal encoding",
           "quantity": 2,
           "weight_kg": 27.05,
-          "dimensions_cm": {
-            "l": 43,
-            "w": 80,
-            "h": 54
+          "dimensions_m": {
+            "l": 0.43,
+            "w": 0.8,
+            "h": 0.54
           }
         }
       ]
@@ -1894,10 +1894,10 @@
           "name": "Multi-channeled client-server archive",
           "quantity": 8,
           "weight_kg": 16.47,
-          "dimensions_cm": {
-            "l": 23,
-            "w": 39,
-            "h": 26
+          "dimensions_m": {
+            "l": 0.23,
+            "w": 0.39,
+            "h": 0.26
           }
         },
         {
@@ -1906,10 +1906,10 @@
           "name": "Secured bifurcated protocol",
           "quantity": 2,
           "weight_kg": 28.02,
-          "dimensions_cm": {
-            "l": 35,
-            "w": 17,
-            "h": 51
+          "dimensions_m": {
+            "l": 0.35,
+            "w": 0.17,
+            "h": 0.51
           }
         },
         {
@@ -1918,10 +1918,10 @@
           "name": "Innovative directional Internet solution",
           "quantity": 9,
           "weight_kg": 3.43,
-          "dimensions_cm": {
-            "l": 40,
-            "w": 63,
-            "h": 33
+          "dimensions_m": {
+            "l": 0.4,
+            "w": 0.63,
+            "h": 0.33
           }
         },
         {
@@ -1930,10 +1930,10 @@
           "name": "Multi-layered zero-defect installation",
           "quantity": 14,
           "weight_kg": 3.46,
-          "dimensions_cm": {
-            "l": 91,
-            "w": 32,
-            "h": 64
+          "dimensions_m": {
+            "l": 0.91,
+            "w": 0.32,
+            "h": 0.64
           }
         }
       ]
@@ -1945,7 +1945,7 @@
       "priority": "high",
       "address": "6330 Greene Light, South Susan, AZ 33741",
       "geo": {
-        "lat": 13.0,
+        "lat": 13,
         "lon": 80.13
       },
       "distance_from_warehouse_km": 9.31,
@@ -1957,10 +1957,10 @@
           "name": "Optimized composite encryption",
           "quantity": 10,
           "weight_kg": 22.04,
-          "dimensions_cm": {
-            "l": 19,
-            "w": 51,
-            "h": 50
+          "dimensions_m": {
+            "l": 0.19,
+            "w": 0.51,
+            "h": 0.5
           }
         },
         {
@@ -1969,10 +1969,10 @@
           "name": "Balanced multi-state alliance",
           "quantity": 5,
           "weight_kg": 18.68,
-          "dimensions_cm": {
-            "l": 27,
-            "w": 78,
-            "h": 18
+          "dimensions_m": {
+            "l": 0.27,
+            "w": 0.78,
+            "h": 0.18
           }
         },
         {
@@ -1981,10 +1981,10 @@
           "name": "Assimilated intangible process improvement",
           "quantity": 3,
           "weight_kg": 17.42,
-          "dimensions_cm": {
-            "l": 36,
-            "w": 30,
-            "h": 18
+          "dimensions_m": {
+            "l": 0.36,
+            "w": 0.3,
+            "h": 0.18
           }
         }
       ]
@@ -2008,10 +2008,10 @@
           "name": "Re-contextualized web-enabled standardization",
           "quantity": 1,
           "weight_kg": 22.95,
-          "dimensions_cm": {
-            "l": 77,
-            "w": 14,
-            "h": 28
+          "dimensions_m": {
+            "l": 0.77,
+            "w": 0.14,
+            "h": 0.28
           }
         },
         {
@@ -2020,10 +2020,10 @@
           "name": "Open-source maximized open architecture",
           "quantity": 6,
           "weight_kg": 29.69,
-          "dimensions_cm": {
-            "l": 47,
-            "w": 92,
-            "h": 10
+          "dimensions_m": {
+            "l": 0.47,
+            "w": 0.92,
+            "h": 0.1
           }
         },
         {
@@ -2032,10 +2032,10 @@
           "name": "Expanded contextually-based emulation",
           "quantity": 5,
           "weight_kg": 27.47,
-          "dimensions_cm": {
-            "l": 73,
-            "w": 71,
-            "h": 52
+          "dimensions_m": {
+            "l": 0.73,
+            "w": 0.71,
+            "h": 0.52
           }
         }
       ]
@@ -2059,10 +2059,10 @@
           "name": "Persistent executive archive",
           "quantity": 11,
           "weight_kg": 14.77,
-          "dimensions_cm": {
-            "l": 96,
-            "w": 80,
-            "h": 42
+          "dimensions_m": {
+            "l": 0.96,
+            "w": 0.8,
+            "h": 0.42
           }
         },
         {
@@ -2071,10 +2071,10 @@
           "name": "Expanded national emulation",
           "quantity": 8,
           "weight_kg": 3.88,
-          "dimensions_cm": {
-            "l": 13,
-            "w": 99,
-            "h": 66
+          "dimensions_m": {
+            "l": 0.13,
+            "w": 0.99,
+            "h": 0.66
           }
         },
         {
@@ -2083,10 +2083,10 @@
           "name": "Synergized holistic Graphic Interface",
           "quantity": 11,
           "weight_kg": 7.27,
-          "dimensions_cm": {
-            "l": 47,
-            "w": 20,
-            "h": 31
+          "dimensions_m": {
+            "l": 0.47,
+            "w": 0.2,
+            "h": 0.31
           }
         },
         {
@@ -2095,10 +2095,10 @@
           "name": "Advanced radical framework",
           "quantity": 12,
           "weight_kg": 2.66,
-          "dimensions_cm": {
-            "l": 96,
-            "w": 66,
-            "h": 33
+          "dimensions_m": {
+            "l": 0.96,
+            "w": 0.66,
+            "h": 0.33
           }
         },
         {
@@ -2107,10 +2107,10 @@
           "name": "Polarized high-level analyzer",
           "quantity": 7,
           "weight_kg": 24.18,
-          "dimensions_cm": {
-            "l": 30,
-            "w": 35,
-            "h": 27
+          "dimensions_m": {
+            "l": 0.3,
+            "w": 0.35,
+            "h": 0.27
           }
         }
       ]
@@ -2134,10 +2134,10 @@
           "name": "Universal neutral parallelism",
           "quantity": 2,
           "weight_kg": 20.69,
-          "dimensions_cm": {
-            "l": 58,
-            "w": 74,
-            "h": 35
+          "dimensions_m": {
+            "l": 0.58,
+            "w": 0.74,
+            "h": 0.35
           }
         },
         {
@@ -2146,10 +2146,10 @@
           "name": "Balanced multi-state alliance",
           "quantity": 8,
           "weight_kg": 18.68,
-          "dimensions_cm": {
-            "l": 27,
-            "w": 78,
-            "h": 18
+          "dimensions_m": {
+            "l": 0.27,
+            "w": 0.78,
+            "h": 0.18
           }
         }
       ]
@@ -2173,10 +2173,10 @@
           "name": "Managed encompassing hardware",
           "quantity": 4,
           "weight_kg": 13.48,
-          "dimensions_cm": {
-            "l": 100,
-            "w": 47,
-            "h": 13
+          "dimensions_m": {
+            "l": 1,
+            "w": 0.47,
+            "h": 0.13
           }
         },
         {
@@ -2185,10 +2185,10 @@
           "name": "Quality-focused 4thgeneration capability",
           "quantity": 15,
           "weight_kg": 15.56,
-          "dimensions_cm": {
-            "l": 21,
-            "w": 95,
-            "h": 63
+          "dimensions_m": {
+            "l": 0.21,
+            "w": 0.95,
+            "h": 0.63
           }
         },
         {
@@ -2197,10 +2197,10 @@
           "name": "Profound global attitude",
           "quantity": 7,
           "weight_kg": 20.05,
-          "dimensions_cm": {
-            "l": 59,
-            "w": 91,
-            "h": 7
+          "dimensions_m": {
+            "l": 0.59,
+            "w": 0.91,
+            "h": 0.07
           }
         }
       ]
@@ -2224,10 +2224,10 @@
           "name": "Right-sized hybrid standardization",
           "quantity": 6,
           "weight_kg": 7.64,
-          "dimensions_cm": {
-            "l": 57,
-            "w": 72,
-            "h": 44
+          "dimensions_m": {
+            "l": 0.57,
+            "w": 0.72,
+            "h": 0.44
           }
         },
         {
@@ -2236,10 +2236,10 @@
           "name": "Extended mission-critical algorithm",
           "quantity": 9,
           "weight_kg": 21.5,
-          "dimensions_cm": {
-            "l": 24,
-            "w": 54,
-            "h": 26
+          "dimensions_m": {
+            "l": 0.24,
+            "w": 0.54,
+            "h": 0.26
           }
         },
         {
@@ -2248,10 +2248,10 @@
           "name": "Synergistic hybrid capacity",
           "quantity": 12,
           "weight_kg": 7.19,
-          "dimensions_cm": {
-            "l": 77,
-            "w": 89,
-            "h": 62
+          "dimensions_m": {
+            "l": 0.77,
+            "w": 0.89,
+            "h": 0.62
           }
         }
       ]
@@ -2275,10 +2275,10 @@
           "name": "Right-sized coherent methodology",
           "quantity": 11,
           "weight_kg": 2.99,
-          "dimensions_cm": {
-            "l": 52,
-            "w": 41,
-            "h": 26
+          "dimensions_m": {
+            "l": 0.52,
+            "w": 0.41,
+            "h": 0.26
           }
         },
         {
@@ -2287,10 +2287,10 @@
           "name": "Visionary eco-centric hierarchy",
           "quantity": 4,
           "weight_kg": 11.77,
-          "dimensions_cm": {
-            "l": 64,
-            "w": 15,
-            "h": 16
+          "dimensions_m": {
+            "l": 0.64,
+            "w": 0.15,
+            "h": 0.16
           }
         },
         {
@@ -2299,10 +2299,10 @@
           "name": "Ergonomic multimedia function",
           "quantity": 1,
           "weight_kg": 5.21,
-          "dimensions_cm": {
-            "l": 73,
-            "w": 22,
-            "h": 42
+          "dimensions_m": {
+            "l": 0.73,
+            "w": 0.22,
+            "h": 0.42
           }
         }
       ]
@@ -2326,10 +2326,10 @@
           "name": "Vision-oriented non-volatile initiative",
           "quantity": 15,
           "weight_kg": 5.17,
-          "dimensions_cm": {
-            "l": 57,
-            "w": 68,
-            "h": 39
+          "dimensions_m": {
+            "l": 0.57,
+            "w": 0.68,
+            "h": 0.39
           }
         },
         {
@@ -2338,10 +2338,10 @@
           "name": "Distributed national function",
           "quantity": 10,
           "weight_kg": 12.97,
-          "dimensions_cm": {
-            "l": 18,
-            "w": 74,
-            "h": 17
+          "dimensions_m": {
+            "l": 0.18,
+            "w": 0.74,
+            "h": 0.17
           }
         }
       ]
@@ -2365,10 +2365,10 @@
           "name": "Multi-lateral asynchronous customer loyalty",
           "quantity": 13,
           "weight_kg": 15.86,
-          "dimensions_cm": {
-            "l": 78,
-            "w": 95,
-            "h": 14
+          "dimensions_m": {
+            "l": 0.78,
+            "w": 0.95,
+            "h": 0.14
           }
         }
       ]
@@ -2392,10 +2392,10 @@
           "name": "Balanced encompassing pricing structure",
           "quantity": 2,
           "weight_kg": 7.79,
-          "dimensions_cm": {
-            "l": 93,
-            "w": 24,
-            "h": 16
+          "dimensions_m": {
+            "l": 0.93,
+            "w": 0.24,
+            "h": 0.16
           }
         },
         {
@@ -2404,10 +2404,10 @@
           "name": "Fully-configurable contextually-based adapter",
           "quantity": 6,
           "weight_kg": 15.3,
-          "dimensions_cm": {
-            "l": 74,
-            "w": 62,
-            "h": 7
+          "dimensions_m": {
+            "l": 0.74,
+            "w": 0.62,
+            "h": 0.07
           }
         },
         {
@@ -2416,10 +2416,10 @@
           "name": "Open-architected local process improvement",
           "quantity": 13,
           "weight_kg": 12.57,
-          "dimensions_cm": {
-            "l": 49,
-            "w": 37,
-            "h": 37
+          "dimensions_m": {
+            "l": 0.49,
+            "w": 0.37,
+            "h": 0.37
           }
         },
         {
@@ -2428,10 +2428,10 @@
           "name": "Team-oriented didactic throughput",
           "quantity": 7,
           "weight_kg": 20.52,
-          "dimensions_cm": {
-            "l": 45,
-            "w": 89,
-            "h": 61
+          "dimensions_m": {
+            "l": 0.45,
+            "w": 0.89,
+            "h": 0.61
           }
         }
       ]
@@ -2455,10 +2455,10 @@
           "name": "Multi-lateral cohesive task-force",
           "quantity": 9,
           "weight_kg": 11.06,
-          "dimensions_cm": {
-            "l": 26,
-            "w": 56,
-            "h": 58
+          "dimensions_m": {
+            "l": 0.26,
+            "w": 0.56,
+            "h": 0.58
           }
         },
         {
@@ -2467,10 +2467,10 @@
           "name": "Realigned clear-thinking software",
           "quantity": 3,
           "weight_kg": 27.63,
-          "dimensions_cm": {
-            "l": 20,
-            "w": 39,
-            "h": 38
+          "dimensions_m": {
+            "l": 0.2,
+            "w": 0.39,
+            "h": 0.38
           }
         },
         {
@@ -2478,11 +2478,11 @@
           "sku": "TEXT-2694",
           "name": "Programmable bandwidth-monitored matrix",
           "quantity": 4,
-          "weight_kg": 27.0,
-          "dimensions_cm": {
-            "l": 82,
-            "w": 51,
-            "h": 16
+          "weight_kg": 27,
+          "dimensions_m": {
+            "l": 0.82,
+            "w": 0.51,
+            "h": 0.16
           }
         },
         {
@@ -2491,10 +2491,10 @@
           "name": "Multi-layered composite hub",
           "quantity": 2,
           "weight_kg": 5.48,
-          "dimensions_cm": {
-            "l": 59,
-            "w": 90,
-            "h": 34
+          "dimensions_m": {
+            "l": 0.59,
+            "w": 0.9,
+            "h": 0.34
           }
         },
         {
@@ -2503,10 +2503,10 @@
           "name": "Persistent upward-trending core",
           "quantity": 14,
           "weight_kg": 6.18,
-          "dimensions_cm": {
-            "l": 51,
-            "w": 47,
-            "h": 59
+          "dimensions_m": {
+            "l": 0.51,
+            "w": 0.47,
+            "h": 0.59
           }
         }
       ]
@@ -2530,10 +2530,10 @@
           "name": "Reactive next generation matrices",
           "quantity": 8,
           "weight_kg": 18.2,
-          "dimensions_cm": {
-            "l": 90,
-            "w": 98,
-            "h": 48
+          "dimensions_m": {
+            "l": 0.9,
+            "w": 0.98,
+            "h": 0.48
           }
         }
       ]

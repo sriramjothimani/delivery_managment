@@ -6,7 +6,7 @@
             "type": "Small",
             "count": 15,
             "capacity": {
-                "volume": 20,
+                "volume": 10,
                 "weight": 2000,
                 "units": {
                     "volume": "cubic_meters",
@@ -41,7 +41,7 @@
             "type": "Medium",
             "count": 10,
             "capacity": {
-              "volume": 45,
+              "volume": 25,
               "weight": 5000,
               "units": {
                 "volume": "cubic_meters",
@@ -71,7 +71,7 @@
             "type": "Large",
             "count": 5,
             "capacity": {
-              "volume": 85,
+              "volume": 50,
               "weight": 10000,
               "units": {
                 "volume": "cubic_meters",

@@ -1,10 +1,11 @@
 from crewai.tools import BaseTool
 
+import json
 from typing import List
 from pydantic import BaseModel, Field
 
-from delivery_management.tasks.create_routes import ClusteredRoutesOutput
 from backup.models.clustered_orders import H3ClusteredOrdersInput
+from delivery_management.models.greedy_clusters import ClusteredRoutesOutput
 from delivery_management.tools.shared_data import get_shared
 
 class EnrichedLocation(BaseModel):
@@ -38,6 +39,7 @@ class EnrichClusteredOrders(BaseTool):
         clustered_routes_output: ClusteredRoutesOutput
     ) -> EnrichedRoutesOutput:
         
+        # print(clustered_routes_output.model_dump_json())
         clustered_orders_input: H3ClusteredOrdersInput = get_shared("h3_clustered_orders")
         # Create a lookup map for location_id to orders
         # location_map = {locations.location_id: locations for locations in clustered_orders_input.h3_clusters}

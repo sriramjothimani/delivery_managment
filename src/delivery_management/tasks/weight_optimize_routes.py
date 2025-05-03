@@ -5,8 +5,6 @@ from crewai import Task
 from pydantic import BaseModel, Field
 from typing import List, Literal, Optional
 
-from delivery_management.tools import enrich_clustered_orders, fleet
-
 class Locations(BaseModel):
     location_id: str = Field(..., description="Location ID to which the orders to be delivered")
     order_id: str = Field(..., description="Order id to be delivered")
@@ -34,25 +32,28 @@ class VolumeWeightOptimisedRoutes(BaseModel):
 # --------------------
 def fine_tune_routes_task(agent):
 
-    enrich_clusters_tool = enrich_clustered_orders.EnrichClusteredOrders()
-
     return Task(
         name="OptimiseRoutesWithVolumeAndWeight",
         description=(
-            "The H3-clustered routes produced earlier are not yet optimized for fleet capacity constraints (volume and weight). "
+            "The time-optimized routes produced earlier need final optimization for fleet capacity constraints (volume and weight). "
             "Use the 'EnrichClusteredOrders' tool to enrich these routes with accurate total weight and volume across all locations. "
-            "Fleet capacity limits such as volume and weight can be fetched using fleet_tool: "
-            "`capacity.volume`, `capacity.weight`, and their respective units from `capacity.units.volume` and `capacity.units.weight`. "
-            "Review the enriched routes and ensure that each one respects the fleet's capacity limits. "
-            "Start analyzing the route and try to fit it with the following constraints,"
-            " - Try to fit a small fleet to strat with "
-            " - If not feasible, split the route to fit as many small fleets as possible"
-            " - do not pick a medium until all the small fleets are exhausted"
-            " - same applies to large fleet, do not pick a large unless all mediums are exhausted"
-            " and the following guidelines,"
-            " - start with the total_weight_kg at the route level"
-            " - drill down to the location level while splitting the route to multiple fleets"
-            "**Your response must be a valid JSON object. Do not wrap it in quotes. And include an meaningful explanations inclusing valid metrics in a field called justification under every route. **"
+
+            "Your goal is to optimize weight distribution while preserving time constraints from previous optimization. "
+            "Follow these rules strictly:\n"
+            "- Use available fleet capacity limits from the 'FleetTool'.\n"
+            "- Do NOT exceed a fleet's maximum weight or volume capacity.\n"
+            "- Preserve time constraints - no route may exceed 8 delivery hours.\n"
+            "   - Small - max weight 2000kg and max volume 10 cubic_meters \n"
+            "   - Medium - max weight 5000kg and max volume 25 cubic_meters \n"
+            "   - Large - max weight 10000kg and max volume 50 cubic_meters \n"
+            "- Try to reduce significant under-utilization while maintaining time efficiency.\n"
+            "- You MAY redistribute locations between routes **within the same H3 index only**.\n"
+            "- Do NOT drop or ignore any location with valid orders.\n"
+            "- Priority orders (priority: true) must always be preserved in a valid route.\n"
+            "- Orders with inventory_issue: true must remain excluded.\n\n"
+
+            "If no improvement is possible for a route, retain it as is.\n\n"
+            "**Your response must be a valid JSON object. Do not wrap it in quotes. Include a meaningful explanations with appropriate metrics. **" 
         ),
         expected_output=(
             "{\n"
@@ -61,9 +62,9 @@ def fine_tune_routes_task(agent):
             "      \"h3_index\": \"86a8100c7ffffff\",\n"
             "      \"fleet_id\": \"MH14Y6543\",\n"
             "      \"fleet_type\": \"Large\",\n"
-            # "      \"total_weight_kg\": 2099.1,\n"
-            # "      \"total_volume_m3\": 14.808765999999999,\n"
-            "        \total_delivery_time\: 3,\n"
+            "      \"total_weight_kg\": 2099.1,\n"
+            "      \"total_volume_m3\": 14.808765999999999,\n"
+            "      \"total_delivery_time\": 3,\n"
             "      \"locations\": [\n"
             "        {\n"
             "          \"location_id\": \"LOC201\",\n"
@@ -77,26 +78,5 @@ def fine_tune_routes_task(agent):
             "}"
         ),
         agent=agent,
-        tools=[enrich_clusters_tool],
         output_json=VolumeWeightOptimisedRoutes
     )
-
-
-    # return Task(
-    #     name="OptimiseRoutesWithVolumeAndWeight",
-    #     description=(
-    #         "The H3 clustered orders lag volume and weight optimization. The clusters are not created as per the proper sum of all the weights/volume of orders"
-    #         "Use 'EnrichClusteredOrders' tool which refer static data and enrich the H3 clustered order to have total volume and weight across locations under a route" 
-    #         "The fleets capacity of volume and weight can be identified from capacity.volume and capacity.weight. Their units from capacity.units.weight and capacity.units.volume"
-    #         "Use the EnrichedRoutesOutput and optimise it with volume and weight limitations of the fleets."
-    #     ),
-    #     expected_output=(
-    #         "A JSON object with key 'routes', which is a list of route objects. "
-    #         "Your output must be in the below JSON format:"
-    #         "{'routes': [{'h3_index':'86a8100c7ffffff', 'fleet_id': 'MH14Y6543', 'fleet_type': 'Small', 'location_ids': ['LOC201', 'LOC202'], "
-    #         "'total_weight_kg': 800.0, 'total_volume_m3': 4.2}]}"
-    #     ),
-    #     agent=agent,
-    #     tools=[enrich_clusters_tool],
-    #     output_json=VolumeWeightOptimisedRoutes
-    # )
