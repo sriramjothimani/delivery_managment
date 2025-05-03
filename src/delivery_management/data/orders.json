@@ -4,7 +4,7 @@
       "order_id": "ORD2001",
       "location_id": "LOC201",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "USNS Summers, FPO AP 07163",
       "geo": {
         "lat": 13.015,
@@ -55,7 +55,7 @@
       "order_id": "ORD2002",
       "location_id": "LOC202",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "497 Christopher Key, North Anaborough, OR 12354",
       "geo": {
         "lat": 12.905,
@@ -121,7 +121,7 @@
       "order_id": "ORD2004",
       "location_id": "LOC204",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "Unit 2665 Box 0415, DPO AA 78074",
       "geo": {
         "lat": 12.92,
@@ -187,7 +187,7 @@
       "order_id": "ORD2006",
       "location_id": "LOC206",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "19337 Juan Street, Lake Bruce, IA 71789",
       "geo": {
         "lat": 13,
@@ -355,7 +355,7 @@
       "order_id": "ORD2010",
       "location_id": "LOC210",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "1459 Moore Manors, North Stacy, RI 34574",
       "geo": {
         "lat": 12.905,
@@ -406,7 +406,7 @@
       "order_id": "ORD2011",
       "location_id": "LOC211",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "630 Kevin Curve, West Adamland, DE 76942",
       "geo": {
         "lat": 13.015,
@@ -520,7 +520,7 @@
       "order_id": "ORD2013",
       "location_id": "LOC213",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "USNS Lambert, FPO AP 10807",
       "geo": {
         "lat": 13.11,
@@ -709,7 +709,7 @@
       "order_id": "ORD2016",
       "location_id": "LOC216",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "32009 Lee Islands Apt. 133, Alexisberg, AL 90174",
       "geo": {
         "lat": 12.92,
@@ -748,7 +748,7 @@
       "order_id": "ORD2017",
       "location_id": "LOC217",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "23532 Travis Estates, Timothymouth, NC 16013",
       "geo": {
         "lat": 12.92,
@@ -775,7 +775,7 @@
       "order_id": "ORD2018",
       "location_id": "LOC218",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "901 Karen Port Apt. 023, Amyland, IN 87746",
       "geo": {
         "lat": 13.14,
@@ -877,7 +877,7 @@
       "order_id": "ORD2020",
       "location_id": "LOC220",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "9563 Desiree Fords Suite 070, New Jason, NH 90876",
       "geo": {
         "lat": 13.015,
@@ -928,7 +928,7 @@
       "order_id": "ORD2021",
       "location_id": "LOC221",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "730 Murphy Ferry Apt. 917, Port Isaac, KS 40112",
       "geo": {
         "lat": 13.03,
@@ -1105,7 +1105,7 @@
       "order_id": "ORD2024",
       "location_id": "LOC224",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "165 Adkins Mills, East Susan, WV 54789",
       "geo": {
         "lat": 12.905,
@@ -1195,7 +1195,7 @@
       "order_id": "ORD2026",
       "location_id": "LOC226",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "03737 Jose Common Apt. 433, Georgemouth, KY 88812",
       "geo": {
         "lat": 12.905,
@@ -1285,7 +1285,7 @@
       "order_id": "ORD2028",
       "location_id": "LOC228",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "5728 Cheryl Courts Apt. 332, North Elizabeth, OK 17790",
       "geo": {
         "lat": 13.015,
@@ -1462,7 +1462,7 @@
       "order_id": "ORD2031",
       "location_id": "LOC231",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "31560 Amber Roads, Lake Danahaven, NC 02656",
       "geo": {
         "lat": 12.86,
@@ -1525,7 +1525,7 @@
       "order_id": "ORD2032",
       "location_id": "LOC232",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "450 Amy Lights, Bakerport, CA 50236",
       "geo": {
         "lat": 13.1,
@@ -1627,7 +1627,7 @@
       "order_id": "ORD2034",
       "location_id": "LOC234",
       "delivery_date": "2025-04-12",
-      "priority": "high",
+      "priority": "normal",
       "address": "795 Garrett Lights Apt. 569, West Anthony, ME 36903",
       "geo": {
         "lat": 12.91,

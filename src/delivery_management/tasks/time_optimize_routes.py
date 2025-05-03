@@ -6,7 +6,7 @@ from crewai import Task
 # ------------------------
 from delivery_management.models.time_optimized_clusters import TimeOptimisedRoutes
 
-from delivery_management.tools import time_constraints
+from delivery_management.tools import time_constraints, enrich_clustered_orders
 
 
 
@@ -16,6 +16,7 @@ from delivery_management.tools import time_constraints
 def time_optimize_routes_task(agent):
 
     BASE_DIR = Path(__file__).resolve().parent.parent
+    enrich_clusters_tool = enrich_clustered_orders.EnrichClusteredOrders()
 
     time_constraints_tool = time_constraints.TimeConstraints()\
         .with_data_file(Path(BASE_DIR / "data/time_constraints.json"))
@@ -25,6 +26,7 @@ def time_optimize_routes_task(agent):
         name="OptimizeRoutesWithTimeConstraints",
         description=(
             "You are given initial delivery routes clustered by H3 index but not yet optimized for time or weight constraints.\n\n"
+            "Use the 'EnrichClusteredOrders' tool to enrich these routes with accurate total weight and volume across all locations. "
 
             "Your task: First optimize these routes for time constraints while preserving weight/volume information:\n"
             "- Delivery window: 08:00 AM–05:00 PM (9 hours).\n"
@@ -53,7 +55,7 @@ def time_optimize_routes_task(agent):
             "- No assumptions about package size, weight, or traffic uniformity.\n"
             "- No route may exceed 8 delivery hours, weight, volume, or driving time limits.\n\n"
 
-            "**Return a properly structured TimeOptimisedRoutes object that includes all required fields for enrichment.**"
+            "**Return a properly structured TimeOptimisedRoutes object that includes all required fields for enrichment. Include a meaningful explanations with appropriate metrics.**"
         ),
 
         expected_output=(
@@ -65,7 +67,6 @@ def time_optimize_routes_task(agent):
             "      \"fleet_id\": \"MH14Y6543\",\n"
             "      \"fleet_type\": \"Large\",\n"
             "      \"total_delivery_time\": 3,\n"
-            "      \"justification\": \"test\",\n"
             "      \"locations\": [\n"
             "        {\n"
             "          \"location_id\": \"LOC201\",\n"
@@ -79,7 +80,7 @@ def time_optimize_routes_task(agent):
             "}"
         ),
         agent=agent,
-        tools=[time_constraints_tool],
+        tools=[enrich_clusters_tool, time_constraints_tool],
         output_json=TimeOptimisedRoutes
     )
 

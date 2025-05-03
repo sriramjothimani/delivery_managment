@@ -50,9 +50,6 @@ class PriorityOrder(BaseModel):
     order_id: str = Field(..., description="unique id of the order")
     location_id: str = Field(..., description="location id")
     priority: str = Field(..., description="priority of the order")
-    product: str = Field(..., description="product id of the order")
-    quantity: int = Field(..., description="quantitiy of the product under the order")
-    metadata: Optional[SKUMeta] = Field(..., description="product metadata")
 
 class WeightVolumeSummary(BaseModel):
     total_weight_kg: float = Field(..., description="total weight of the products in kg for a location")
@@ -157,6 +154,13 @@ class ClusterOrdersByGeoTool(BaseTool):
             priority = order.get("priority")
             packages = order.get("packages", [])
 
+            if priority == "high":
+                priority_orders.append(PriorityOrder(
+                    order_id=order_id,
+                    location_id=location_id,
+                    priority=priority,
+                ))            
+
             if not packages:
                 continue
 
@@ -182,16 +186,6 @@ class ClusterOrdersByGeoTool(BaseTool):
 
                 product_counter[sku] += quantity
                 raw_order_index[sku].append((order_id, location_id, quantity))
-
-                if priority == "high":
-                    priority_orders.append(PriorityOrder(
-                        order_id=order_id,
-                        location_id=location_id,
-                        priority=priority,
-                        product=sku,
-                        quantity=quantity,
-                        metadata=metadata
-                    ))
 
                 weight_volume_tracker[location_id]["weight"] += weight * quantity
                 weight_volume_tracker[location_id]["volume"] += volume * quantity

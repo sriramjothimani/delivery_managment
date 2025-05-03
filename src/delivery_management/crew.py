@@ -72,7 +72,7 @@ class DeliveryManagement():
         config = agents_config['TimeOptimizerAgent'],
         memory= True,
         verbose= True,
-        tools=[enrich_clusters_tool, fleet_tool],
+        tools=[fleet_tool],
         llm = llm
     )
 

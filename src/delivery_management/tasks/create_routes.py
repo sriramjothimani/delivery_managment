@@ -39,7 +39,7 @@ def create_cluster_orders_into_routes_task(agent):
             "- Each route must include: h3_index, fleet_id, fleet_type, total_delivery_time_hours, location_ids.\n"
             "- One route must not contain locations from multiple H3 clusters.\n\n"
 
-            "**Return a valid compact JSON object without wrapping it as a string.**"
+            "**Return a valid compact JSON object without wrapping it as a string. Include a meaningful explanations with appropriate metrics.**"
         ),
         expected_output=(
             "{\n"
