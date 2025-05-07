@@ -4,7 +4,7 @@ from crewai import Task
 # ------------------------
 # Pydantic Output Schema
 # ------------------------
-from delivery_management.models.time_optimized_clusters import TimeOptimisedRoutes
+from delivery_management.models.optimized_routes import OptimizedRoutes
 from delivery_management.tools import time_constraints, enrich_clustered_orders, fleet
 
 # --------------------
@@ -79,6 +79,6 @@ def time_optimize_routes_task(agent):
         ),
         agent=agent,
         tools=[enrich_clusters_tool, time_constraints_tool, fleet_tool],
-        output_json=TimeOptimisedRoutes
+        output_json=OptimizedRoutes
     )
 

@@ -9,7 +9,7 @@ from delivery_management.tools import (
 # ------------------------
 # Pydantic Output Schema
 # ------------------------
-from delivery_management.models.greedy_clusters import ClusteredRoutesOutput
+from delivery_management.models.greedy_routes import GreedyRoutes
 
 # --------------------
 # Task Factory
@@ -45,7 +45,7 @@ def create_cluster_orders_into_routes_task(agent):
             "Return a JSON object containing:\n"
             "- h3_index\n"
             "- total_delivery_time_hours\n"
-            "- a list of location_ids included in the route\n\n"
+            "- a list of location objects (locations) included in the route\n\n"
 
             "Fleet assignment and load balancing will be handled in later stages.\n"
             "**Return a valid compact JSON object. Do not wrap it in quotes.**"
@@ -56,13 +56,18 @@ def create_cluster_orders_into_routes_task(agent):
             "    {\n"
             "      \"h3_index\": \"86a8100c7ffffff\",\n"
             "      \"total_delivery_time_hours\": 7.8,\n"
-            "      \"location_ids\": [\"LOC201\", \"LOC202\"]\n"
+            "      \"locations\": [\n"
+            "        {\n"
+            "          \"location_id\": \"LOC201\",\n"
+            "          \"order_id\": \"ORD2001\"\n"
+            "        }\n"
+            "      ]\n"
             "    }\n"
             "  ]\n"
             "}"
         ),
         agent=agent,
         tools=[cluster_orders_tool, fleet_tool],
-        output_json=ClusteredRoutesOutput
+        output_json=GreedyRoutes
     )
 

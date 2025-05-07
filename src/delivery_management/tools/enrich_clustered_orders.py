@@ -5,7 +5,7 @@ from typing import List
 from pydantic import BaseModel, Field
 
 from backup.models.clustered_orders import H3ClusteredOrdersInput
-from delivery_management.models.greedy_clusters import ClusteredRoutesOutput
+from delivery_management.models.greedy_routes import GreedyRoutes
 from delivery_management.tools.shared_data import get_shared
 
 class EnrichedLocation(BaseModel):
@@ -36,7 +36,7 @@ class EnrichClusteredOrders(BaseTool):
 
     def enrich_routes(
         self,
-        clustered_routes_output: ClusteredRoutesOutput
+        clustered_routes_output: GreedyRoutes
     ) -> EnrichedRoutesOutput:
         
         # print(clustered_routes_output.model_dump_json())
@@ -57,7 +57,8 @@ class EnrichClusteredOrders(BaseTool):
             route_weight = 0.0
             route_volume = 0.0
 
-            for loc_id in route["location_ids"]:
+            for location in route["locations"]:
+                loc_id = location["location_id"]
                 location_cluster = location_map.get(loc_id)
                 if not location_cluster:
                     continue
@@ -96,5 +97,5 @@ class EnrichClusteredOrders(BaseTool):
 
         return EnrichedRoutesOutput(routes=enriched_routes)
 
-    def _run(self, clustered_routes_output: ClusteredRoutesOutput) -> EnrichedRoutesOutput:
+    def _run(self, clustered_routes_output: GreedyRoutes) -> EnrichedRoutesOutput:
         return self.enrich_routes(clustered_routes_output)
