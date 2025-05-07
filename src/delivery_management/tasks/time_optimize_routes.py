@@ -29,7 +29,7 @@ def time_optimize_routes_task(agent):
             "- Delivery window: 08:00 AM–05:00 PM (9 hours).\n"
             "- Maximum total delivery time per route: **8 hours** (excluding breaks and travel overhead).\n"
             "- Drivers may drive 4 hours maximum, then must take a 45-minute break.\n"
-            "- Peak hours (07:30–09:00, 16:30–18:30) increase travel time (impact factor provided).\n\n"
+            "- Peak hours (07:30–09:00, 16:30–18:30) increase travel time 1.5 and 1.7 times.\n\n"
 
             "Splitting Rules:\n"
             "- If total delivery time > 8 hours, **split** into multiple sub-routes.\n"
@@ -38,10 +38,14 @@ def time_optimize_routes_task(agent):
             "- No mixing locations across different H3 indexes.\n"
             "- No dropping locations.\n\n"
 
-            "Fleet Assignment Rules:\n"
-            "- Prefer Small fleets first, then Medium, then Large.\n"
-            "- Use only available fleet IDs from the Fleet tool.\n"
-            "- Respect fleet capacity (weight and volume)\n\n"
+            "Fleet Assignment Rules (Time Optimization Focus):\n"
+            "- Prefer smaller fleets for better time efficiency in most cases\n"
+            "- Consider that larger fleets may have longer loading/unloading times\n"
+            "- Use only available fleet IDs from the Fleet tool\n"
+            "- Reserve Large fleets only for:\n"
+            "  - Routes with many locations where consolidation saves significant time\n"
+            "  - Areas with known traffic bottlenecks\n"
+            "- Never assign a larger fleet unless it demonstrably improves time efficiency\n\n"
             
             "Important:\n"
             "- Fleet size affects both capacity and time efficiency\n"

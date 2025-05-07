@@ -79,10 +79,14 @@ class EnrichClusteredOrders(BaseTool):
                 )
                 enriched_locations.append(enriched_location)
             
+            # Only assign fleet_id if it exists in the route
+            fleet_id = route.get("fleet_id") if "fleet_id" in route else ""
+            fleet_type = route.get("fleet_type") if "fleet_type" in route else ""
+            
             enriched_route = EnrichedRoute(
                 h3_index=route["h3_index"],
-                fleet_id=route["fleet_id"],
-                fleet_type=route["fleet_type"],
+                fleet_id=fleet_id,
+                fleet_type=fleet_type,
                 total_weight_kg=route_weight,
                 total_volume_m3=route_volume,
                 total_delivery_time=sum(location.est_delivery_time_hours for location in enriched_locations),
