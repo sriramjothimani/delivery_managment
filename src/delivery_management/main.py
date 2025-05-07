@@ -23,7 +23,8 @@ def run():
     }
     
     try:
-        DeliveryManagement().crew().kickoff(inputs=inputs)
+        results = DeliveryManagement().crew().kickoff(inputs=inputs)
+        print(results)
         # fleetCrew.kickoff(inputs=inputs)
         # for task in fleetCrew.tasks:
         #     print(f"""

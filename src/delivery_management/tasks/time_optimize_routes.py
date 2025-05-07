@@ -5,10 +5,7 @@ from crewai import Task
 # Pydantic Output Schema
 # ------------------------
 from delivery_management.models.time_optimized_clusters import TimeOptimisedRoutes
-
-from delivery_management.tools import time_constraints, enrich_clustered_orders
-
-
+from delivery_management.tools import time_constraints, enrich_clustered_orders, fleet
 
 # --------------------
 # Task Factory
@@ -21,14 +18,14 @@ def time_optimize_routes_task(agent):
     time_constraints_tool = time_constraints.TimeConstraints()\
         .with_data_file(Path(BASE_DIR / "data/time_constraints.json"))
     
-
+    fleet_tool = fleet.Fleet()
     return Task(
         name="OptimizeRoutesWithTimeConstraints",
         description=(
             "You are given initial delivery routes clustered by H3 index but not yet optimized for time or weight constraints.\n\n"
             "Use the 'EnrichClusteredOrders' tool to enrich these routes with accurate total weight and volume across all locations. "
 
-            "Your task: First optimize these routes for time constraints while preserving weight/volume information:\n"
+            "Your task: First optimize these routes for time constraints:\n"
             "- Delivery window: 08:00 AM–05:00 PM (9 hours).\n"
             "- Maximum total delivery time per route: **8 hours** (excluding breaks and travel overhead).\n"
             "- Drivers may drive 4 hours maximum, then must take a 45-minute break.\n"
@@ -44,10 +41,10 @@ def time_optimize_routes_task(agent):
             "Fleet Assignment Rules:\n"
             "- Prefer Small fleets first, then Medium, then Large.\n"
             "- Use only available fleet IDs from the Fleet tool.\n"
-            "- Respect fleet capacity (weight and volume) - preserve this data for later optimization.\n\n"
+            "- Respect fleet capacity (weight and volume)\n\n"
             
             "Important:\n"
-            "- Fleet size affects both capacity and time efficiency - preserve weight/volume data.\n"
+            "- Fleet size affects both capacity and time efficiency\n"
             "- Delivery time limits (max 8 hours) apply to all fleets equally.\n"
             "- Larger fleets cannot deliver beyond the 8-hour window.\n\n"            
 
@@ -66,13 +63,10 @@ def time_optimize_routes_task(agent):
             "      \"h3_index\": \"86a8100c7ffffff\",\n"
             "      \"fleet_id\": \"MH14Y6543\",\n"
             "      \"fleet_type\": \"Large\",\n"
-            "      \"total_delivery_time\": 3,\n"
             "      \"locations\": [\n"
             "        {\n"
             "          \"location_id\": \"LOC201\",\n"
-            "          \"order_id\": \"ORD2001\",\n"
-            "          \"order_count\": 3,\n"
-            "          \"est_delivery_time_hours\": 4\n"
+            "          \"order_id\": \"ORD2001\"\n"
             "        }\n"
             "      ]\n"
             "    }\n"
@@ -80,7 +74,7 @@ def time_optimize_routes_task(agent):
             "}"
         ),
         agent=agent,
-        tools=[enrich_clusters_tool, time_constraints_tool],
+        tools=[enrich_clusters_tool, time_constraints_tool, fleet_tool],
         output_json=TimeOptimisedRoutes
     )
 

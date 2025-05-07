@@ -1,7 +1,11 @@
 from crewai import Task
 from typing import List
+from pathlib import Path
 from pydantic import BaseModel
-
+from delivery_management.tools import (
+    cluster_orders,
+    fleet
+)
 # ------------------------
 # Pydantic Output Schema
 # ------------------------
@@ -11,6 +15,15 @@ from delivery_management.models.greedy_clusters import ClusteredRoutesOutput
 # Task Factory
 # --------------------
 def create_cluster_orders_into_routes_task(agent):
+    BASE_DIR = Path(__file__).resolve().parent.parent
+
+    cluster_orders_tool = cluster_orders.ClusterOrdersByGeoTool()\
+        .with_orders_file(Path(BASE_DIR / "data/orders.json"))\
+        .with_geolocations_file(Path(BASE_DIR / "data/geolocations.json"))\
+        .with_static_ref_file(Path(BASE_DIR / "data/static_reference_data.json"))\
+        .with_inventory_file(Path(BASE_DIR / "data/inventory.json"))
+        
+    fleet_tool = fleet.Fleet()
 
     return Task(
         name="ClusterOrdersIntoRoutes",
@@ -55,6 +68,7 @@ def create_cluster_orders_into_routes_task(agent):
             "}"
         ),
         agent=agent,
+        tools=[cluster_orders_tool, fleet_tool],
         output_json=ClusteredRoutesOutput
     )
 

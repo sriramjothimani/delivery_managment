@@ -4,22 +4,24 @@ from crewai import Task
 # ------------------------
 from pydantic import BaseModel, Field
 from typing import List, Literal, Optional
+from delivery_management.tools import fleet
+from delivery_management.tools import enrich_clustered_orders, fleet
 
 class Locations(BaseModel):
     location_id: str = Field(..., description="Location ID to which the orders to be delivered")
     order_id: str = Field(..., description="Order id to be delivered")
-    order_count: int = Field(..., description="count of packages")
+    # order_count: int = Field(..., description="count of packages")
     # total_weight_kg: float = Field(..., description="total weight of the orders to be delivered in that location") 
     # total_volume_m3: float = Field(..., description="total volume of the orders to be delivered in that location")
-    est_delivery_time_hours: float = Field(..., description="estimated delivery time for all the packages in a particular location")
+    # est_delivery_time_hours: float = Field(..., description="estimated delivery time for all the packages in a particular location")
 
 class Route(BaseModel):
     h3_index: Optional[str] = Field(..., description="H3 index representing the clustered area")
     fleet_id: str = Field(..., description="Unique identifier for the fleet assigned to the route")
     fleet_type: Literal["Small", "Medium", "Large"] = Field(..., description="Type of fleet used for delivery")
-    total_weight_kg: float = Field(..., description="a sum of product of quantity and weight of all the packages of all the orders under the route")
-    total_volume_m3: float = Field(..., description="a sum of volume of all the packages of all the orders under the route")
-    total_delivery_time: float = Field(..., description="estimated total delivery time for the route")
+    # total_weight_kg: float = Field(..., description="a sum of product of quantity and weight of all the packages of all the orders under the route")
+    # total_volume_m3: float = Field(..., description="a sum of volume of all the packages of all the orders under the route")
+    # total_delivery_time: float = Field(..., description="estimated total delivery time for the route")
     locations: List[Locations] = Field(..., description="List of Locations with their corresponding order counts")
     justification: str = Field(..., description="a justification under every route on why that is planned the way it is planned")
 
@@ -32,6 +34,9 @@ class VolumeWeightOptimisedRoutes(BaseModel):
 # --------------------
 def fine_tune_routes_task(agent):
 
+    enrich_clusters_tool = enrich_clustered_orders.EnrichClusteredOrders()
+
+    fleet_tool = fleet.Fleet()
     return Task(
         name="OptimiseRoutesWithVolumeAndWeight",
         description=(
@@ -62,15 +67,10 @@ def fine_tune_routes_task(agent):
             "      \"h3_index\": \"86a8100c7ffffff\",\n"
             "      \"fleet_id\": \"MH14Y6543\",\n"
             "      \"fleet_type\": \"Large\",\n"
-            "      \"total_weight_kg\": 2099.1,\n"
-            "      \"total_volume_m3\": 14.808765999999999,\n"
-            "      \"total_delivery_time\": 3,\n"
             "      \"locations\": [\n"
             "        {\n"
             "          \"location_id\": \"LOC201\",\n"
             "          \"order_id\": \"ORD2001\",\n"
-            "          \"order_count\": 3,\n"
-            "          \"est_delivery_time_hours\": 3\n"
             "        }\n"
             "      ]\n"
             "    }\n"
@@ -78,5 +78,6 @@ def fine_tune_routes_task(agent):
             "}"
         ),
         agent=agent,
+        tools=[enrich_clusters_tool, fleet_tool],
         output_json=VolumeWeightOptimisedRoutes
     )

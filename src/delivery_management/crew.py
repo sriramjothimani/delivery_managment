@@ -47,7 +47,7 @@ class DeliveryManagement():
 
     # litellm._turn_on_debug()
 
-    analyzer_tool = cluster_orders.ClusterOrdersByGeoTool()\
+    cluster_orders_tool = cluster_orders.ClusterOrdersByGeoTool()\
         .with_orders_file(Path(BASE_DIR / "data/orders.json"))\
         .with_geolocations_file(Path(BASE_DIR / "data/geolocations.json"))\
         .with_static_ref_file(Path(BASE_DIR / "data/static_reference_data.json"))\
@@ -63,7 +63,7 @@ class DeliveryManagement():
         config= agents_config['GreedyFleetManagerAgent'],
         memory= True,
         verbose=True,
-        tools=[analyzer_tool, fleet_tool],
+        # tools=[fleet_tool],
         # llm='openai/gpt-4-turbo'
         llm = llm
     )
@@ -72,7 +72,7 @@ class DeliveryManagement():
         config = agents_config['TimeOptimizerAgent'],
         memory= True,
         verbose= True,
-        tools=[fleet_tool],
+        # tools=[fleet_tool],
         llm = llm
     )
 
@@ -80,7 +80,7 @@ class DeliveryManagement():
         config = agents_config['WeightOptimizerAgent'],
         memory= True,
         verbose= True,
-        tools=[fleet_tool],
+        # tools=[fleet_tool],
         llm = llm
     )
 
