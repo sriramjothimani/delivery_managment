@@ -44,7 +44,6 @@ def create_cluster_orders_into_routes_task(agent):
             "**Output**:\n"
             "Return a JSON object containing:\n"
             "- h3_index\n"
-            "- total_delivery_time_hours\n"
             "- a list of location objects (locations) included in the route\n\n"
 
             "Fleet assignment and load balancing will be handled in later stages.\n"
@@ -55,7 +54,6 @@ def create_cluster_orders_into_routes_task(agent):
             "  \"routes\": [\n"
             "    {\n"
             "      \"h3_index\": \"86a8100c7ffffff\",\n"
-            "      \"total_delivery_time_hours\": 7.8,\n"
             "      \"locations\": [\n"
             "        {\n"
             "          \"location_id\": \"LOC201\",\n"

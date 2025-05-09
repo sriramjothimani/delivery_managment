@@ -1,37 +1,26 @@
 from crewai import Task
-# ------------------------
-# Pydantic Output Schema
-# ------------------------
-from pydantic import BaseModel, Field
-from typing import List, Literal, Optional
 from delivery_management.models.optimized_routes import OptimizedRoutes
-from delivery_management.tools import fleet
-from delivery_management.tools import enrich_clustered_orders, fleet
+from delivery_management.tools import fleet, enrich_clustered_orders
 
-# --------------------
-# Task Factory
-# --------------------
 def fine_tune_routes_task(agent):
-
     enrich_clusters_tool = enrich_clustered_orders.EnrichClusteredOrders()
-
     fleet_tool = fleet.Fleet()
     return Task(
         name="OptimiseRoutesWithWeight",
         description=(
-            "The time-optimized routes produced earlier need final optimization for fleet capacity constraints (volume and weight). "
-            "Use the 'EnrichClusteredOrders' tool to enrich these routes with accurate total weight and volume across all locations. "
-
-            "Your goal is to STRICTLY optimize for weight constraints while preserving time optimization. "
-            "This is the first optimization pass - volume will be handled separately.\n"
+            "Optimize routes for weight constraints using fleet capabilities.\n"
+            "Key Rules:\n"
+            "1. Never exceed fleet weight capacities\n"
+            "2. Preserve existing time windows\n"
+            "3. Only adjust fleet assignments when necessary\n"
             "Follow these rules absolutely:\n"
             "- Use available fleet weight capacity limits from the 'FleetTool'.\n"
             "- Do NOT exceed a fleet's maximum weight capacity under any circumstances\n"
             "- Preserve time constraints - no route may exceed 8 delivery hours\n\n"
             "Fleet Weight Capacity Evaluation:\n"
-            "- Small: 1000kg capacity\n"
-            "- Medium: 2000kg capacity\n"
-            "- Large: 5000kg capacity\n\n"
+            "- Small: 2000kg capacity\n"
+            "- Medium: 5000kg capacity\n"
+            "- Large: 10000kg capacity\n\n"
             "Optimal Fleet Selection Rules:\n"
             "1. First evaluate ALL possible fleet options that can handle the route's weight\n"
             "2. Consider:\n"
@@ -65,6 +54,7 @@ def fine_tune_routes_task(agent):
             "      \"h3_index\": \"86a8100c7ffffff\",\n"
             "      \"fleet_id\": \"MH14Y6543\",\n"
             "      \"fleet_type\": \"Large\",\n"
+            "      \"justification\": \"bla bla blah\",\n"
             "      \"locations\": [\n"
             "        {\n"
             "          \"location_id\": \"LOC201\",\n"

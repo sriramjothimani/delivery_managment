@@ -212,26 +212,6 @@ class ClusterOrdersByGeoTool(BaseTool):
             for loc_id, orders in location_clusters.items()
         ]
 
-    def _build_product_summary(self, product_counter, sku_map_flat) -> List[ProductSummary]:
-        return [
-            ProductSummary(
-                product=sku,
-                total_quantity=qty,
-                metadata=SKUMeta(**sku_map_flat[sku]) if sku in sku_map_flat else None
-            )
-            for sku, qty in product_counter.items()
-        ]
-
-    def _build_weight_volume_summary(self, weight_volume_tracker) -> List[WeightVolumeSummary]:
-        return [
-            WeightVolumeSummary(
-                location_id='TOTAL' if loc_id == "__total__" else loc_id,
-                total_weight_kg=round(data["weight"], 2),
-                total_volume_cm3=round(data["volume"], 2)
-            )
-            for loc_id, data in weight_volume_tracker.items()
-        ]
-
     def _apply_h3_geo_clustering(self, clustered_orders_input: ClusteredOrdersInput, resolution: int) -> H3ClusteredOrdersInput:
         """
         Apply H3 clustering on the location data in the ClusteredOrdersInput.
@@ -273,10 +253,7 @@ class ClusterOrdersByGeoTool(BaseTool):
 
         # Return the updated clustered orders input with H3 clustering applied
         return H3ClusteredOrdersInput(
-            # product_summary=clustered_orders_input.product_summary,
             priority_orders=clustered_orders_input.priority_orders,
-            # weight_volume_summary=clustered_orders_input.weight_volume_summary,
-            # inventory_issues=clustered_orders_input.inventory_issues,
             h3_clusters=h3_location_clusters
         )
 

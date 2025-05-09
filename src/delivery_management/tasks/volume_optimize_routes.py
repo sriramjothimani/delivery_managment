@@ -1,28 +1,24 @@
 from crewai import Task
-# ------------------------
-# Pydantic Output Schema
-# ------------------------
-from pydantic import BaseModel, Field
-from typing import List, Literal, Optional
+from pathlib import Path
 from delivery_management.models.optimized_routes import OptimizedRoutes
-from delivery_management.tools import fleet
-from delivery_management.tools import enrich_clustered_orders, fleet
+from delivery_management.tools import fleet, time_constraints, enrich_clustered_orders
 
-# --------------------
-# Task Factory
-# --------------------
 def fine_tune_routes_task(agent):
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    
     enrich_clusters_tool = enrich_clustered_orders.EnrichClusteredOrders()
+    time_constraints_tool = time_constraints.TimeConstraints()\
+        .with_data_file(Path(BASE_DIR / "data/time_constraints.json"))
     fleet_tool = fleet.Fleet()
     
     return Task(
         name="OptimiseRoutesWithVolume",
         description=(
-            "The weight-optimized routes produced earlier need final optimization for fleet volume constraints. "
-            "Use the 'EnrichClusteredOrders' tool to enrich these routes with accurate total volume across all locations. "
-            
-            "Your goal is to STRICTLY optimize for volume constraints while preserving weight and time optimization. "
-            "Follow these rules absolutely:\n"
+            "Final optimization for volume while preserving all time and weight decisions.\n"
+            "Key Rules:\n"
+            "1. Validate time and weight constraints first\n"
+            "2. Only adjust packing configurations\n"
+            "3. Never violate previous optimizations\n"
             "- Use available fleet volume capacity limits from the 'FleetTool'.\n"
             "- Do NOT exceed a fleet's maximum volume capacity under any circumstances\n"
             "- Preserve weight and time constraints from previous optimizations\n\n"
@@ -56,6 +52,7 @@ def fine_tune_routes_task(agent):
             "      \"h3_index\": \"86a8100c7ffffff\",\n"
             "      \"fleet_id\": \"MH14Y6543\",\n"
             "      \"fleet_type\": \"Large\",\n"
+            "      \"justification\": \"bla bla blah\",\n"
             "      \"locations\": [\n"
             "        {\n"
             "          \"location_id\": \"LOC201\",\n"
@@ -67,6 +64,6 @@ def fine_tune_routes_task(agent):
             "}"
         ),
         agent=agent,
-        tools=[enrich_clusters_tool, fleet_tool],
+        tools=[enrich_clusters_tool, fleet_tool, time_constraints_tool],
         output_json=OptimizedRoutes
     )

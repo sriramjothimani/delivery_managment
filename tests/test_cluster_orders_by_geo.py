@@ -1,5 +1,11 @@
 import json
+import sys
 from pathlib import Path
+
+# Add src directory to Python path
+BASE_DIR = Path(__file__).resolve().parent.parent
+sys.path.append(str(BASE_DIR / "src"))
+
 from delivery_management.tools.cluster_orders import ClusterOrdersByGeoTool  # Replace with actual import
 
 # Test cases for ClusterOrdersByGeoTool
