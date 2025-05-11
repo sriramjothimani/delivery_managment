@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 import sys
 import warnings
-
+import pprint
 from datetime import datetime
 
 from delivery_management.crew import DeliveryManagement
+from delivery_management.tools.enrich_final_output import FinalOutputEnricher
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
@@ -23,16 +24,13 @@ def run():
     }
     
     try:
+        # Get initial optimization results
         results = DeliveryManagement().crew().kickoff(inputs=inputs)
-        print(results)
-        # fleetCrew.kickoff(inputs=inputs)
-        # for task in fleetCrew.tasks:
-        #     print(f"""
-        #     Task completed!
-        #     Task ID: {task.id}
-        #     Task: {task.output.description}
-        #     Output: {task.output.raw}
-        #     """)
+        
+        # Enrich with detailed order information
+        enricher = FinalOutputEnricher()._run(results)
+        print(enricher.model_dump_json())
+
     except Exception as e:
         raise Exception(f"An error occurred while running the crew: {e}")
 
