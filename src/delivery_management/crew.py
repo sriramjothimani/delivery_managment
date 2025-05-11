@@ -14,7 +14,8 @@ from delivery_management.tasks import (
     create_routes,
     time_optimize_routes,
     weight_optimize_routes,
-    volume_optimize_routes
+    volume_optimize_routes,
+    summarize_optimizations
 )
 
 # If you want to run a snippet of code before or after the crew starts,
@@ -93,12 +94,20 @@ class DeliveryManagement():
         llm = llm
     )
 
+    summarizeOptimizationAgent = Agent(
+        config = agents_config['OptimizationSummarizerAgent'],
+        memory= True,
+        verbose= True,
+        llm= llm
+    )
+
     # Define Tasks
 
     create_routes = create_routes.create_cluster_orders_into_routes_task(greedyFleetManagerAgent)
     time_optimize_routes = time_optimize_routes.time_optimize_routes_task(timeOptimizerAgent)
     weight_optimize_routes = weight_optimize_routes.fine_tune_routes_task(weightOptimizerAgent)
     volume_optimize_routes = volume_optimize_routes.fine_tune_routes_task(volumeOptimizerAgent)
+    summarize_optized_routes = summarize_optimizations.create_summary_task(summarizeOptimizationAgent)
 
     def crew(self) -> Crew:
         """Creates the DeliveryManagement crew"""
@@ -106,17 +115,9 @@ class DeliveryManagement():
         # https://docs.crewai.com/concepts/knowledge#what-is-knowledge
 
         return Crew(
-            agents= [self.greedyFleetManagerAgent, self.timeOptimizerAgent, self.weightOptimizerAgent, self.volumeOptimizerAgent],
-            tasks= [self.create_routes, self.time_optimize_routes, self.weight_optimize_routes, self.volume_optimize_routes],
+            agents= [self.greedyFleetManagerAgent, self.timeOptimizerAgent, self.weightOptimizerAgent, self.volumeOptimizerAgent, self.summarizeOptimizationAgent],
+            tasks= [self.create_routes, self.time_optimize_routes, self.weight_optimize_routes, self.volume_optimize_routes, self.summarize_optized_routes],
             process=Process.sequential,
             verbose=True,
             cache=False
         )
-
-        # return Crew(
-        #     agents= [self.greedyFleetManagerAgent, self.weightOptimizerAgent], 
-        #     tasks= [self.create_routes, self.time_optimize_routes, self.weight_optimize_routes],
-        #     process=Process.sequential,
-        #     verbose=True,
-        #     cache=False
-        # )

@@ -35,7 +35,7 @@ class FinalOutputEnricher(BaseTool):
 
     def _run(self, routes: Dict) -> Dict:
         """Enrich final routes output with detailed order data"""
-        clustered_orders = get_shared("h3_clustered_orders")
+        clustered_orders = get_shared("h3_clusters")
         enriched_routes = []
         
         # Convert clustered_orders to dict if needed

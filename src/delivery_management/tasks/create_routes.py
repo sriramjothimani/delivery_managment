@@ -25,8 +25,16 @@ def create_cluster_orders_into_routes_task(agent):
         
     fleet_tool = fleet.Fleet()
 
+    from delivery_management.tools.shared_data import set_shared
+    
+    def store_output_callback(output: GreedyRoutes):
+        # Store both the raw output and parsed model
+        set_shared("h3_clustered_orders", output.model_dump())
+        return output.model_dump()
+        
     return Task(
         name="ClusterOrdersIntoRoutes",
+        callback=store_output_callback,
         description=(
             "You are given a set of validated delivery orders grouped by H3 index using the 'ClusterOrdersByGeoTool'. "
             "Each H3 cluster contains one or more delivery locations, and each location has one or more orders.\n\n"

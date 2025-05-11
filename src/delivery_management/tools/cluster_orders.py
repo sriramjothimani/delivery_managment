@@ -261,5 +261,5 @@ class ClusterOrdersByGeoTool(BaseTool):
         self.load_json_data()
         clusteredOrders = self.cluster()
         h3_clustered_orders = self._apply_h3_geo_clustering(clusteredOrders, 6)
-        set_shared("h3_clustered_orders", h3_clustered_orders)
+        set_shared("h3_clusters", h3_clustered_orders)
         return h3_clustered_orders

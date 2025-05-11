@@ -40,7 +40,7 @@ class EnrichClusteredOrders(BaseTool):
     ) -> EnrichedRoutesOutput:
         
         # print(clustered_routes_output.model_dump_json())
-        clustered_orders_input: H3ClusteredOrdersInput = get_shared("h3_clustered_orders")
+        clustered_orders_input: H3ClusteredOrdersInput = get_shared("h3_clusters")
         # Create a lookup map for location_id to orders
         # location_map = {locations.location_id: locations for locations in clustered_orders_input.h3_clusters}
 
@@ -98,4 +98,5 @@ class EnrichClusteredOrders(BaseTool):
         return EnrichedRoutesOutput(routes=enriched_routes)
 
     def _run(self, clustered_routes_output: GreedyRoutes) -> EnrichedRoutesOutput:
+        print(clustered_routes_output)
         return self.enrich_routes(clustered_routes_output)

@@ -19,8 +19,16 @@ def time_optimize_routes_task(agent):
         .with_data_file(Path(BASE_DIR / "data/time_constraints.json"))
     
     fleet_tool = fleet.Fleet()
+    
+    from delivery_management.tools.shared_data import set_shared
+    
+    def store_output_callback(output: OptimizedRoutes) -> OptimizedRoutes:
+        set_shared("time_optimized_routes", output)
+        return output.model_dump()
+        
     return Task(
         name="OptimizeRoutesWithTimeConstraints",
+        callback=store_output_callback,
         description=(
             "You are given initial delivery routes clustered by H3 index but not yet optimized for time or weight constraints.\n\n"
             "Use the 'EnrichClusteredOrders' tool to enrich these routes with accurate total weight and volume across all locations. "

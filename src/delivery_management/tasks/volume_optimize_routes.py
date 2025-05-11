@@ -11,8 +11,15 @@ def fine_tune_routes_task(agent):
         .with_data_file(Path(BASE_DIR / "data/time_constraints.json"))
     fleet_tool = fleet.Fleet()
     
+    from delivery_management.tools.shared_data import set_shared
+    
+    def store_output_callback(output) -> OptimizedRoutes:
+        set_shared("volume_optimized_routes", output)
+        return output.model_dump()
+        
     return Task(
         name="OptimiseRoutesWithVolume",
+        callback=store_output_callback,
         description=(
             "Final optimization for volume while preserving all time and weight decisions.\n"
             "Key Rules:\n"

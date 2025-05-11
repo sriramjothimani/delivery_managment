@@ -28,8 +28,8 @@ def run():
         results = DeliveryManagement().crew().kickoff(inputs=inputs)
         
         # Enrich with detailed order information
-        enricher = FinalOutputEnricher()._run(results)
-        print(enricher.model_dump_json())
+        # enricher = FinalOutputEnricher()._run(results)
+        # print(enricher.model_dump_json())
 
     except Exception as e:
         raise Exception(f"An error occurred while running the crew: {e}")

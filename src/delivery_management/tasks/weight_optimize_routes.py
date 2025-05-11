@@ -5,8 +5,15 @@ from delivery_management.tools import fleet, enrich_clustered_orders
 def fine_tune_routes_task(agent):
     enrich_clusters_tool = enrich_clustered_orders.EnrichClusteredOrders()
     fleet_tool = fleet.Fleet()
+    from delivery_management.tools.shared_data import set_shared
+    
+    def store_output_callback(output) -> OptimizedRoutes:
+        set_shared("weight_optimized_routes", output)
+        return output.json_dict
+        
     return Task(
         name="OptimiseRoutesWithWeight",
+        callback=store_output_callback,
         description=(
             "Optimize routes for weight constraints using fleet capabilities.\n"
             "Key Rules:\n"
