@@ -1,6 +1,8 @@
+from pathlib import Path
 from crewai import Task
 from pydantic import BaseModel, Field
 from typing import Dict, List, Literal, Optional
+from delivery_management.tools import fleet, time_constraints
 from delivery_management.tools.optimization_collector import OptimizationCollectorTool
 
 class OptimizationStep(BaseModel):
@@ -8,18 +10,31 @@ class OptimizationStep(BaseModel):
     fleet_distribution: Dict[Literal["Small", "Medium", "Large"], int] = Field(
         ..., description="Fleet type counts at this stage"
     )
-    avg_utilization: float = Field(..., description="Average fleet utilization percentage")
-    improvement: Optional[str] = Field(None, description="Improvement metrics")
+    cost_analysis: Dict[str, float] = Field(
+        ..., description="Cost metrics including per_km and maintenance"
+    )
+    time_efficiency: float = Field(
+        ..., description="Time efficiency improvement percentage"
+    )
+    drawbacks: List[str] = Field(
+        ..., description="Identified limitations at this stage"
+    )
+    improvements: List[str] = Field(
+        ..., description="Specific optimizations implemented"
+    )
 
 class FleetDistribution(BaseModel):
     Small: int = Field(..., description="Count of small fleets")
     Medium: int = Field(..., description="Count of medium fleets")
     Large: int = Field(..., description="Count of large fleets")
+    total_cost: float = Field(..., description="Total operational cost")
+    avg_maintenance: float = Field(..., description="Average maintenance factor")
 
 class EfficiencyMetrics(BaseModel):
     total_routes: int = Field(..., description="Total number of routes")
-    avg_utilization: float = Field(..., description="Average utilization percentage")
-    total_cost_savings: float = Field(..., description="Total cost savings")
+    cost_per_km: Dict[str, float] = Field(..., description="Per km charges by fleet type")
+    maintenance_factors: Dict[str, float] = Field(..., description="Maintenance coefficients")
+    time_savings: float = Field(..., description="Total time saved in hours")
 
 class OptimizationSummary(BaseModel):
     steps: List[OptimizationStep] = Field(..., description="List of optimization steps")
@@ -28,26 +43,39 @@ class OptimizationSummary(BaseModel):
 
 def create_summary_task(agent):
     collector = OptimizationCollectorTool()
+    fleet_tool = fleet.Fleet()
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    
+    time_constraints_tool = time_constraints.TimeConstraints()\
+        .with_data_file(Path(BASE_DIR / "data/time_constraints.json"))
+
     return Task(
         name="SummarizeOptimizationSteps",
         description=(
-            "Analyze and summarize how the optimization agents improved fleet assignments step-by-step. "
-            "Access the stored outputs from each optimization stage to generate a comprehensive report.\n\n"
+            "Analyze and provide a detailed optimization summary using these tools:\n"
+            "1. OptimizationCollectorTool - Get stage-wise fleet distribution data\n"
+            "2. Fleet tool - Calculate per km charges and maintenance costs\n"
+            "3. TimeConstraints tool - Analyze time efficiency improvements\n\n"
             
-            "Your report must include:\n"
-            "1. Chronological sequence of all optimization steps\n"
-            "2. Fleet assignment changes at each stage\n"
-            "3. Efficiency improvements (cost, utilization, etc.)\n"
-            "4. Key decision points and rationale\n"
-            "5. Final fleet assignment statistics\n\n"
+            "For each optimization stage, analyze:\n"
+            "- Drawbacks identified (using fleet and time constraint tools)\n"
+            "- Specific improvements implemented\n"
+            "- Fleet distribution changes (from OptimizationCollector)\n"
+            "- Cost impact (using Fleet tool's per km charges)\n"
+            "- Maintenance implications (from Fleet tool)\n\n"
             
-            "Available optimization stages:\n"
-            "- h3_clustered_orders: Initial clustering\n"
-            "- time_optimized_routes: Final time-optimized routes\n\n"
-            "- weight_optimized_routes: After weight optimization\n"
-            "- volume_optimized_routes: After volume optimization\n"
+            "Include in your summary:\n"
+            "1. Detailed textual analysis of each stage\n"
+            "2. Structured data with:\n"
+            "   - Fleet counts per type\n"
+            "   - Cost per km\n"
+            "   - Maintenance factors\n"
+            "   - Time efficiency metrics\n"
+            "3. Overall cost-benefit analysis\n\n"
             
-            "Format the output as a well-structured JSON document with clear sections."
+            "Format output with:\n"
+            "1. Comprehensive textual summary\n"
+            "2. Supporting structured data matching the OptimizationSummary model"
         ),
         expected_output=(
             "{\n"
@@ -85,6 +113,6 @@ def create_summary_task(agent):
             "}"
         ),
         agent=agent,
-        tools=[collector],
+        tools=[collector, fleet_tool, time_constraints_tool],
         output_json=OptimizationSummary
     )
