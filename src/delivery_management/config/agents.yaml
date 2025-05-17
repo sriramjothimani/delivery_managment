@@ -1,5 +1,5 @@
 GreedyFleetManagerAgent:
-  role: Delivery Time-Based Route Planner
+  role: Greedy route planning
   goal: >
     Group delivery locations within each H3 cluster into routes that stay within the 8-hour delivery time limit,
     forming initial delivery plans without considering fleet assignment or load balancing.

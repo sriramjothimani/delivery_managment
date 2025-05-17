@@ -1,0 +1,348 @@
+{
+  "routes": [
+    {
+      "h3_index": "86a8100c7ffffff",
+      "fleet_id": "TN14H4509",
+      "fleet_type": "Small",
+      "justification": "Route volume is 8.14 m3 and weight is 1321.86kg, which is within the capacity of a Small fleet (10 m3, 2000kg).",
+      "locations": [
+        {
+          "location_id": "LOC201",
+          "order_id": "ORD2001"
+        },
+        {
+          "location_id": "LOC202",
+          "order_id": "ORD2002"
+        },
+        {
+          "location_id": "LOC203",
+          "order_id": "ORD2003"
+        },
+        {
+          "location_id": "LOC204",
+          "order_id": "ORD2004"
+        },
+        {
+          "location_id": "LOC205",
+          "order_id": "ORD2005"
+        },
+        {
+          "location_id": "LOC206",
+          "order_id": "ORD2006"
+        },
+        {
+          "location_id": "LOC207",
+          "order_id": "ORD2007"
+        }
+      ]
+    },
+    {
+      "h3_index": "86a8100c7ffffff",
+      "fleet_id": "KA03M6781",
+      "fleet_type": "Small",
+      "justification": "Route volume is 3.81 m3 and weight is 393.52kg, which is within the capacity of a Small fleet (10 m3, 2000kg).",
+      "locations": [
+        {
+          "location_id": "LOC208",
+          "order_id": "ORD2008"
+        },
+        {
+          "location_id": "LOC209",
+          "order_id": "ORD2009"
+        }
+      ]
+    },
+    {
+      "h3_index": "86a8100efffffff",
+      "fleet_id": "MH12A1234",
+      "fleet_type": "Small",
+      "justification": "Route volume is 5.13 m3 and weight is 1006.59kg, which is within the capacity of a Small fleet (10 m3, 2000kg).",
+      "locations": [
+        {
+          "location_id": "LOC210",
+          "order_id": "ORD2010"
+        },
+        {
+          "location_id": "LOC211",
+          "order_id": "ORD2011"
+        },
+        {
+          "location_id": "LOC212",
+          "order_id": "ORD2012"
+        }
+      ]
+    },
+    {
+      "h3_index": "86a8100efffffff",
+      "fleet_id": "DL10C5678",
+      "fleet_type": "Small",
+      "justification": "Route volume is 9.38 m3 and weight is 1528.63kg, which is within the capacity of a Small fleet (10 m3, 2000kg).",
+      "locations": [
+        {
+          "location_id": "LOC213",
+          "order_id": "ORD2013"
+        },
+        {
+          "location_id": "LOC214",
+          "order_id": "ORD2014"
+        }
+      ]
+    },
+    {
+      "h3_index": "86a8100efffffff",
+      "fleet_id": "AP29F9012",
+      "fleet_type": "Small",
+      "justification": "Route volume is 4.24 m3 and weight is 788.86kg, which is within the capacity of a Small fleet (10 m3, 2000kg).",
+      "locations": [
+        {
+          "location_id": "LOC215",
+          "order_id": "ORD2015"
+        },
+        {
+          "location_id": "LOC216",
+          "order_id": "ORD2016"
+        }
+      ]
+    },
+    {
+      "h3_index": "86a810057ffffff",
+      "fleet_id": "GJ01X3456",
+      "fleet_type": "Large",
+      "justification": "Route volume is 42.32 m3 and weight is 1146.66kg, which is within the capacity of a Large fleet (50 m3, 5000kg).",
+      "locations": [
+        {
+          "location_id": "LOC217",
+          "order_id": "ORD2017"
+        },
+        {
+          "location_id": "LOC218",
+          "order_id": "ORD2018"
+        },
+        {
+          "location_id": "LOC219",
+          "order_id": "ORD2019"
+        },
+        {
+          "location_id": "LOC220",
+          "order_id": "ORD2020"
+        }
+      ]
+    },
+    {
+      "h3_index": "86a810057ffffff",
+      "fleet_id": "RJ19P7890",
+      "fleet_type": "Small",
+      "justification": "Route volume is 9.41 m3 and weight is 1145.18kg, which is within the capacity of a Small fleet (10 m3, 2000kg).",
+      "locations": [
+        {
+          "location_id": "LOC221",
+          "order_id": "ORD2021"
+        },
+        {
+          "location_id": "LOC222",
+          "order_id": "ORD2022"
+        },
+        {
+          "location_id": "LOC223",
+          "order_id": "ORD2023"
+        }
+      ]
+    },
+    {
+      "h3_index": "86a810057ffffff",
+      "fleet_id": "WB20Y6543",
+      "fleet_type": "Large",
+      "justification": "Route volume is 50.85 m3 and weight is 1144.43kg. Although ideally this should be split, I am not allowed to split routes, so assigning a Large fleet.",
+      "locations": [
+        {
+          "location_id": "LOC224",
+          "order_id": "ORD2024"
+        },
+        {
+          "location_id": "LOC225",
+          "order_id": "ORD2025"
+        },
+        {
+          "location_id": "LOC226",
+          "order_id": "ORD2026"
+        }
+      ]
+    },
+    {
+      "h3_index": "86a810057ffffff",
+      "fleet_id": "HR26D8765",
+      "fleet_type": "Large",
+      "justification": "Route volume is 50.23 m3 and weight is 654.8kg. Although ideally this should be split, I am not allowed to split routes, so assigning a Large fleet.",
+      "locations": [
+        {
+          "location_id": "LOC227",
+          "order_id": "ORD2027"
+        },
+        {
+          "location_id": "LOC228",
+          "order_id": "ORD2028"
+        }
+      ]
+    },
+    {
+      "h3_index": "86a810077ffffff",
+      "fleet_id": "PB08L2345",
+      "fleet_type": "Small",
+      "justification": "Route volume is 6.88 m3 and weight is 1134.7kg, which is within the capacity of a Small fleet (10 m3, 2000kg).",
+      "locations": [
+        {
+          "location_id": "LOC229",
+          "order_id": "ORD2029"
+        },
+        {
+          "location_id": "LOC230",
+          "order_id": "ORD2030"
+        },
+        {
+          "location_id": "LOC231",
+          "order_id": "ORD2031"
+        }
+      ]
+    },
+    {
+      "h3_index": "86a810077ffffff",
+      "fleet_id": "KA05N4321",
+      "fleet_type": "Medium",
+      "justification": "Route volume is 12.32 m3 and weight is 1273.77kg, which is within the capacity of a Medium fleet (25 m3, 5000kg).",
+      "locations": [
+        {
+          "location_id": "LOC232",
+          "order_id": "ORD2032"
+        },
+        {
+          "location_id": "LOC233",
+          "order_id": "ORD2033"
+        },
+        {
+          "location_id": "LOC234",
+          "order_id": "ORD2034"
+        }
+      ]
+    },
+    {
+      "h3_index": "86a810077ffffff",
+      "fleet_id": "MP09K5432",
+      "fleet_type": "Small",
+      "justification": "Route volume is 0.49 m3 and weight is 100.65kg, which is within the capacity of a Small fleet (10 m3, 2000kg).",
+      "locations": [
+        {
+          "location_id": "LOC235",
+          "order_id": "ORD2035"
+        }
+      ]
+    },
+    {
+      "h3_index": "86a810067ffffff",
+      "fleet_id": "KA07P8765",
+      "fleet_type": "Medium",
+      "justification": "Route volume is 10.72 m3 and weight is 1261.14kg, which is within the capacity of a Medium fleet (25 m3, 5000kg).",
+      "locations": [
+        {
+          "location_id": "LOC236",
+          "order_id": "ORD2036"
+        },
+        {
+          "location_id": "LOC237",
+          "order_id": "ORD2037"
+        }
+      ]
+    },
+    {
+      "h3_index": "86a810067ffffff",
+      "fleet_id": "JK02R1238",
+      "fleet_type": "Small",
+      "justification": "Route volume is 5.97 m3 and weight is 971.61kg, which is within the capacity of a Small fleet (10 m3, 2000kg).",
+      "locations": [
+        {
+          "location_id": "LOC238",
+          "order_id": "ORD2038"
+        },
+        {
+          "location_id": "LOC239",
+          "order_id": "ORD2039"
+        },
+        {
+          "location_id": "LOC240",
+          "order_id": "ORD2040"
+        }
+      ]
+    },
+    {
+      "h3_index": "86a810067ffffff",
+      "fleet_id": "OR05S4321",
+      "fleet_type": "Medium",
+      "justification": "Route volume is 10.25 m3 and weight is 1093.15kg, which is within the capacity of a Medium fleet (25 m3, 5000kg).",
+      "locations": [
+        {
+          "location_id": "LOC241",
+          "order_id": "ORD2041"
+        },
+        {
+          "location_id": "LOC242",
+          "order_id": "ORD2042"
+        },
+        {
+          "location_id": "LOC243",
+          "order_id": "ORD2043"
+        }
+      ]
+    },
+    {
+      "h3_index": "86a810067ffffff",
+      "fleet_id": "CH04Z6789",
+      "fleet_type": "Small",
+      "justification": "Route volume is 9.72 m3 and weight is 618.05kg, which is within the capacity of a Small fleet (10 m3, 2000kg).",
+      "locations": [
+        {
+          "location_id": "LOC244",
+          "order_id": "ORD2044"
+        },
+        {
+          "location_id": "LOC245",
+          "order_id": "ORD2045"
+        },
+        {
+          "location_id": "LOC246",
+          "order_id": "ORD2046"
+        }
+      ]
+    },
+    {
+      "h3_index": "86a81014fffffff",
+      "fleet_id": "KA16X3456",
+      "fleet_type": "Small",
+      "justification": "Route volume is 7.65 m3 and weight is 1008.52kg, which is within the capacity of a Small fleet (10 m3, 2000kg).",
+      "locations": [
+        {
+          "location_id": "LOC247",
+          "order_id": "ORD2047"
+        },
+        {
+          "location_id": "LOC248",
+          "order_id": "ORD2048"
+        },
+        {
+          "location_id": "LOC249",
+          "order_id": "ORD2049"
+        }
+      ]
+    },
+    {
+      "h3_index": "86a81014fffffff",
+      "fleet_id": "KA15W8765",
+      "fleet_type": "Small",
+      "justification": "Route volume is 3.39 m3 and weight is 145.6kg, which is within the capacity of a Small fleet (10 m3, 2000kg).",
+      "locations": [
+        {
+          "location_id": "LOC250",
+          "order_id": "ORD2050"
+        }
+      ]
+    }
+  ]
+}

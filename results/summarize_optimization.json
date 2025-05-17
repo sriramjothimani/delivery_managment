@@ -1,0 +1,80 @@
+{
+  "steps": [
+    {
+      "stage": "Initial Clustering",
+      "fleet_distribution": {
+        "Small": 0,
+        "Medium": 0,
+        "Large": 0
+      },
+      "cost_analysis": {
+        "cost_per_km": 0.0,
+        "maintenance": 0.0
+      },
+      "time_efficiency": 0.0,
+      "drawbacks": [],
+      "improvements": []
+    },
+    {
+      "stage": "After Weight Optimization",
+      "fleet_distribution": {
+        "Small": 18,
+        "Medium": 0,
+        "Large": 0
+      },
+      "cost_analysis": {
+        "cost_per_km": 12.5,
+        "maintenance": 850.0
+      },
+      "time_efficiency": 0.0,
+      "drawbacks": [
+        "Only considers weight, not volume.",
+        "Potential for underutilization of fleet volume capacity."
+      ],
+      "improvements": [
+        "Improved fleet assignment based on weight constraints."
+      ]
+    },
+    {
+      "stage": "After Volume Optimization",
+      "fleet_distribution": {
+        "Small": 15,
+        "Medium": 3,
+        "Large": 3
+      },
+      "cost_analysis": {
+        "cost_per_km": 22.916666666666668,
+        "maintenance": 1133.3333333333333
+      },
+      "time_efficiency": 0.0,
+      "drawbacks": [
+        "Some routes may be assigned to larger fleets than necessary due to volume constraints, increasing costs."
+      ],
+      "improvements": [
+        "Fleet assignment considers both weight and volume constraints.",
+        "Better utilization of fleet capacity."
+      ]
+    }
+  ],
+  "final_fleet_assignments": {
+    "Small": 15,
+    "Medium": 3,
+    "Large": 3,
+    "total_cost": 0.0,
+    "avg_maintenance": 0.0
+  },
+  "efficiency_gains": {
+    "total_routes": 21,
+    "cost_per_km": {
+      "Small": 12.5,
+      "Medium": 22.75,
+      "Large": 38.5
+    },
+    "maintenance_factors": {
+      "Small": 850.0,
+      "Medium": 1250.0,
+      "Large": 2100.0
+    },
+    "time_savings": 0.0
+  }
+}
